@@ -1,0 +1,137 @@
+{
+  "run_id": "rag_run_20260423T185628Z_990ce41b",
+  "generated_at_utc": "2026-04-23T18:56:37.741281+00:00",
+  "input": {
+    "query": "NDC Oti 2020 vote count",
+    "top_k": 5,
+    "hybrid_alpha": 0.55,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "llm_model": "gpt-4o-mini",
+    "max_context_tokens": 1200
+  },
+  "stage_times": {
+    "retrieval_start": "2026-04-23T18:56:28.781853+00:00",
+    "retrieval_end": "2026-04-23T18:56:34.396078+00:00",
+    "context_selection_start": "2026-04-23T18:56:34.396093+00:00",
+    "context_selection_end": "2026-04-23T18:56:34.398204+00:00",
+    "prompt_construction_start": "2026-04-23T18:56:34.398213+00:00",
+    "prompt_construction_end": "2026-04-23T18:56:34.398221+00:00",
+    "llm_generation_start": "2026-04-23T18:56:34.398225+00:00",
+    "llm_generation_end": "2026-04-23T18:56:37.741271+00:00"
+  },
+  "pipeline": {
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "chunk_id": "large_csv_2020_oti_region_001",
+        "source": "csv",
+        "doc_id": "csv_2020_oti_region",
+        "similarity_scores": {
+          "vector_score": 0.623141884803772,
+          "keyword_score": 0.3090553426703532,
+          "hybrid_score": 1.000000011920929
+        },
+        "text_preview": "in 2020, john dramani mahama of ndc received 181021 votes which is 62.53 percent in oti region. in 2020, nana akufo addo of npp received 103865 votes which is 35.88 percent in oti region. in 2020, christian kwabena andrews of gum received 2459 votes which is 0.85 percent in oti region. in 2020, davi"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "large_csv_2016_oti_region_001",
+        "source": "csv",
+        "doc_id": "csv_2016_oti_region",
+        "similarity_scores": {
+          "vector_score": 0.5735812783241272,
+          "keyword_score": 0.19300602583010792,
+          "hybrid_score": 0.7847742845750292
+        },
+        "text_preview": "in 2016, john dramani mahama of ndc received 136257 votes which is 63.43 percent in oti region. in 2016, nana akufo addo of npp received 74275 votes which is 34.58 percent in oti region. in 2016, bridget dzogbenuku of ppp received 1215 votes which is 0.57 percent in oti region. in 2016, ivor kobina "
+      },
+      {
+        "rank": 3,
+        "chunk_id": "large_csv_2012_oti_region_001",
+        "source": "csv",
+        "doc_id": "csv_2012_oti_region",
+        "similarity_scores": {
+          "vector_score": 0.5622817277908325,
+          "keyword_score": 0.1910519458756809,
+          "hybrid_score": 0.7713838227064467
+        },
+        "text_preview": "in 2012, john dramani mahama of ndc received 155343 votes which is 68.81 percent in oti region. in 2012, nana akufo addo of npp received 64207 votes which is 28.44 percent in oti region. in 2012, henry herbert lartey of gcpp received 1592 votes which is 0.71 percent in oti region. in 2012, alfred kw"
+      },
+      {
+        "rank": 4,
+        "chunk_id": "large_csv_2020_northern_region_001",
+        "source": "csv",
+        "doc_id": "csv_2020_northern_region",
+        "similarity_scores": {
+          "vector_score": 0.5058479309082031,
+          "keyword_score": 0.13126171989913243,
+          "hybrid_score": 0.6316597849954786
+        },
+        "text_preview": "in 2020, john dramani mahama of ndc received 476650 votes which is 53.14 percent in northern region. in 2020, nana akufo addo of npp received 409063 votes which is 45.61 percent in northern region. in 2020, christian kwabena andrews of gum received 3184 votes which is 0.35 percent in northern region"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "large_csv_2020_eastern_region_001",
+        "source": "csv",
+        "doc_id": "csv_2020_eastern_region",
+        "similarity_scores": {
+          "vector_score": 0.5076678395271301,
+          "keyword_score": 0.12944600719622926,
+          "hybrid_score": 0.6307144212511792
+        },
+        "text_preview": "in 2020, nana akufo addo of npp received 752061 votes which is 60.80 percent in eastern region. in 2020, john dramani mahama of ndc received 470999 votes which is 38.08 percent in eastern region. in 2020, christian kwabena andrews of gum received 9819 votes which is 0.79 percent in eastern region. i"
+      }
+    ],
+    "context_selection": {
+      "used_context_tokens": 1200,
+      "selected_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "large_csv_2020_oti_region_001",
+          "source": "csv",
+          "doc_id": "csv_2020_oti_region",
+          "vector_score": 0.623141884803772,
+          "keyword_score": 0.3090553426703532,
+          "hybrid_score": 1.000000011920929,
+          "used_tokens": 394,
+          "truncated": false
+        },
+        {
+          "rank": 2,
+          "chunk_id": "large_csv_2016_oti_region_001",
+          "source": "csv",
+          "doc_id": "csv_2016_oti_region",
+          "vector_score": 0.5735812783241272,
+          "keyword_score": 0.19300602583010792,
+          "hybrid_score": 0.7847742845750292,
+          "used_tokens": 246,
+          "truncated": false
+        },
+        {
+          "rank": 3,
+          "chunk_id": "large_csv_2012_oti_region_001",
+          "source": "csv",
+          "doc_id": "csv_2012_oti_region",
+          "vector_score": 0.5622817277908325,
+          "keyword_score": 0.1910519458756809,
+          "hybrid_score": 0.7713838227064467,
+          "used_tokens": 244,
+          "truncated": false
+        },
+        {
+          "rank": 4,
+          "chunk_id": "large_csv_2020_northern_region_001",
+          "source": "csv",
+          "doc_id": "csv_2020_northern_region",
+          "vector_score": 0.5058479309082031,
+          "keyword_score": 0.13126171989913243,
+          "hybrid_score": 0.6316597849954786,
+          "used_tokens": 316,
+          "truncated": true
+        }
+      ]
+    },
+    "final_prompt_sent_to_llm": "SYSTEM:\nYou are a strict grounded assistant for Academic City RAG. Use only retrieved context, cite chunk IDs like [chunk_id] for factual claims, and if evidence is missing output exactly: Insufficient evidence in retrieved context.\n\nUSER:\nUser query:\nNDC Oti 2020 vote count\n\nRetrieved context:\n[large_csv_2020_oti_region_001] source=csv doc=csv_2020_oti_region\nin 2020, john dramani mahama of ndc received 181021 votes which is 62.53 percent in oti region. in 2020, nana akufo addo of npp received 103865 votes which is 35.88 percent in oti region. in 2020, christian kwabena andrews of gum received 2459 votes which is 0.85 percent in oti region. in 2020, david asibi ayindenaba apasera of pnc received 371 votes which is 0.13 percent in oti region. in 2020, alfred kwame asiedu walker of ind received 282 votes which is 0.10 percent in oti region. in 2020, ivor kobina greenstreet of cpp received 265 votes which is 0.09 percent in oti region. in 2020, nana konadu agyeman rawlings of ndp received 253 votes which is 0.09 percent in oti region. in 2020, bridget dzogbenuku of ppp received 240 votes which is 0.08 percent in oti region. in 2020, percival kofi akpaloo of lpg received 228 votes which is 0.08 percent in oti region. in 2020, akua donkor of gfp received 200 votes which is 0.07 percent in oti region. in 2020, hassan ayariga of apc received 195 votes which is 0.07 percent in oti region. in 2020, henry herbert lartey of gcpp received 97 votes which is 0.03 percent in oti region.\n\n[large_csv_2016_oti_region_001] source=csv doc=csv_2016_oti_region\nin 2016, john dramani mahama of ndc received 136257 votes which is 63.43 percent in oti region. in 2016, nana akufo addo of npp received 74275 votes which is 34.58 percent in oti region. in 2016, bridget dzogbenuku of ppp received 1215 votes which is 0.57 percent in oti region. in 2016, ivor kobina greenstreet of cpp received 1012 votes which is 0.47 percent in oti region. in 2016, alfred kwame asiedu walker of ind received 978 votes which is 0.46 percent in oti region. in 2016, david asibi ayindenaba apasera of pnc received 471 votes which is 0.22 percent in oti region. in 2016, nana konadu agyeman rawlings of ndp received 437 votes which is 0.20 percent in oti region.\n\n[large_csv_2012_oti_region_001] source=csv doc=csv_2012_oti_region\nin 2012, john dramani mahama of ndc received 155343 votes which is 68.81 percent in oti region. in 2012, nana akufo addo of npp received 64207 votes which is 28.44 percent in oti region. in 2012, henry herbert lartey of gcpp received 1592 votes which is 0.71 percent in oti region. in 2012, alfred kwame asiedu walker of ind received 1430 votes which is 0.63 percent in oti region. in 2012, bridget dzogbenuku of ppp received 1141 votes which is 0.51 percent in oti region. in 2012, ivor kobina greenstreet of cpp received 880 votes which is 0.39 percent in oti region. in 2012, david asibi ayindenaba apasera of pnc received 658 votes which is 0.29 percent in oti region.\n\n[large_csv_2020_northern_region_001] source=csv doc=csv_2020_northern_region\nin 2020, john dramani mahama of ndc received 476650 votes which is 53.14 percent in northern region. in 2020, nana akufo addo of npp received 409063 votes which is 45.61 percent in northern region. in 2020, christian kwabena andrews of gum received 3184 votes which is 0.35 percent in northern region. in 2020, ivor kobina greenstreet of cpp received 1516 votes which is 0.17 percent in northern region. in 2020, percival kofi akpaloo of lpg received 1281 votes which is 0.14 percent in northern region. in 2020, alfred kwame asiedu walker of ind received 1260 votes which is 0.14 percent in northern region. in 2020, david asibi ayindenaba apasera of pnc received 1209 votes which is 0.13 percent in northern region. in 2020, hassan ayariga of apc received 899 votes which is 0.10 percent in northern region. in 2020, nana konadu agyeman rawlings of ndp received 545 votes which is 0.06 percent in northern region. in 2020, bridget dzogbenuku of ppp\n\nRules:\n- Use only the retrieved context.\n- Do not invent facts.\n- Include citations like [chunk_id].\n- If context is insufficient, output exactly: Insufficient evidence in retrieved context.\n",
+    "response": "In the 2020 elections, John Dramani Mahama of the NDC received 181,021 votes, which accounted for 62.53% of the votes in the Oti region. Nana Akufo-Addo of the NPP received 103,865 votes (35.88%), while other candidates received significantly fewer votes [large_csv_2020_oti_region_001]."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "run_id": "rag_run_20260423T185425Z_25397cd6",
+  "generated_at_utc": "2026-04-23T18:54:34.298750+00:00",
+  "input": {
+    "query": "DACF outstanding BTAs end-Dec 2024",
+    "top_k": 5,
+    "hybrid_alpha": 0.55,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "llm_model": "gpt-4o-mini",
+    "max_context_tokens": 1200
+  },
+  "stage_times": {
+    "retrieval_start": "2026-04-23T18:54:25.884686+00:00",
+    "retrieval_end": "2026-04-23T18:54:31.537367+00:00",
+    "context_selection_start": "2026-04-23T18:54:31.537381+00:00",
+    "context_selection_end": "2026-04-23T18:54:31.539013+00:00",
+    "prompt_construction_start": "2026-04-23T18:54:31.539020+00:00",
+    "prompt_construction_end": "2026-04-23T18:54:31.539027+00:00",
+    "llm_generation_start": "2026-04-23T18:54:31.539029+00:00",
+    "llm_generation_end": "2026-04-23T18:54:34.298739+00:00"
+  },
+  "pipeline": {
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "chunk_id": "large_pdf_page_023_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_023",
+        "similarity_scores": {
+          "vector_score": 0.40744954347610474,
+          "keyword_score": 0.23967815740947265,
+          "hybrid_score": 0.7849650676034609
+        },
+        "text_preview": "update on arrears/payable accumulation 68. mr. speaker, at the end of december 2024, total central government arrears/payables amounted to gh\u00a267.5 billion (5.7% of gdp) consisting of mda outstanding interim payment certificates (ipcs) and invoices of gh\u00a249.2 billion and outstanding bank transfer adv"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "large_pdf_page_040_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_040",
+        "similarity_scores": {
+          "vector_score": 0.4434485137462616,
+          "keyword_score": 0.19355923645341605,
+          "hybrid_score": 0.7664634483289776
+        },
+        "text_preview": "137. mr. speaker, as at end-december 2024, total arrears amounted to gh\u00a267,516 million consisting of outstanding claims of gh\u00a249,237 million and outstanding btas of gh\u20b518,279 million. the total arrears reported exclude outstanding ipp claims. 138. mr. speaker, the total outstanding claims of gh\u00a249,2"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "large_pdf_page_024_002",
+        "source": "pdf",
+        "doc_id": "pdf_page_024",
+        "similarity_scores": {
+          "vector_score": 0.32369017601013184,
+          "keyword_score": 0.28364948067215795,
+          "hybrid_score": 0.7432299754812686
+        },
+        "text_preview": "summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- economic sector sn covered entity outstanding ipc / invoice outstanding btas total 13 ministry of food and agriculture 2,228.7 154.6 2,383.3 14 ministry of fisheries and aquaculture 673.0 16.4 689.3 15 ministry of lands and natural resources 1,"
+      },
+      {
+        "rank": 4,
+        "chunk_id": "large_pdf_page_025_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_025",
+        "similarity_scores": {
+          "vector_score": 0.25765281915664673,
+          "keyword_score": 0.33615741867649207,
+          "hybrid_score": 0.7342071950435638
+        },
+        "text_preview": "table 10 : summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- social sector sn covered entity outstanding ipc / invoice outstanding btas total 25 ministry of education 4,324.8 380.4 4,705.2 26 ministry of labour, jobs, and employment 6.5 39.8 46.3 27 national pensions regulatory authority 0.0 0"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "large_pdf_page_040_002",
+        "source": "pdf",
+        "doc_id": "pdf_page_040",
+        "similarity_scores": {
+          "vector_score": 0.47529491782188416,
+          "keyword_score": 0.139136220670678,
+          "hybrid_score": 0.731858152335774
+        },
+        "text_preview": "speaker, mdas\u2019 total outstanding claims of gh\u20b545.1 billion is as a result of a stock- taking exercise of mdas\u2019 end 2024 outstanding liabilities which included both claims which had already been submitted to mof and those yet to be submitted. government has programmed to audit these arrears/payables "
+      }
+    ],
+    "context_selection": {
+      "used_context_tokens": 1200,
+      "selected_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "large_pdf_page_023_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_023",
+          "vector_score": 0.40744954347610474,
+          "keyword_score": 0.23967815740947265,
+          "hybrid_score": 0.7849650676034609,
+          "used_tokens": 530,
+          "truncated": false
+        },
+        {
+          "rank": 2,
+          "chunk_id": "large_pdf_page_040_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_040",
+          "vector_score": 0.4434485137462616,
+          "keyword_score": 0.19355923645341605,
+          "hybrid_score": 0.7664634483289776,
+          "used_tokens": 283,
+          "truncated": false
+        },
+        {
+          "rank": 3,
+          "chunk_id": "large_pdf_page_024_002",
+          "source": "pdf",
+          "doc_id": "pdf_page_024",
+          "vector_score": 0.32369017601013184,
+          "keyword_score": 0.28364948067215795,
+          "hybrid_score": 0.7432299754812686,
+          "used_tokens": 387,
+          "truncated": true
+        }
+      ]
+    },
+    "final_prompt_sent_to_llm": "SYSTEM:\nYou are a strict grounded assistant for Academic City RAG. Use only retrieved context, cite chunk IDs like [chunk_id] for factual claims, and if evidence is missing output exactly: Insufficient evidence in retrieved context.\n\nUSER:\nUser query:\nDACF outstanding BTAs end-Dec 2024\n\nRetrieved context:\n[large_pdf_page_023_001] source=pdf doc=pdf_page_023\nupdate on arrears/payable accumulation 68. mr. speaker, at the end of december 2024, total central government arrears/payables amounted to gh\u00a267.5 billion (5.7% of gdp) consisting of mda outstanding interim payment certificates (ipcs) and invoices of gh\u00a249.2 billion and outstanding bank transfer advice (btas) of gh\u00a218.3 billion at the controller and accountant-general\u2019s department (cagd) as shown in table 5. 69. mr. speaker, as part of measures to address th ese mounting accumulated arrears/payables, we will conduct an audit of these claims to validate their true quantum and eligibility. table 5: central government payables as at end 2024 (gh\u00a2 million) no. items amount % of gdp 1 payables at mdas (outstanding ipc/invoices) 49,237.23 4.2 2 payables at the cagd (outstanding btas) 18,278.84 1.6 3 total payables 67,516.07 5.7 source: mof 70. mr. speaker the breakdown of the arrears/payables are presented in tables 6, 7, and 8. table 6: summary of arrears/payables as at end-dec 2024 (gh\u00a2million) no item outstanding ipc / invoice outstanding btas total capex g&s coe sub- total capex g&s coe sub- total 1 administration 2,268 735 5 3,009 689 1,568 431 2,688 5,697 2 economic 5,264 2,515 7 7,787 560 207 0 768 8,555 3 infrastructure 19,583 2,511 - 22,094 764 35 1 799 22,893 4 social 597 5,627 413 6,637 138 1,118 328 1,584 8,221 5 public safety 4,040 1,452 37 5,530 241 268 215 723 6,254 sub-total 31,753 12,840 463 45,057 2,392 3,196 975 6,562 51,619 6 subvented p.e.\n\n[large_pdf_page_040_001] source=pdf doc=pdf_page_040\n137. mr. speaker, as at end-december 2024, total arrears amounted to gh\u00a267,516 million consisting of outstanding claims of gh\u00a249,237 million and outstanding btas of gh\u20b518,279 million. the total arrears reported exclude outstanding ipp claims. 138. mr. speaker, the total outstanding claims of gh\u00a249,237 million is made up of mdas\u2019 total of gh\u00a245,057 million, energy sector payment shortfalls of gh\u20b52.0 billion and statutory fund claims of gh\u20b52.2 billion. 139. mr. speaker, mdas\u2019 total outstanding claims of gh\u20b545.1 billion is as a result of a stock- taking exercise of mdas\u2019 end 2024 outstanding liabilities which included both claims which had already been submitted to mof and those yet to be submitted. government has programmed to audit these arrears/payables to validate the quantum before payments are made. table 25: summary of 2024 expenditure performance no. indicators (gh\u20b5 million) 2023 2024 prov. jan-dec y/y (%) budget rev. budget proj. prov. jan-dec dev y/y (%) (gh\u20b5) (%) 1 total exp.\n\n[large_pdf_page_024_002] source=pdf doc=pdf_page_024\nsummary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- economic sector sn covered entity outstanding ipc / invoice outstanding btas total 13 ministry of food and agriculture 2,228.7 154.6 2,383.3 14 ministry of fisheries and aquaculture 673.0 16.4 689.3 15 ministry of lands and natural resources 1,822.4 72.0 1,894.4 16 ministry of trade, agribusiness and industry 0.0 114.7 114.7 17 ministry of tourism, culture and creative arts 9.0 8.5 17.6 18 ministry of environment, science and technology 20.1 86.1 106.2 19 ministry of energy and green transition 3,033.8 315.2 3,349.0 total 7,787.0 767.5 8,554.5 table 9: summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- infrastructure sector sn covered entity outstanding ipc / invoice outstanding btas total 20 ministry of works, housing and water resources 1,604.5 14.8 1,619.3 21 ministry of roads and highways 15,429.1 593.1 16,022.1 22 ministry of communication, digital technology and innovations 3,115.2 77.8 3,193.0 23 ministry of transport 1,945.1 36.3 1,981.4 24 ministry of sanitation and water resources 0.0 77.2 77.2 total 22,093.8\n\nRules:\n- Use only the retrieved context.\n- Do not invent facts.\n- Include citations like [chunk_id].\n- If context is insufficient, output exactly: Insufficient evidence in retrieved context.\n",
+    "response": "As of the end of December 2024, the outstanding Bank Transfer Advice (BTAs) amounted to approximately GH\u00a218.3 billion, which is part of the total central government arrears/payables of GH\u00a267.5 billion. This total includes GH\u00a249.2 billion in outstanding interim payment certificates (IPCs) and invoices [large_pdf_page_023_001]."
+  }
+}

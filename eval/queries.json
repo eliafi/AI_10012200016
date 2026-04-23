@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q01_csv_ashanti_npp_votes",
+    "query": "How many votes did Nana Akufo Addo get in Ashanti Region in 2020?",
+    "expected_source": "csv",
+    "must_contain_all": ["ashanti region", "nana akufo addo", "1795824"]
+  },
+  {
+    "id": "q02_csv_ahafo_ndc_percent",
+    "query": "What percentage did John Dramani Mahama get in Ahafo Region in 2020?",
+    "expected_source": "csv",
+    "must_contain_all": ["ahafo region", "john dramani mahama", "44.04"]
+  },
+  {
+    "id": "q03_csv_greater_accra_ndc_votes",
+    "query": "How many votes did John Dramani Mahama receive in Greater Accra Region?",
+    "expected_source": "csv",
+    "must_contain_all": ["greater accra region", "john dramani mahama", "1326489"]
+  },
+  {
+    "id": "q04_csv_eastern_npp_votes",
+    "query": "What were Nana Akufo Addo's votes in Eastern Region?",
+    "expected_source": "csv",
+    "must_contain_all": ["eastern region", "nana akufo addo", "752061"]
+  },
+  {
+    "id": "q05_csv_bono_east_ndc_votes",
+    "query": "Who led in Bono East Region and with how many votes?",
+    "expected_source": "csv",
+    "must_contain_all": ["bono east region", "john dramani mahama", "265728"]
+  },
+  {
+    "id": "q06_csv_oti_ndc_votes",
+    "query": "What was John Dramani Mahama's vote count in Oti Region?",
+    "expected_source": "csv",
+    "must_contain_all": ["oti region", "john dramani mahama", "181021"]
+  },
+  {
+    "id": "q07_csv_north_east_npp_percent",
+    "query": "What percentage did Nana Akufo Addo receive in North East Region?",
+    "expected_source": "csv",
+    "must_contain_all": ["north east region", "nana akufo addo", "51.33"]
+  },
+  {
+    "id": "q08_csv_central_gum_votes",
+    "query": "How many votes did Christian Kwabena Andrews get in Central Region?",
+    "expected_source": "csv",
+    "must_contain_all": ["central region", "christian kwabena andrews", "15160"]
+  },
+  {
+    "id": "q09_csv_central_gcpp_candidate",
+    "query": "Which candidate from GCPP appears in Central Region results?",
+    "expected_source": "csv",
+    "must_contain_all": ["central region", "henry herbert lartey", "gcpp"]
+  },
+  {
+    "id": "q10_csv_ahafo_npp_votes",
+    "query": "How many votes did Nana Akufo Addo get in Ahafo Region?",
+    "expected_source": "csv",
+    "must_contain_all": ["ahafo region", "nana akufo addo", "145584"]
+  },
+  {
+    "id": "q11_pdf_theme",
+    "query": "What is the theme of the 2025 budget statement?",
+    "expected_source": "pdf",
+    "must_contain_all": ["resetting the economy for the ghana we want"]
+  },
+  {
+    "id": "q12_pdf_presenter",
+    "query": "Who presented the 2025 budget statement to parliament?",
+    "expected_source": "pdf",
+    "must_contain_all": ["cassiel ato forson", "minister for finance"]
+  },
+  {
+    "id": "q13_pdf_authority",
+    "query": "Under whose authority was the budget presented?",
+    "expected_source": "pdf",
+    "must_contain_all": ["john dramani mahama", "president of the republic of ghana"]
+  },
+  {
+    "id": "q14_pdf_legal_basis",
+    "query": "Which law section is cited for presenting the budget?",
+    "expected_source": "pdf",
+    "must_contain_all": ["public financial management act", "act 921"]
+  },
+  {
+    "id": "q15_pdf_total_crude_output",
+    "query": "What was Ghana's total crude oil production in 2024?",
+    "expected_source": "pdf",
+    "must_contain_all": ["total crude oil production", "48.24 million barrels"]
+  },
+  {
+    "id": "q16_pdf_jubilee_output",
+    "query": "How much output came from the Greater Jubilee field in 2024?",
+    "expected_source": "pdf",
+    "must_contain_all": ["greater jubilee", "31.85 million"]
+  },
+  {
+    "id": "q17_pdf_ten_output",
+    "query": "How much crude oil was produced by TEN in 2024?",
+    "expected_source": "pdf",
+    "must_contain_all": ["ten", "6.78 million"]
+  },
+  {
+    "id": "q18_pdf_sgn_output",
+    "query": "How much output came from Sankofa-Gye Nyame in 2024?",
+    "expected_source": "pdf",
+    "must_contain_all": ["sankofa-gye nyame", "9.61 million"]
+  },
+  {
+    "id": "q19_pdf_athletics_medals",
+    "query": "How many medals did the national athletics team win at the 4-Nation Junior Championships?",
+    "expected_source": "pdf",
+    "must_contain_all": ["4-nation junior athletics championships", "11 gold", "6 silver", "1 bronze"]
+  },
+  {
+    "id": "q20_pdf_athletics_countries",
+    "query": "Which countries participated in the 4-Nation Junior Athletics Championships?",
+    "expected_source": "pdf",
+    "must_contain_all": ["4-nation junior athletics championships", "benin", "burkina faso"]
+  }
+]

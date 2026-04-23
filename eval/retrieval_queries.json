@@ -1,0 +1,114 @@
+[
+  {
+    "id": "r01_csv_2020_ashanti_npp_votes",
+    "query": "How many votes did Nana Akufo Addo receive in Ashanti Region in 2020?",
+    "expected_source": "csv",
+    "must_contain_all": ["2020", "ashanti region", "nana akufo addo", "1795824"],
+    "failure_case": false
+  },
+  {
+    "id": "r02_csv_2020_ahafo_ndc_percent",
+    "query": "What percentage did John Dramani Mahama get in Ahafo Region in 2020?",
+    "expected_source": "csv",
+    "must_contain_all": ["2020", "ahafo region", "john dramani mahama", "44.04"],
+    "failure_case": false
+  },
+  {
+    "id": "r03_csv_2016_eastern_npp_votes",
+    "query": "What were Nana Akufo Addo's votes in Eastern Region in 2016?",
+    "expected_source": "csv",
+    "must_contain_all": ["2016", "eastern region", "nana akufo addo", "678514"],
+    "failure_case": false
+  },
+  {
+    "id": "r04_csv_2020_oti_ndc_votes",
+    "query": "How many votes did John Dramani Mahama receive in Oti Region in 2020?",
+    "expected_source": "csv",
+    "must_contain_all": ["2020", "oti region", "john dramani mahama", "181021"],
+    "failure_case": false
+  },
+  {
+    "id": "r05_pdf_theme",
+    "query": "What is the theme of the 2025 budget statement?",
+    "expected_source": "pdf",
+    "must_contain_all": ["theme", "resetting the economy for the ghana we want"],
+    "failure_case": false
+  },
+  {
+    "id": "r06_pdf_presenter",
+    "query": "Who presented the 2025 budget and in what role?",
+    "expected_source": "pdf",
+    "must_contain_all": ["cassiel ato forson", "minister for finance"],
+    "failure_case": false
+  },
+  {
+    "id": "r07_pdf_legal_basis",
+    "query": "Which legal act is cited for presenting the budget statement?",
+    "expected_source": "pdf",
+    "must_contain_all": ["public financial management act", "act 921"],
+    "failure_case": false
+  },
+  {
+    "id": "r08_pdf_total_crude_output",
+    "query": "What was total crude oil production in 2024?",
+    "expected_source": "pdf",
+    "must_contain_all": ["total crude oil production", "48.24 million barrels"],
+    "failure_case": false
+  },
+  {
+    "id": "r09_pdf_field_breakdown",
+    "query": "Give the 2024 output breakdown for Greater Jubilee, TEN and SGN fields.",
+    "expected_source": "pdf",
+    "must_contain_all": ["greater jubilee", "31.85 million", "6.78 million", "9.61 million"],
+    "failure_case": false
+  },
+  {
+    "id": "r10_pdf_athletics_medals",
+    "query": "How many medals did the national athletics team win at the 4-Nation Junior Championships?",
+    "expected_source": "pdf",
+    "must_contain_all": ["4-nation junior athletics championships", "11 gold", "6 silver", "1 bronze"],
+    "failure_case": false
+  },
+  {
+    "id": "r11_pdf_failure_nhf_invoice",
+    "query": "NHF outstanding IPC invoice end-Dec 2024",
+    "expected_source": "pdf",
+    "must_contain_all": ["national health fund", "571.0", "2,886.4", "3,457.4"],
+    "failure_case": true
+  },
+  {
+    "id": "r12_pdf_failure_dacf_btas",
+    "query": "DACF outstanding BTAs end-Dec 2024",
+    "expected_source": "pdf",
+    "must_contain_all": ["district assemblies common fund", "3,274.4", "3,582.1"],
+    "failure_case": true
+  },
+  {
+    "id": "r13_pdf_failure_appendix_7b",
+    "query": "Appendix 7B NTR/IGF 2024 actuals and 2025 projections",
+    "expected_source": "pdf",
+    "must_contain_all": ["appendix 7b", "non-tax revenue / internally generated funds", "2025 projections"],
+    "failure_case": true
+  },
+  {
+    "id": "r14_pdf_failure_ten_output",
+    "query": "TEN field output in 2024 million barrels",
+    "expected_source": "pdf",
+    "must_contain_all": ["ten", "6.78 million"],
+    "failure_case": true
+  },
+  {
+    "id": "r15_csv_failure_ga_shortform",
+    "query": "NPP votes in GA for 2020",
+    "expected_source": "csv",
+    "must_contain_all": ["2020", "greater accra region", "nana akufo addo", "1253179"],
+    "failure_case": true
+  },
+  {
+    "id": "r16_csv_failure_ndc_shortform",
+    "query": "NDC Oti 2020 vote count",
+    "expected_source": "csv",
+    "must_contain_all": ["2020", "oti region", "john dramani mahama", "181021"],
+    "failure_case": true
+  }
+]

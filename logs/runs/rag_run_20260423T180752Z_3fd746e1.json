@@ -1,0 +1,148 @@
+{
+  "run_id": "rag_run_20260423T180752Z_3fd746e1",
+  "generated_at_utc": "2026-04-23T18:08:01.513245+00:00",
+  "input": {
+    "query": "How many votes did Nana Akufo Addo receive in Ashanti Region in 2020?",
+    "top_k": 5,
+    "hybrid_alpha": 0.55,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "llm_model": "gpt-4o-mini",
+    "max_context_tokens": 1200
+  },
+  "stage_times": {
+    "retrieval_start": "2026-04-23T18:07:52.488364+00:00",
+    "retrieval_end": "2026-04-23T18:07:58.686199+00:00",
+    "context_selection_start": "2026-04-23T18:07:58.686209+00:00",
+    "context_selection_end": "2026-04-23T18:07:58.687288+00:00",
+    "prompt_construction_start": "2026-04-23T18:07:58.687292+00:00",
+    "prompt_construction_end": "2026-04-23T18:07:58.687297+00:00",
+    "llm_generation_start": "2026-04-23T18:07:58.687299+00:00",
+    "llm_generation_end": "2026-04-23T18:08:01.513232+00:00"
+  },
+  "pipeline": {
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "chunk_id": "large_csv_2020_ashanti_region_001",
+        "source": "csv",
+        "doc_id": "csv_2020_ashanti_region",
+        "similarity_scores": {
+          "vector_score": 0.7916934490203857,
+          "keyword_score": 0.4736067471536499,
+          "hybrid_score": 1.000000011920929
+        },
+        "text_preview": "in 2020, nana akufo addo of npp received 1795824 votes which is 72.79 percent in ashanti region. in 2020, john dramani mahama of ndc received 653149 votes which is 26.47 percent in ashanti region. in 2020, christian kwabena andrews of gum received 12564 votes which is 0.51 percent in ashanti region."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "large_csv_2016_ashanti_region_001",
+        "source": "csv",
+        "doc_id": "csv_2016_ashanti_region",
+        "similarity_scores": {
+          "vector_score": 0.7432376146316528,
+          "keyword_score": 0.30155253444952634,
+          "hybrid_score": 0.8040221046546218
+        },
+        "text_preview": "in 2016, nana akufo addo of npp received 1640694 votes which is 75.98 percent in ashanti region. in 2016, john dramani mahama of ndc received 503497 votes which is 23.32 percent in ashanti region. in 2016, bridget dzogbenuku of ppp received 9969 votes which is 0.46 percent in ashanti region. in 2016"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "large_csv_2008_ashanti_region_001",
+        "source": "csv",
+        "doc_id": "csv_2008_ashanti_region",
+        "similarity_scores": {
+          "vector_score": 0.7831060290336609,
+          "keyword_score": 0.24915494813182798,
+          "hybrid_score": 0.7809762705375193
+        },
+        "text_preview": "in 2008, nana addo of npp received 1214350 votes which is 72.40 percent in ashanti region. in 2008, j. a mills of ndc received 438234 votes which is 26.13 percent in ashanti region. in 2008, papa k. nduom of cpp received 11937 votes which is 0.71 percent in ashanti region. in 2008, edward mahama of "
+      },
+      {
+        "rank": 4,
+        "chunk_id": "large_csv_2012_ashanti_region_001",
+        "source": "csv",
+        "doc_id": "csv_2012_ashanti_region",
+        "similarity_scores": {
+          "vector_score": 0.720944344997406,
+          "keyword_score": 0.288876218463566,
+          "hybrid_score": 0.7770253924157731
+        },
+        "text_preview": "in 2012, nana akufo addo of npp received 1531152 votes which is 70.86 percent in ashanti region. in 2012, john dramani mahama of ndc received 612616 votes which is 28.35 percent in ashanti region. in 2012, bridget dzogbenuku of ppp received 6594 votes which is 0.31 percent in ashanti region. in 2012"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "large_csv_2020_ahafo_region_001",
+        "source": "csv",
+        "doc_id": "csv_2020_ahafo_region",
+        "similarity_scores": {
+          "vector_score": 0.6767551898956299,
+          "keyword_score": 0.2848607875461274,
+          "hybrid_score": 0.7435721763390762
+        },
+        "text_preview": "in 2020, nana akufo addo of npp received 145584 votes which is 55.04 percent in ahafo region. in 2020, john dramani mahama of ndc received 116485 votes which is 44.04 percent in ahafo region. in 2020, christian kwabena andrews of gum received 1490 votes which is 0.56 percent in ahafo region. in 2020"
+      }
+    ],
+    "context_selection": {
+      "used_context_tokens": 1200,
+      "selected_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "large_csv_2020_ashanti_region_001",
+          "source": "csv",
+          "doc_id": "csv_2020_ashanti_region",
+          "vector_score": 0.7916934490203857,
+          "keyword_score": 0.4736067471536499,
+          "hybrid_score": 1.000000011920929,
+          "used_tokens": 398,
+          "truncated": false
+        },
+        {
+          "rank": 2,
+          "chunk_id": "large_csv_2016_ashanti_region_001",
+          "source": "csv",
+          "doc_id": "csv_2016_ashanti_region",
+          "vector_score": 0.7432376146316528,
+          "keyword_score": 0.30155253444952634,
+          "hybrid_score": 0.8040221046546218,
+          "used_tokens": 250,
+          "truncated": false
+        },
+        {
+          "rank": 3,
+          "chunk_id": "large_csv_2008_ashanti_region_001",
+          "source": "csv",
+          "doc_id": "csv_2008_ashanti_region",
+          "vector_score": 0.7831060290336609,
+          "keyword_score": 0.24915494813182798,
+          "hybrid_score": 0.7809762705375193,
+          "used_tokens": 179,
+          "truncated": false
+        },
+        {
+          "rank": 4,
+          "chunk_id": "large_csv_2012_ashanti_region_001",
+          "source": "csv",
+          "doc_id": "csv_2012_ashanti_region",
+          "vector_score": 0.720944344997406,
+          "keyword_score": 0.288876218463566,
+          "hybrid_score": 0.7770253924157731,
+          "used_tokens": 248,
+          "truncated": false
+        },
+        {
+          "rank": 5,
+          "chunk_id": "large_csv_2020_ahafo_region_001",
+          "source": "csv",
+          "doc_id": "csv_2020_ahafo_region",
+          "vector_score": 0.6767551898956299,
+          "keyword_score": 0.2848607875461274,
+          "hybrid_score": 0.7435721763390762,
+          "used_tokens": 125,
+          "truncated": true
+        }
+      ]
+    },
+    "final_prompt_sent_to_llm": "SYSTEM:\nYou are a strict grounded assistant for Academic City RAG. Use only retrieved context, cite chunk IDs like [chunk_id] for factual claims, and if evidence is missing output exactly: Insufficient evidence in retrieved context.\n\nUSER:\nUser query:\nHow many votes did Nana Akufo Addo receive in Ashanti Region in 2020?\n\nRetrieved context:\n[large_csv_2020_ashanti_region_001] source=csv doc=csv_2020_ashanti_region\nin 2020, nana akufo addo of npp received 1795824 votes which is 72.79 percent in ashanti region. in 2020, john dramani mahama of ndc received 653149 votes which is 26.47 percent in ashanti region. in 2020, christian kwabena andrews of gum received 12564 votes which is 0.51 percent in ashanti region. in 2020, ivor kobina greenstreet of cpp received 1356 votes which is 0.05 percent in ashanti region. in 2020, alfred kwame asiedu walker of ind received 952 votes which is 0.04 percent in ashanti region. in 2020, percival kofi akpaloo of lpg received 712 votes which is 0.03 percent in ashanti region. in 2020, akua donkor of gfp received 593 votes which is 0.02 percent in ashanti region. in 2020, hassan ayariga of apc received 482 votes which is 0.02 percent in ashanti region. in 2020, nana konadu agyeman rawlings of ndp received 476 votes which is 0.02 percent in ashanti region. in 2020, david asibi ayindenaba apasera of pnc received 444 votes which is 0.02 percent in ashanti region. in 2020, bridget dzogbenuku of ppp received 435 votes which is 0.02 percent in ashanti region. in 2020, henry herbert lartey of gcpp received 304 votes which is 0.01 percent in ashanti region.\n\n[large_csv_2016_ashanti_region_001] source=csv doc=csv_2016_ashanti_region\nin 2016, nana akufo addo of npp received 1640694 votes which is 75.98 percent in ashanti region. in 2016, john dramani mahama of ndc received 503497 votes which is 23.32 percent in ashanti region. in 2016, bridget dzogbenuku of ppp received 9969 votes which is 0.46 percent in ashanti region. in 2016, ivor kobina greenstreet of cpp received 1817 votes which is 0.08 percent in ashanti region. in 2016, david asibi ayindenaba apasera of pnc received 1317 votes which is 0.06 percent in ashanti region. in 2016, alfred kwame asiedu walker of ind received 704 votes which is 0.03 percent in ashanti region. in 2016, nana konadu agyeman rawlings of ndp received 332 votes which is 0.02 percent in ashanti region.\n\n[large_csv_2008_ashanti_region_001] source=csv doc=csv_2008_ashanti_region\nin 2008, nana addo of npp received 1214350 votes which is 72.40 percent in ashanti region. in 2008, j. a mills of ndc received 438234 votes which is 26.13 percent in ashanti region. in 2008, papa k. nduom of cpp received 11937 votes which is 0.71 percent in ashanti region. in 2008, edward mahama of pnc received 5464 votes which is 0.33 percent in ashanti region. in 2008, kwesi amoafo-yeboah of ind received 2517 votes which is 0.15 percent in ashanti region.\n\n[large_csv_2012_ashanti_region_001] source=csv doc=csv_2012_ashanti_region\nin 2012, nana akufo addo of npp received 1531152 votes which is 70.86 percent in ashanti region. in 2012, john dramani mahama of ndc received 612616 votes which is 28.35 percent in ashanti region. in 2012, bridget dzogbenuku of ppp received 6594 votes which is 0.31 percent in ashanti region. in 2012, henry herbert lartey of gcpp received 5483 votes which is 0.25 percent in ashanti region. in 2012, ivor kobina greenstreet of cpp received 1802 votes which is 0.08 percent in ashanti region. in 2012, david asibi ayindenaba apasera of pnc received 1355 votes which is 0.06 percent in ashanti region. in 2012, alfred kwame asiedu walker of ind received 823 votes which is 0.04 percent in ashanti region.\n\n[large_csv_2020_ahafo_region_001] source=csv doc=csv_2020_ahafo_region\nin 2020, nana akufo addo of npp received 145584 votes which is 55.04 percent in ahafo region. in 2020, john dramani mahama of ndc received 116485 votes which is 44.04 percent in ahafo region. in 2020, christian kwabena andrews of gum received 1490 votes which is 0.56 percent in ahafo region. in 202\n\nRules:\n- Use only the retrieved context.\n- Do not invent facts.\n- Include citations like [chunk_id].\n- If context is insufficient, output exactly: Insufficient evidence in retrieved context.\n",
+    "response": "In the 2020 elections, Nana Akufo-Addo received 1,795,824 votes in the Ashanti Region, which accounted for 72.79 percent of the total votes cast in that region [large_csv_2020_ashanti_region_001]."
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "r01_csv_2020_ashanti_npp_votes",
+    "category": "normal"
+  },
+  {
+    "id": "r02_csv_2020_ahafo_ndc_percent",
+    "category": "normal"
+  },
+  {
+    "id": "r04_csv_2020_oti_ndc_votes",
+    "category": "normal"
+  },
+  {
+    "id": "r05_pdf_theme",
+    "category": "normal"
+  },
+  {
+    "id": "r06_pdf_presenter",
+    "category": "normal"
+  },
+  {
+    "id": "r10_pdf_athletics_medals",
+    "category": "normal"
+  },
+  {
+    "id": "r03_csv_2016_eastern_npp_votes",
+    "category": "hard"
+  },
+  {
+    "id": "r07_pdf_legal_basis",
+    "category": "hard"
+  },
+  {
+    "id": "r08_pdf_total_crude_output",
+    "category": "hard"
+  },
+  {
+    "id": "r09_pdf_field_breakdown",
+    "category": "hard"
+  },
+  {
+    "id": "r13_pdf_failure_appendix_7b",
+    "category": "adversarial"
+  },
+  {
+    "id": "r15_csv_failure_ga_shortform",
+    "category": "adversarial"
+  }
+]

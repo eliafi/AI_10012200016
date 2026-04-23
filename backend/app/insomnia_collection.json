@@ -1,0 +1,228 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-04-23T18:10:00.000Z",
+  "__export_source": "insomnia.desktop.app:v2026.1.0",
+  "resources": [
+    {
+      "_id": "wrk_ai_exam_rag",
+      "_type": "workspace",
+      "name": "AI Exam RAG API",
+      "description": "Part D full pipeline API tests",
+      "scope": "collection"
+    },
+    {
+      "_id": "env_ai_exam_rag_base",
+      "_type": "environment",
+      "parentId": "wrk_ai_exam_rag",
+      "name": "Base Environment",
+      "data": {
+        "base_url": "http://127.0.0.1:8000"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "base_url"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1700000000000
+    },
+    {
+      "_id": "fld_health_checks",
+      "_type": "request_group",
+      "parentId": "wrk_ai_exam_rag",
+      "name": "1) Health Checks",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": 1700000001000
+    },
+    {
+      "_id": "fld_pipeline_queries",
+      "_type": "request_group",
+      "parentId": "wrk_ai_exam_rag",
+      "name": "2) Pipeline Queries",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": 1700000002000
+    },
+    {
+      "_id": "fld_edge_cases",
+      "_type": "request_group",
+      "parentId": "wrk_ai_exam_rag",
+      "name": "3) Edge Cases",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": 1700000003000
+    },
+    {
+      "_id": "req_health",
+      "_type": "request",
+      "parentId": "fld_health_checks",
+      "name": "GET /health",
+      "description": "Basic service status check",
+      "method": "GET",
+      "url": "{{ _.base_url }}/health",
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": 1700000001100,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "body": {}
+    },
+    {
+      "_id": "req_query_presenter",
+      "_type": "request",
+      "parentId": "fld_pipeline_queries",
+      "name": "POST /query - Presenter Question",
+      "description": "Normal factual query; should return citation-grounded answer",
+      "method": "POST",
+      "url": "{{ _.base_url }}/query",
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 1700000002100,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"query\": \"Who presented the 2025 budget and in what role?\",\n  \"top_k\": 5,\n  \"hybrid_alpha\": 0.55,\n  \"llm_model\": \"gpt-4o-mini\",\n  \"max_context_tokens\": 1200\n}"
+      }
+    },
+    {
+      "_id": "req_query_theme",
+      "_type": "request",
+      "parentId": "fld_pipeline_queries",
+      "name": "POST /query - Budget Theme",
+      "description": "Checks retrieval quality for theme-specific query",
+      "method": "POST",
+      "url": "{{ _.base_url }}/query",
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 1700000002200,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"query\": \"What is the theme of the 2025 budget statement?\",\n  \"top_k\": 5,\n  \"hybrid_alpha\": 0.55,\n  \"llm_model\": \"gpt-4o-mini\",\n  \"max_context_tokens\": 1200\n}"
+      }
+    },
+    {
+      "_id": "req_query_election",
+      "_type": "request",
+      "parentId": "fld_pipeline_queries",
+      "name": "POST /query - Election CSV Query",
+      "description": "Checks mixed corpus behavior on CSV-heavy question",
+      "method": "POST",
+      "url": "{{ _.base_url }}/query",
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 1700000002300,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"query\": \"How many votes did Nana Akufo Addo receive in Ashanti Region in 2020?\",\n  \"top_k\": 5,\n  \"hybrid_alpha\": 0.55,\n  \"llm_model\": \"gpt-4o-mini\",\n  \"max_context_tokens\": 1200\n}"
+      }
+    },
+    {
+      "_id": "req_edge_low_context",
+      "_type": "request",
+      "parentId": "fld_edge_cases",
+      "name": "POST /query - Low Context Budget",
+      "description": "Stress test prompt with tight context window",
+      "method": "POST",
+      "url": "{{ _.base_url }}/query",
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 1700000003100,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"query\": \"Appendix 7B NTR/IGF 2024 actuals and 2025 projections\",\n  \"top_k\": 5,\n  \"hybrid_alpha\": 0.55,\n  \"llm_model\": \"gpt-4o-mini\",\n  \"max_context_tokens\": 300\n}"
+      }
+    },
+    {
+      "_id": "req_edge_high_keyword_weight",
+      "_type": "request",
+      "parentId": "fld_edge_cases",
+      "name": "POST /query - Higher Keyword Weight",
+      "description": "Compare retrieval behavior with lower alpha (more keyword impact)",
+      "method": "POST",
+      "url": "{{ _.base_url }}/query",
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 1700000003200,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"query\": \"NHF outstanding IPC invoice end-Dec 2024\",\n  \"top_k\": 5,\n  \"hybrid_alpha\": 0.35,\n  \"llm_model\": \"gpt-4o-mini\",\n  \"max_context_tokens\": 1200\n}"
+      }
+    }
+  ]
+}

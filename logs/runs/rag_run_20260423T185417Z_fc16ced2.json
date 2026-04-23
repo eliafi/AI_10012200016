@@ -1,0 +1,126 @@
+{
+  "run_id": "rag_run_20260423T185417Z_fc16ced2",
+  "generated_at_utc": "2026-04-23T18:54:24.606987+00:00",
+  "input": {
+    "query": "NHF outstanding IPC invoice end-Dec 2024",
+    "top_k": 5,
+    "hybrid_alpha": 0.55,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "llm_model": "gpt-4o-mini",
+    "max_context_tokens": 1200
+  },
+  "stage_times": {
+    "retrieval_start": "2026-04-23T18:54:17.042362+00:00",
+    "retrieval_end": "2026-04-23T18:54:22.648206+00:00",
+    "context_selection_start": "2026-04-23T18:54:22.648219+00:00",
+    "context_selection_end": "2026-04-23T18:54:22.650641+00:00",
+    "prompt_construction_start": "2026-04-23T18:54:22.650656+00:00",
+    "prompt_construction_end": "2026-04-23T18:54:22.650665+00:00",
+    "llm_generation_start": "2026-04-23T18:54:22.650669+00:00",
+    "llm_generation_end": "2026-04-23T18:54:24.606978+00:00"
+  },
+  "pipeline": {
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "chunk_id": "large_pdf_page_025_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_025",
+        "similarity_scores": {
+          "vector_score": 0.42603200674057007,
+          "keyword_score": 0.3686750520068169,
+          "hybrid_score": 0.9026771903038024
+        },
+        "text_preview": "table 10 : summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- social sector sn covered entity outstanding ipc / invoice outstanding btas total 25 ministry of education 4,324.8 380.4 4,705.2 26 ministry of labour, jobs, and employment 6.5 39.8 46.3 27 national pensions regulatory authority 0.0 0"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "large_pdf_page_024_002",
+        "source": "pdf",
+        "doc_id": "pdf_page_024",
+        "similarity_scores": {
+          "vector_score": 0.46911734342575073,
+          "keyword_score": 0.3110878452429866,
+          "hybrid_score": 0.8800009093477694
+        },
+        "text_preview": "summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- economic sector sn covered entity outstanding ipc / invoice outstanding btas total 13 ministry of food and agriculture 2,228.7 154.6 2,383.3 14 ministry of fisheries and aquaculture 673.0 16.4 689.3 15 ministry of lands and natural resources 1,"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "large_pdf_page_024_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_024",
+        "similarity_scores": {
+          "vector_score": 0.33716851472854614,
+          "keyword_score": 0.3010082160949104,
+          "hybrid_score": 0.721880236739326
+        },
+        "text_preview": "table 7: summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- admin sector sn covered entity outstanding ipc / invoice outstanding btas total 1 office of government machinery 192.2 575.2 767.5 2 office of the head of civil service 0.0 0.7 0.7 3 parliament of ghana 0.0 231.7 231.7 4 audit service "
+      },
+      {
+        "rank": 4,
+        "chunk_id": "large_pdf_page_023_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_023",
+        "similarity_scores": {
+          "vector_score": 0.4163152575492859,
+          "keyword_score": 0.21428543187467172,
+          "hybrid_score": 0.7034932016862295
+        },
+        "text_preview": "update on arrears/payable accumulation 68. mr. speaker, at the end of december 2024, total central government arrears/payables amounted to gh\u00a267.5 billion (5.7% of gdp) consisting of mda outstanding interim payment certificates (ipcs) and invoices of gh\u00a249.2 billion and outstanding bank transfer adv"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "large_pdf_page_026_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_026",
+        "similarity_scores": {
+          "vector_score": 0.3980761170387268,
+          "keyword_score": 0.15618294508242883,
+          "hybrid_score": 0.6124178233081259
+        },
+        "text_preview": "table 13: summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- other covered entities sn covered entity outstanding ipc / invoice outstanding btas total 1 national health fund (nhf) 571.0 2,886.4 3,457.4 2 district assemblies common fund (dacf) 307.7 3,274.4 3,582.1 3 ghana education trust fund ("
+      }
+    ],
+    "context_selection": {
+      "used_context_tokens": 1200,
+      "selected_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "large_pdf_page_025_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_025",
+          "vector_score": 0.42603200674057007,
+          "keyword_score": 0.3686750520068169,
+          "hybrid_score": 0.9026771903038024,
+          "used_tokens": 566,
+          "truncated": false
+        },
+        {
+          "rank": 2,
+          "chunk_id": "large_pdf_page_024_002",
+          "source": "pdf",
+          "doc_id": "pdf_page_024",
+          "vector_score": 0.46911734342575073,
+          "keyword_score": 0.3110878452429866,
+          "hybrid_score": 0.8800009093477694,
+          "used_tokens": 397,
+          "truncated": false
+        },
+        {
+          "rank": 3,
+          "chunk_id": "large_pdf_page_024_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_024",
+          "vector_score": 0.33716851472854614,
+          "keyword_score": 0.3010082160949104,
+          "hybrid_score": 0.721880236739326,
+          "used_tokens": 237,
+          "truncated": true
+        }
+      ]
+    },
+    "final_prompt_sent_to_llm": "SYSTEM:\nYou are a strict grounded assistant for Academic City RAG. Use only retrieved context, cite chunk IDs like [chunk_id] for factual claims, and if evidence is missing output exactly: Insufficient evidence in retrieved context.\n\nUSER:\nUser query:\nNHF outstanding IPC invoice end-Dec 2024\n\nRetrieved context:\n[large_pdf_page_025_001] source=pdf doc=pdf_page_025\ntable 10 : summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- social sector sn covered entity outstanding ipc / invoice outstanding btas total 25 ministry of education 4,324.8 380.4 4,705.2 26 ministry of labour, jobs, and employment 6.5 39.8 46.3 27 national pensions regulatory authority 0.0 0.0 0.0 28 ministry of sports and recreation 263.1 68.1 331.2 29 national commission for civic education 8.8 15.2 24.0 30 ministry of youth development and empowerment 0.0 0.0 0.0 31 ministry of health 1,956.7 327.5 2,284.3 32 ministry of gender, children and social protection 76.9 752.9 829.9 33 national labour commission 0.0 0.0 0.0 total 6,636.9 1,583.9 8,220.9 table 11: summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- public safety sn covered entity outstanding ipc / invoice outstanding btas total 34 office of the attorney-general and ministry of justice 30.2 3.7 33.9 35 office of the legal aid commission 0.0 2.1 2.1 36 ministry of defence 3,987.2 288.1 4,275.4 37 commission on human rights and administrative justice 0.0 14.5 14.5 38 judicial service 72.9 66.4 139.3 39 ministry of the interior 1,439.7 348.6 1,788.3 40 office of the special prosecutor 0.0 0.0 0.0 total 5,530.1 723.4 6,253.5 table 12: summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- wages & salaries sn covered entity outstanding ipc / invoice outstanding btas total 41 subvented p.e. 0.0 686.3 686.3 42 wages & salaries 0.0 1,256.1 1,256.1 total 0.0 1,942.5 1,942.5 total mda 45,056.8 8,505.0 53,561.8\n\n[large_pdf_page_024_002] source=pdf doc=pdf_page_024\nsummary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- economic sector sn covered entity outstanding ipc / invoice outstanding btas total 13 ministry of food and agriculture 2,228.7 154.6 2,383.3 14 ministry of fisheries and aquaculture 673.0 16.4 689.3 15 ministry of lands and natural resources 1,822.4 72.0 1,894.4 16 ministry of trade, agribusiness and industry 0.0 114.7 114.7 17 ministry of tourism, culture and creative arts 9.0 8.5 17.6 18 ministry of environment, science and technology 20.1 86.1 106.2 19 ministry of energy and green transition 3,033.8 315.2 3,349.0 total 7,787.0 767.5 8,554.5 table 9: summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- infrastructure sector sn covered entity outstanding ipc / invoice outstanding btas total 20 ministry of works, housing and water resources 1,604.5 14.8 1,619.3 21 ministry of roads and highways 15,429.1 593.1 16,022.1 22 ministry of communication, digital technology and innovations 3,115.2 77.8 3,193.0 23 ministry of transport 1,945.1 36.3 1,981.4 24 ministry of sanitation and water resources 0.0 77.2 77.2 total 22,093.8 799.2 22,893.0\n\n[large_pdf_page_024_001] source=pdf doc=pdf_page_024\ntable 7: summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- admin sector sn covered entity outstanding ipc / invoice outstanding btas total 1 office of government machinery 192.2 575.2 767.5 2 office of the head of civil service 0.0 0.7 0.7 3 parliament of ghana 0.0 231.7 231.7 4 audit service 0.0 0.0 0.0 5 public services commission 0.0 0.0 0.0 6 electoral commission 0.0 211.9 211.9 7 ministry of foreign affairs 101.6 47.9 149.5 8 ministry of finance 1,316.2 1,582.5 2,898.7 9 ministry of local government, chieftaincy and religious affairs 1,399.0 36.4 1,435.4 10 national\n\nRules:\n- Use only the retrieved context.\n- Do not invent facts.\n- Include citations like [chunk_id].\n- If context is insufficient, output exactly: Insufficient evidence in retrieved context.\n",
+    "response": "Insufficient evidence in retrieved context."
+  }
+}

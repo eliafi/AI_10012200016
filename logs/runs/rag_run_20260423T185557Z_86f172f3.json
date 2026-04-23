@@ -1,0 +1,137 @@
+{
+  "run_id": "rag_run_20260423T185557Z_86f172f3",
+  "generated_at_utc": "2026-04-23T18:56:06.645303+00:00",
+  "input": {
+    "query": "NPP votes in GA for 2020",
+    "top_k": 5,
+    "hybrid_alpha": 0.55,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "llm_model": "gpt-4o-mini",
+    "max_context_tokens": 1200
+  },
+  "stage_times": {
+    "retrieval_start": "2026-04-23T18:55:57.066430+00:00",
+    "retrieval_end": "2026-04-23T18:56:03.012570+00:00",
+    "context_selection_start": "2026-04-23T18:56:03.012583+00:00",
+    "context_selection_end": "2026-04-23T18:56:03.014071+00:00",
+    "prompt_construction_start": "2026-04-23T18:56:03.014076+00:00",
+    "prompt_construction_end": "2026-04-23T18:56:03.014082+00:00",
+    "llm_generation_start": "2026-04-23T18:56:03.014085+00:00",
+    "llm_generation_end": "2026-04-23T18:56:06.645292+00:00"
+  },
+  "pipeline": {
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "chunk_id": "large_csv_2020_central_region_001",
+        "source": "csv",
+        "doc_id": "csv_2020_central_region",
+        "similarity_scores": {
+          "vector_score": 0.5290396213531494,
+          "keyword_score": 0.23594533338434787,
+          "hybrid_score": 0.9599033117294311
+        },
+        "text_preview": "in 2020, nana akufo addo of npp received 613804 votes which is 52.31 percent in central region. in 2020, john dramani mahama of ndc received 538829 votes which is 45.92 percent in central region. in 2020, christian kwabena andrews of gum received 15160 votes which is 1.29 percent in central region. "
+      },
+      {
+        "rank": 2,
+        "chunk_id": "large_csv_2020_eastern_region_001",
+        "source": "csv",
+        "doc_id": "csv_2020_eastern_region",
+        "similarity_scores": {
+          "vector_score": 0.5305951833724976,
+          "keyword_score": 0.23101656452575783,
+          "hybrid_score": 0.9518401690544063
+        },
+        "text_preview": "in 2020, nana akufo addo of npp received 752061 votes which is 60.80 percent in eastern region. in 2020, john dramani mahama of ndc received 470999 votes which is 38.08 percent in eastern region. in 2020, christian kwabena andrews of gum received 9819 votes which is 0.79 percent in eastern region. i"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "large_csv_2020_western_region_001",
+        "source": "csv",
+        "doc_id": "csv_2020_western_region",
+        "similarity_scores": {
+          "vector_score": 0.5236061811447144,
+          "keyword_score": 0.23413822992427236,
+          "hybrid_score": 0.951786383708557
+        },
+        "text_preview": "in 2020, nana akufo addo of npp received 439724 votes which is 50.93 percent in western region. in 2020, john dramani mahama of ndc received 398549 votes which is 46.16 percent in western region. in 2020, christian kwabena andrews of gum received 20638 votes which is 2.39 percent in western region. "
+      },
+      {
+        "rank": 4,
+        "chunk_id": "large_csv_2020_volta_region_001",
+        "source": "csv",
+        "doc_id": "csv_2020_volta_region",
+        "similarity_scores": {
+          "vector_score": 0.5293161273002625,
+          "keyword_score": 0.23145893285661878,
+          "hybrid_score": 0.9515843961446895
+        },
+        "text_preview": "in 2020, john dramani mahama of ndc received 606508 votes which is 84.83 percent in volta region. in 2020, nana akufo addo of npp received 100481 votes which is 14.05 percent in volta region. in 2020, christian kwabena andrews of gum received 4679 votes which is 0.65 percent in volta region. in 2020"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "large_csv_2020_savannah_region_001",
+        "source": "csv",
+        "doc_id": "csv_2020_savannah_region",
+        "similarity_scores": {
+          "vector_score": 0.5756876468658447,
+          "keyword_score": 0.20957460488630655,
+          "hybrid_score": 0.949705192973237
+        },
+        "text_preview": "in 2020, john dramani mahama of ndc received 144244 votes which is 62.97 percent in savannah region. in 2020, nana akufo addo of npp received 80605 votes which is 35.19 percent in savannah region. in 2020, christian kwabena andrews of gum received 1409 votes which is 0.62 percent in savannah region."
+      }
+    ],
+    "context_selection": {
+      "used_context_tokens": 1200,
+      "selected_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "large_csv_2020_central_region_001",
+          "source": "csv",
+          "doc_id": "csv_2020_central_region",
+          "vector_score": 0.5290396213531494,
+          "keyword_score": 0.23594533338434787,
+          "hybrid_score": 0.9599033117294311,
+          "used_tokens": 384,
+          "truncated": false
+        },
+        {
+          "rank": 2,
+          "chunk_id": "large_csv_2020_eastern_region_001",
+          "source": "csv",
+          "doc_id": "csv_2020_eastern_region",
+          "vector_score": 0.5305951833724976,
+          "keyword_score": 0.23101656452575783,
+          "hybrid_score": 0.9518401690544063,
+          "used_tokens": 384,
+          "truncated": false
+        },
+        {
+          "rank": 3,
+          "chunk_id": "large_csv_2020_western_region_001",
+          "source": "csv",
+          "doc_id": "csv_2020_western_region",
+          "vector_score": 0.5236061811447144,
+          "keyword_score": 0.23413822992427236,
+          "hybrid_score": 0.951786383708557,
+          "used_tokens": 385,
+          "truncated": false
+        },
+        {
+          "rank": 4,
+          "chunk_id": "large_csv_2020_volta_region_001",
+          "source": "csv",
+          "doc_id": "csv_2020_volta_region",
+          "vector_score": 0.5293161273002625,
+          "keyword_score": 0.23145893285661878,
+          "hybrid_score": 0.9515843961446895,
+          "used_tokens": 47,
+          "truncated": true
+        }
+      ]
+    },
+    "final_prompt_sent_to_llm": "SYSTEM:\nYou are a strict grounded assistant for Academic City RAG. Use only retrieved context, cite chunk IDs like [chunk_id] for factual claims, and if evidence is missing output exactly: Insufficient evidence in retrieved context.\n\nUSER:\nUser query:\nNPP votes in GA for 2020\n\nRetrieved context:\n[large_csv_2020_central_region_001] source=csv doc=csv_2020_central_region\nin 2020, nana akufo addo of npp received 613804 votes which is 52.31 percent in central region. in 2020, john dramani mahama of ndc received 538829 votes which is 45.92 percent in central region. in 2020, christian kwabena andrews of gum received 15160 votes which is 1.29 percent in central region. in 2020, ivor kobina greenstreet of cpp received 1117 votes which is 0.10 percent in central region. in 2020, bridget dzogbenuku of ppp received 1056 votes which is 0.09 percent in central region. in 2020, alfred kwame asiedu walker of ind received 841 votes which is 0.07 percent in central region. in 2020, percival kofi akpaloo of lpg received 617 votes which is 0.05 percent in central region. in 2020, akua donkor of gfp received 520 votes which is 0.04 percent in central region. in 2020, hassan ayariga of apc received 448 votes which is 0.04 percent in central region. in 2020, nana konadu agyeman rawlings of ndp received 430 votes which is 0.04 percent in central region. in 2020, henry herbert lartey of gcpp received 363 votes which is 0.03 percent in central region. in 2020, david asibi ayindenaba apasera of pnc received 292 votes which is 0.02 percent in central region.\n\n[large_csv_2020_eastern_region_001] source=csv doc=csv_2020_eastern_region\nin 2020, nana akufo addo of npp received 752061 votes which is 60.80 percent in eastern region. in 2020, john dramani mahama of ndc received 470999 votes which is 38.08 percent in eastern region. in 2020, christian kwabena andrews of gum received 9819 votes which is 0.79 percent in eastern region. in 2020, ivor kobina greenstreet of cpp received 854 votes which is 0.07 percent in eastern region. in 2020, alfred kwame asiedu walker of ind received 642 votes which is 0.05 percent in eastern region. in 2020, percival kofi akpaloo of lpg received 510 votes which is 0.04 percent in eastern region. in 2020, hassan ayariga of apc received 466 votes which is 0.04 percent in eastern region. in 2020, akua donkor of gfp received 379 votes which is 0.03 percent in eastern region. in 2020, bridget dzogbenuku of ppp received 363 votes which is 0.03 percent in eastern region. in 2020, nana konadu agyeman rawlings of ndp received 358 votes which is 0.03 percent in eastern region. in 2020, david asibi ayindenaba apasera of pnc received 278 votes which is 0.02 percent in eastern region. in 2020, henry herbert lartey of gcpp received 211 votes which is 0.02 percent in eastern region.\n\n[large_csv_2020_western_region_001] source=csv doc=csv_2020_western_region\nin 2020, nana akufo addo of npp received 439724 votes which is 50.93 percent in western region. in 2020, john dramani mahama of ndc received 398549 votes which is 46.16 percent in western region. in 2020, christian kwabena andrews of gum received 20638 votes which is 2.39 percent in western region. in 2020, ivor kobina greenstreet of cpp received 1143 votes which is 0.13 percent in western region. in 2020, bridget dzogbenuku of ppp received 787 votes which is 0.09 percent in western region. in 2020, alfred kwame asiedu walker of ind received 508 votes which is 0.06 percent in western region. in 2020, nana konadu agyeman rawlings of ndp received 417 votes which is 0.05 percent in western region. in 2020, hassan ayariga of apc received 400 votes which is 0.05 percent in western region. in 2020, akua donkor of gfp received 379 votes which is 0.04 percent in western region. in 2020, percival kofi akpaloo of lpg received 367 votes which is 0.04 percent in western region. in 2020, david asibi ayindenaba apasera of pnc received 305 votes which is 0.04 percent in western region. in 2020, henry herbert lartey of gcpp received 223 votes which is 0.03 percent in western region.\n\n[large_csv_2020_volta_region_001] source=csv doc=csv_2020_volta_region\nin 2020, john dramani mahama of ndc received 606508 votes which is 84\n\nRules:\n- Use only the retrieved context.\n- Do not invent facts.\n- Include citations like [chunk_id].\n- If context is insufficient, output exactly: Insufficient evidence in retrieved context.\n",
+    "response": "In the 2020 elections in Ghana, the New Patriotic Party (NPP), led by Nana Akufo-Addo, received the following votes in various regions:\n\n1. **Central Region**: 613,804 votes (52.31%) [large_csv_2020_central_region_001].\n2. **Eastern Region**: 752,061 votes (60.80%) [large_csv_2020_eastern_region_001].\n3. **Western Region**: 439,724 votes (50.93%) [large_csv_2020_western_region_001].\n\nInsufficient evidence in retrieved context for NPP votes in other regions."
+  }
+}

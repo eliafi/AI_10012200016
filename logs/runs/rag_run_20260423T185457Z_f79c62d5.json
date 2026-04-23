@@ -1,0 +1,148 @@
+{
+  "run_id": "rag_run_20260423T185457Z_f79c62d5",
+  "generated_at_utc": "2026-04-23T18:55:04.478704+00:00",
+  "input": {
+    "query": "Appendix 7B NTR/IGF 2024 actuals and 2025 projections",
+    "top_k": 5,
+    "hybrid_alpha": 0.55,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "llm_model": "gpt-4o-mini",
+    "max_context_tokens": 1200
+  },
+  "stage_times": {
+    "retrieval_start": "2026-04-23T18:54:57.128987+00:00",
+    "retrieval_end": "2026-04-23T18:55:02.841383+00:00",
+    "context_selection_start": "2026-04-23T18:55:02.841397+00:00",
+    "context_selection_end": "2026-04-23T18:55:02.841830+00:00",
+    "prompt_construction_start": "2026-04-23T18:55:02.841834+00:00",
+    "prompt_construction_end": "2026-04-23T18:55:02.841839+00:00",
+    "llm_generation_start": "2026-04-23T18:55:02.841842+00:00",
+    "llm_generation_end": "2026-04-23T18:55:04.478694+00:00"
+  },
+  "pipeline": {
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "chunk_id": "large_pdf_page_204_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_204",
+        "similarity_scores": {
+          "vector_score": 0.4434416890144348,
+          "keyword_score": 0.5240034603216968,
+          "hybrid_score": 0.9544927597045898
+        },
+        "text_preview": "appendix 7b:"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "large_pdf_page_199_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_199",
+        "similarity_scores": {
+          "vector_score": 0.4434416890144348,
+          "keyword_score": 0.5240034603216968,
+          "hybrid_score": 0.9544927597045898
+        },
+        "text_preview": "appendix 7b:"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "large_pdf_page_202_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_202",
+        "similarity_scores": {
+          "vector_score": 0.4434416890144348,
+          "keyword_score": 0.5240034603216968,
+          "hybrid_score": 0.9544927597045898
+        },
+        "text_preview": "appendix 7b:"
+      },
+      {
+        "rank": 4,
+        "chunk_id": "large_pdf_page_205_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_205",
+        "similarity_scores": {
+          "vector_score": 0.43562576174736023,
+          "keyword_score": 0.27702811952504947,
+          "hybrid_score": 0.7337642671813353
+        },
+        "text_preview": "appendix 7b: non-tax revenue / internally generated funds (ntr/igf) 2024 proj vs actuals and 2025 projections (gh\u00a2'000) capped retention (%) collection retention lodgement collection retention lodgement collection retention lodgement social sector 7,985,345.66 7,821,309.51 164,036.15 9,773,235.72 9,"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "large_pdf_page_201_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_201",
+        "similarity_scores": {
+          "vector_score": 0.4326743185520172,
+          "keyword_score": 0.27766849767397306,
+          "hybrid_score": 0.7310543093844862
+        },
+        "text_preview": "appendix 7b: non-tax revenue / internally generated funds (ntr/igf) 2024 proj vs actuals and 2025 projections (gh\u00a2'000) capped retention (%) collection retention lodgement collection retention lodgement collection retention lodgement economic sector 2,739,416.84 2,287,259.80 452,157.04 2,817,339.63 "
+      }
+    ],
+    "context_selection": {
+      "used_context_tokens": 360,
+      "selected_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "large_pdf_page_204_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_204",
+          "vector_score": 0.4434416890144348,
+          "keyword_score": 0.5240034603216968,
+          "hybrid_score": 0.9544927597045898,
+          "used_tokens": 25,
+          "truncated": false
+        },
+        {
+          "rank": 2,
+          "chunk_id": "large_pdf_page_199_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_199",
+          "vector_score": 0.4434416890144348,
+          "keyword_score": 0.5240034603216968,
+          "hybrid_score": 0.9544927597045898,
+          "used_tokens": 25,
+          "truncated": false
+        },
+        {
+          "rank": 3,
+          "chunk_id": "large_pdf_page_202_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_202",
+          "vector_score": 0.4434416890144348,
+          "keyword_score": 0.5240034603216968,
+          "hybrid_score": 0.9544927597045898,
+          "used_tokens": 25,
+          "truncated": false
+        },
+        {
+          "rank": 4,
+          "chunk_id": "large_pdf_page_205_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_205",
+          "vector_score": 0.43562576174736023,
+          "keyword_score": 0.27702811952504947,
+          "hybrid_score": 0.7337642671813353,
+          "used_tokens": 143,
+          "truncated": false
+        },
+        {
+          "rank": 5,
+          "chunk_id": "large_pdf_page_201_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_201",
+          "vector_score": 0.4326743185520172,
+          "keyword_score": 0.27766849767397306,
+          "hybrid_score": 0.7310543093844862,
+          "used_tokens": 142,
+          "truncated": false
+        }
+      ]
+    },
+    "final_prompt_sent_to_llm": "SYSTEM:\nYou are a strict grounded assistant for Academic City RAG. Use only retrieved context, cite chunk IDs like [chunk_id] for factual claims, and if evidence is missing output exactly: Insufficient evidence in retrieved context.\n\nUSER:\nUser query:\nAppendix 7B NTR/IGF 2024 actuals and 2025 projections\n\nRetrieved context:\n[large_pdf_page_204_001] source=pdf doc=pdf_page_204\nappendix 7b:\n\n[large_pdf_page_199_001] source=pdf doc=pdf_page_199\nappendix 7b:\n\n[large_pdf_page_202_001] source=pdf doc=pdf_page_202\nappendix 7b:\n\n[large_pdf_page_205_001] source=pdf doc=pdf_page_205\nappendix 7b: non-tax revenue / internally generated funds (ntr/igf) 2024 proj vs actuals and 2025 projections (gh\u00a2'000) capped retention (%) collection retention lodgement collection retention lodgement collection retention lodgement social sector 7,985,345.66 7,821,309.51 164,036.15 9,773,235.72 9,626,349.66 146,886.06 8,014,992.76 7,865,439.42 144,475.59 regulatory agencies:\n\n[large_pdf_page_201_001] source=pdf doc=pdf_page_201\nappendix 7b: non-tax revenue / internally generated funds (ntr/igf) 2024 proj vs actuals and 2025 projections (gh\u00a2'000) capped retention (%) collection retention lodgement collection retention lodgement collection retention lodgement economic sector 2,739,416.84 2,287,259.80 452,157.04 2,817,339.63 2,525,030.12 292,309.51 2,824,594.77 2,333,099.21 491,495.56 min.\n\nRules:\n- Use only the retrieved context.\n- Do not invent facts.\n- Include citations like [chunk_id].\n- If context is insufficient, output exactly: Insufficient evidence in retrieved context.\n",
+    "response": "Insufficient evidence in retrieved context."
+  }
+}

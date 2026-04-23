@@ -1,0 +1,879 @@
+{
+  "generated_at_utc": "2026-04-23T18:57:01.111534+00:00",
+  "design_choices": {
+    "adversarial_queries": 6,
+    "query_ids": [
+      "r11_pdf_failure_nhf_invoice",
+      "r12_pdf_failure_dacf_btas",
+      "r13_pdf_failure_appendix_7b",
+      "r14_pdf_failure_ten_output",
+      "r15_csv_failure_ga_shortform",
+      "r16_csv_failure_ndc_shortform"
+    ],
+    "runs_per_query": 3,
+    "llm_model": "gpt-4o-mini",
+    "rag_retrieval_top_k": 5,
+    "rag_hybrid_alpha": 0.55,
+    "rag_max_context_tokens": 1200
+  },
+  "summary": {
+    "rag": {
+      "responses_evaluated": 18,
+      "accuracy_rate_correct": 0.3333333333333333,
+      "accuracy_rate_partial": 0.05555555555555555,
+      "accuracy_rate_incorrect": 0.6111111111111112,
+      "avg_keyword_coverage": 0.35648148148148145,
+      "hallucination_rate": 0.2777777777777778
+    },
+    "pure_llm": {
+      "responses_evaluated": 18,
+      "accuracy_rate_correct": 0.0,
+      "accuracy_rate_partial": 0.5,
+      "accuracy_rate_incorrect": 0.5,
+      "avg_keyword_coverage": 0.3194444444444444,
+      "hallucination_rate": 0.5
+    }
+  },
+  "consistency": {
+    "rag": {
+      "avg_consistency_score_jaccard": 0.6394778851662436,
+      "per_query": [
+        {
+          "query_id": "r11_pdf_failure_nhf_invoice",
+          "runs_observed": 3,
+          "runs_expected": 3,
+          "consistency_score_jaccard": 1.0
+        },
+        {
+          "query_id": "r12_pdf_failure_dacf_btas",
+          "runs_observed": 3,
+          "runs_expected": 3,
+          "consistency_score_jaccard": 0.5791885860035071
+        },
+        {
+          "query_id": "r13_pdf_failure_appendix_7b",
+          "runs_observed": 3,
+          "runs_expected": 3,
+          "consistency_score_jaccard": 0.3333333333333333
+        },
+        {
+          "query_id": "r14_pdf_failure_ten_output",
+          "runs_observed": 3,
+          "runs_expected": 3,
+          "consistency_score_jaccard": 0.8333333333333334
+        },
+        {
+          "query_id": "r15_csv_failure_ga_shortform",
+          "runs_observed": 3,
+          "runs_expected": 3,
+          "consistency_score_jaccard": 0.3719508918977004
+        },
+        {
+          "query_id": "r16_csv_failure_ndc_shortform",
+          "runs_observed": 3,
+          "runs_expected": 3,
+          "consistency_score_jaccard": 0.7190611664295875
+        }
+      ]
+    },
+    "pure_llm": {
+      "avg_consistency_score_jaccard": 0.6633187998004675,
+      "per_query": [
+        {
+          "query_id": "r11_pdf_failure_nhf_invoice",
+          "runs_observed": 3,
+          "runs_expected": 3,
+          "consistency_score_jaccard": 0.6819546819546819
+        },
+        {
+          "query_id": "r12_pdf_failure_dacf_btas",
+          "runs_observed": 3,
+          "runs_expected": 3,
+          "consistency_score_jaccard": 0.7948717948717948
+        },
+        {
+          "query_id": "r13_pdf_failure_appendix_7b",
+          "runs_observed": 3,
+          "runs_expected": 3,
+          "consistency_score_jaccard": 0.5982672138622891
+        },
+        {
+          "query_id": "r14_pdf_failure_ten_output",
+          "runs_observed": 3,
+          "runs_expected": 3,
+          "consistency_score_jaccard": 0.5479774705581157
+        },
+        {
+          "query_id": "r15_csv_failure_ga_shortform",
+          "runs_observed": 3,
+          "runs_expected": 3,
+          "consistency_score_jaccard": 0.6172448979591837
+        },
+        {
+          "query_id": "r16_csv_failure_ndc_shortform",
+          "runs_observed": 3,
+          "runs_expected": 3,
+          "consistency_score_jaccard": 0.7395967395967395
+        }
+      ]
+    }
+  },
+  "runs": [
+    {
+      "query_id": "r11_pdf_failure_nhf_invoice",
+      "query": "NHF outstanding IPC invoice end-Dec 2024",
+      "mode": "rag",
+      "run_index": 1,
+      "response": "Insufficient evidence in retrieved context.",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185355Z_817cf3cc.json",
+      "accuracy": {
+        "keyword_coverage": 0.0,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": true,
+          "has_citation": false,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r11_pdf_failure_nhf_invoice",
+      "query": "NHF outstanding IPC invoice end-Dec 2024",
+      "mode": "pure_llm",
+      "run_index": 1,
+      "response": "I'm unable to provide specific financial data or projections for NHF's outstanding IPC invoices as of December 2024. Please consult your financial records or relevant accounting software for accurate information.",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.0,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": true,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": true,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r11_pdf_failure_nhf_invoice",
+      "query": "NHF outstanding IPC invoice end-Dec 2024",
+      "mode": "rag",
+      "run_index": 2,
+      "response": "Insufficient evidence in retrieved context.",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185407Z_8b566bf3.json",
+      "accuracy": {
+        "keyword_coverage": 0.0,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": true,
+          "has_citation": false,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r11_pdf_failure_nhf_invoice",
+      "query": "NHF outstanding IPC invoice end-Dec 2024",
+      "mode": "pure_llm",
+      "run_index": 2,
+      "response": "I'm unable to provide specific financial data or projections for NHF's outstanding IPC invoices as of December 2024. You may need to consult financial reports or contact the relevant department for accurate information.",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.0,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": true,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": true,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r11_pdf_failure_nhf_invoice",
+      "query": "NHF outstanding IPC invoice end-Dec 2024",
+      "mode": "rag",
+      "run_index": 3,
+      "response": "Insufficient evidence in retrieved context.",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185417Z_fc16ced2.json",
+      "accuracy": {
+        "keyword_coverage": 0.0,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": true,
+          "has_citation": false,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r11_pdf_failure_nhf_invoice",
+      "query": "NHF outstanding IPC invoice end-Dec 2024",
+      "mode": "pure_llm",
+      "run_index": 3,
+      "response": "I'm unable to provide specific financial data or projections for NHF or any outstanding IPC invoices as of December 2024. Please check with your financial department or relevant records for accurate information.",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.0,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": true,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": true,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r12_pdf_failure_dacf_btas",
+      "query": "DACF outstanding BTAs end-Dec 2024",
+      "mode": "rag",
+      "run_index": 1,
+      "response": "As of the end of December 2024, the outstanding Bank Transfer Advice (BTAs) amounted to approximately GH\u00a218.3 billion, which is part of the total central government arrears/payables of GH\u00a267.5 billion. This total includes GH\u00a249.2 billion in outstanding interim payment certificates (IPCs) and invoices [large_pdf_page_023_001].",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185425Z_25397cd6.json",
+      "accuracy": {
+        "keyword_coverage": 0.0,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": true,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": true,
+          "unsupported_claim_risk": true,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r12_pdf_failure_dacf_btas",
+      "query": "DACF outstanding BTAs end-Dec 2024",
+      "mode": "pure_llm",
+      "run_index": 1,
+      "response": "I'm sorry, but I don't have access to real-time data or specific financial forecasts. You may want to check with financial institutions or databases for the latest information on DACF outstanding BTAs for December 2024.",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.0,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": true,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": true,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r12_pdf_failure_dacf_btas",
+      "query": "DACF outstanding BTAs end-Dec 2024",
+      "mode": "rag",
+      "run_index": 2,
+      "response": "As of the end of December 2024, the outstanding Bank Transfer Advice (BTAs) amounted to GH\u00a218.3 billion at the Controller and Accountant-General\u2019s Department (CAGD) [large_pdf_page_023_001].",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185436Z_37db53b5.json",
+      "accuracy": {
+        "keyword_coverage": 0.0,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": true,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": true,
+          "unsupported_claim_risk": true,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r12_pdf_failure_dacf_btas",
+      "query": "DACF outstanding BTAs end-Dec 2024",
+      "mode": "pure_llm",
+      "run_index": 2,
+      "response": "I'm sorry, but I don't have access to real-time data or projections for DACF outstanding BTAs as of December 2024. You may want to check financial reports or databases for the most accurate information.",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.0,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": true,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": true,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r12_pdf_failure_dacf_btas",
+      "query": "DACF outstanding BTAs end-Dec 2024",
+      "mode": "rag",
+      "run_index": 3,
+      "response": "As of the end of December 2024, the outstanding Bank Transfer Advice (BTAs) amounted to approximately GH\u00a218.3 billion, which is part of the total central government arrears/payables of GH\u00a267.5 billion [large_pdf_page_023_001].",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185446Z_1ffb2f33.json",
+      "accuracy": {
+        "keyword_coverage": 0.0,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": true,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": true,
+          "unsupported_claim_risk": true,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r12_pdf_failure_dacf_btas",
+      "query": "DACF outstanding BTAs end-Dec 2024",
+      "mode": "pure_llm",
+      "run_index": 3,
+      "response": "I'm sorry, but I don't have access to real-time data or projections for DACF outstanding BTAs as of December 2024. You may want to check financial reports or databases for the most accurate information.",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.0,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": true,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": true,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r13_pdf_failure_appendix_7b",
+      "query": "Appendix 7B NTR/IGF 2024 actuals and 2025 projections",
+      "mode": "rag",
+      "run_index": 1,
+      "response": "Insufficient evidence in retrieved context.",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185457Z_f79c62d5.json",
+      "accuracy": {
+        "keyword_coverage": 0.0,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": true,
+          "has_citation": false,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r13_pdf_failure_appendix_7b",
+      "query": "Appendix 7B NTR/IGF 2024 actuals and 2025 projections",
+      "mode": "pure_llm",
+      "run_index": 1,
+      "response": "I'm unable to provide specific documents or data such as \"Appendix 7B NTR/IGF 2024 actuals and 2025 projections.\" You may need to refer to the relevant financial reports or databases for that information.",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.6666666666666666,
+        "label": "partial"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r13_pdf_failure_appendix_7b",
+      "query": "Appendix 7B NTR/IGF 2024 actuals and 2025 projections",
+      "mode": "rag",
+      "run_index": 2,
+      "response": "The details for Appendix 7B regarding Non-Tax Revenue (NTR) and Internally Generated Funds (IGF) for 2024 actuals and 2025 projections are as follows:\n\n1. **Social Sector**:\n   - **2024 Actuals**: \n     - Collection: GH\u00a2 7,985,345.66\n     - Retention: GH\u00a2 7,821,309.51\n     - Lodgement: GH\u00a2 164,036.15\n   - **2025 Projections**:\n     - Collection: GH\u00a2 9,773,235.72\n     - Retention: GH\u00a2 9,626,349.66\n     - Lodgement: GH\u00a2 146,886.06\n   - **2025 Further Projections**:\n     - Collection: GH\u00a2 8,014,992.76\n     - Retention: GH\u00a2 7,865,439.42\n     - Lodgement: GH\u00a2 144,475.59 [large_pdf_page_205_001].\n\n2. **Economic Sector**:\n   - **2024 Actuals**: \n     - Collection: GH\u00a2 2,739,416.84\n     - Retention: GH\u00a2 2,287,259.80\n     - Lodgement: GH\u00a2 452,157.04\n   - **2025 Projections**:\n     - Collection: GH\u00a2 2,817,339.63\n     - Retention: GH\u00a2 2,525,030.12\n     - Lodgement: GH\u00a2 292,309.51\n   - **2025 Further Projections**:\n     - Collection: GH",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185506Z_79107775.json",
+      "accuracy": {
+        "keyword_coverage": 0.6666666666666666,
+        "label": "partial"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": true,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r13_pdf_failure_appendix_7b",
+      "query": "Appendix 7B NTR/IGF 2024 actuals and 2025 projections",
+      "mode": "pure_llm",
+      "run_index": 2,
+      "response": "I'm unable to provide specific documents or data like \"Appendix 7B NTR/IGF 2024 actuals and 2025 projections.\" You may need to check the relevant financial reports or databases for that information.",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.6666666666666666,
+        "label": "partial"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r13_pdf_failure_appendix_7b",
+      "query": "Appendix 7B NTR/IGF 2024 actuals and 2025 projections",
+      "mode": "rag",
+      "run_index": 3,
+      "response": "Insufficient evidence in retrieved context.",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185519Z_acfb7787.json",
+      "accuracy": {
+        "keyword_coverage": 0.0,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": true,
+          "has_citation": false,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r13_pdf_failure_appendix_7b",
+      "query": "Appendix 7B NTR/IGF 2024 actuals and 2025 projections",
+      "mode": "pure_llm",
+      "run_index": 3,
+      "response": "I'm unable to access specific documents or data such as \"Appendix 7B NTR/IGF 2024 actuals and 2025 projections.\" Please provide more context or details, and I'll do my best to assist you!",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.6666666666666666,
+        "label": "partial"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r14_pdf_failure_ten_output",
+      "query": "TEN field output in 2024 million barrels",
+      "mode": "rag",
+      "run_index": 1,
+      "response": "The TEN field output in 2024 was 6.78 million barrels [large_pdf_page_051_001].",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185529Z_79494346.json",
+      "accuracy": {
+        "keyword_coverage": 1.0,
+        "label": "correct"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": true,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r14_pdf_failure_ten_output",
+      "query": "TEN field output in 2024 million barrels",
+      "mode": "pure_llm",
+      "run_index": 1,
+      "response": "I'm not sure what \"TEN field\" refers to specifically, but if you're asking about oil production projections for a specific field or region in 2024, please provide more context or details.",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.5,
+        "label": "partial"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r14_pdf_failure_ten_output",
+      "query": "TEN field output in 2024 million barrels",
+      "mode": "rag",
+      "run_index": 2,
+      "response": "The TEN field output in 2024 was 6.78 million barrels [large_pdf_page_051_001].",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185537Z_c7e10ed9.json",
+      "accuracy": {
+        "keyword_coverage": 1.0,
+        "label": "correct"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": true,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r14_pdf_failure_ten_output",
+      "query": "TEN field output in 2024 million barrels",
+      "mode": "pure_llm",
+      "run_index": 2,
+      "response": "I'm not sure what \"TEN\" refers to in this context. Could you clarify what you mean by \"TEN field\"?",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.5,
+        "label": "partial"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r14_pdf_failure_ten_output",
+      "query": "TEN field output in 2024 million barrels",
+      "mode": "rag",
+      "run_index": 3,
+      "response": "The TEN field output in 2024 is reported to be 6.78 million barrels [large_pdf_page_051_001].",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185546Z_6e420677.json",
+      "accuracy": {
+        "keyword_coverage": 1.0,
+        "label": "correct"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": true,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r14_pdf_failure_ten_output",
+      "query": "TEN field output in 2024 million barrels",
+      "mode": "pure_llm",
+      "run_index": 3,
+      "response": "I'm not sure what \"TEN field\" refers to specifically, but if you're asking about oil production projections for a specific field in 2024, please provide more context or details.",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.5,
+        "label": "partial"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r15_csv_failure_ga_shortform",
+      "query": "NPP votes in GA for 2020",
+      "mode": "rag",
+      "run_index": 1,
+      "response": "In the 2020 elections in Ghana, the New Patriotic Party (NPP), led by Nana Akufo-Addo, received the following votes in various regions:\n\n1. **Central Region**: 613,804 votes (52.31%) [large_csv_2020_central_region_001].\n2. **Eastern Region**: 752,061 votes (60.80%) [large_csv_2020_eastern_region_001].\n3. **Western Region**: 439,724 votes (50.93%) [large_csv_2020_western_region_001].\n\nInsufficient evidence in retrieved context for NPP votes in other regions.",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185557Z_86f172f3.json",
+      "accuracy": {
+        "keyword_coverage": 0.25,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": true,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": true,
+          "unsupported_claim_risk": true,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r15_csv_failure_ga_shortform",
+      "query": "NPP votes in GA for 2020",
+      "mode": "pure_llm",
+      "run_index": 1,
+      "response": "In the 2020 election, the National Popular Vote (NPV) initiative was not on the ballot in Georgia. However, if you're asking about the overall voting results in Georgia for the presidential election, Joe Biden received 49.5% of the votes, while Donald Trump received 49.2%. If you need more specific information, please clarify!",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.25,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": true,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": true,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r15_csv_failure_ga_shortform",
+      "query": "NPP votes in GA for 2020",
+      "mode": "rag",
+      "run_index": 2,
+      "response": "In the 2020 elections in Ghana, the New Patriotic Party (NPP), led by Nana Akufo-Addo, received the following votes in different regions:\n\n1. **Central Region**: 613,804 votes (52.31%)\n2. **Eastern Region**: 752,061 votes (60.80%)\n3. **Western Region**: 439,724 votes (50.93%)\n\nInsufficient evidence in retrieved context for NPP votes in other regions.",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185608Z_ea71e480.json",
+      "accuracy": {
+        "keyword_coverage": 0.25,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": true,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": true,
+          "citation_missing_risk": true
+        }
+      }
+    },
+    {
+      "query_id": "r15_csv_failure_ga_shortform",
+      "query": "NPP votes in GA for 2020",
+      "mode": "pure_llm",
+      "run_index": 2,
+      "response": "In the 2020 election, the National Popular Vote (NPP) initiative was not on the ballot in Georgia. However, Georgia's electoral votes were contested in the presidential election, with Joe Biden receiving 49.5% and Donald Trump receiving 49.2% of the votes. If you meant something else regarding NPP or specific vote counts, please clarify!",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.25,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": true,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": true,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r15_csv_failure_ga_shortform",
+      "query": "NPP votes in GA for 2020",
+      "mode": "rag",
+      "run_index": 3,
+      "response": "Insufficient evidence in retrieved context.",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185619Z_2bfffbdd.json",
+      "accuracy": {
+        "keyword_coverage": 0.0,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": true,
+          "has_citation": false,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r15_csv_failure_ga_shortform",
+      "query": "NPP votes in GA for 2020",
+      "mode": "pure_llm",
+      "run_index": 3,
+      "response": "In the 2020 election, the National Popular Vote (NPP) initiative was not on the ballot in Georgia. However, Joe Biden received approximately 49.5% of the votes, while Donald Trump received about 49.2%. If you meant something else regarding NPP or specific voting details, please clarify!",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.25,
+        "label": "incorrect"
+      },
+      "hallucination": {
+        "flagged": true,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": true,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r16_csv_failure_ndc_shortform",
+      "query": "NDC Oti 2020 vote count",
+      "mode": "rag",
+      "run_index": 1,
+      "response": "In the 2020 elections, John Dramani Mahama of the NDC received 181,021 votes, which accounted for 62.53% of the votes in the Oti region. Nana Akufo-Addo of the NPP received 103,865 votes (35.88%), while other candidates received significantly fewer votes [large_csv_2020_oti_region_001].",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185628Z_990ce41b.json",
+      "accuracy": {
+        "keyword_coverage": 0.75,
+        "label": "correct"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": true,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r16_csv_failure_ndc_shortform",
+      "query": "NDC Oti 2020 vote count",
+      "mode": "pure_llm",
+      "run_index": 1,
+      "response": "The NDC (National Democratic Congress) in the Oti Region during the 2020 elections received approximately 100,000 votes. For precise figures, please refer to the official Electoral Commission results.",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.5,
+        "label": "partial"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r16_csv_failure_ndc_shortform",
+      "query": "NDC Oti 2020 vote count",
+      "mode": "rag",
+      "run_index": 2,
+      "response": "In the 2020 election, John Dramani Mahama of the NDC received 181,021 votes, which accounted for 62.53% of the total votes in the Oti region [large_csv_2020_oti_region_001].",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185639Z_fcdbc213.json",
+      "accuracy": {
+        "keyword_coverage": 0.75,
+        "label": "correct"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": true,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r16_csv_failure_ndc_shortform",
+      "query": "NDC Oti 2020 vote count",
+      "mode": "pure_llm",
+      "run_index": 2,
+      "response": "The NDC (National Democratic Congress) in the Oti Region during the 2020 elections received approximately 84,000 votes, while the NPP (New Patriotic Party) garnered around 54,000 votes. For exact figures, please refer to the official electoral commission results.",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.5,
+        "label": "partial"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r16_csv_failure_ndc_shortform",
+      "query": "NDC Oti 2020 vote count",
+      "mode": "rag",
+      "run_index": 3,
+      "response": "In the 2020 elections, John Dramani Mahama of the NDC received 181,021 votes, which accounted for 62.53% of the total votes in the Oti region. Nana Akufo-Addo of the NPP received 103,865 votes (35.88%), while other candidates received significantly fewer votes [large_csv_2020_oti_region_001].",
+      "log_path": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\logs\\runs\\rag_run_20260423T185650Z_bda89c79.json",
+      "accuracy": {
+        "keyword_coverage": 0.75,
+        "label": "correct"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": true,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    },
+    {
+      "query_id": "r16_csv_failure_ndc_shortform",
+      "query": "NDC Oti 2020 vote count",
+      "mode": "pure_llm",
+      "run_index": 3,
+      "response": "The NDC (National Democratic Congress) in the Oti Region during the 2020 elections received approximately 61,000 votes, while the NPP (New Patriotic Party) garnered around 39,000 votes. For precise figures, please refer to the official electoral commission results.",
+      "log_path": "",
+      "accuracy": {
+        "keyword_coverage": 0.5,
+        "label": "partial"
+      },
+      "hallucination": {
+        "flagged": false,
+        "details": {
+          "insufficient_evidence_used": false,
+          "has_citation": false,
+          "unsupported_claim_risk": false,
+          "citation_missing_risk": false
+        }
+      }
+    }
+  ]
+}

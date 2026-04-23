@@ -1,0 +1,2614 @@
+{
+  "generated_at_utc": "2026-04-23T16:37:48.677611+00:00",
+  "design_choices": {
+    "embedding_pipeline": "local sentence-transformers",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "vector_storage": "FAISS IndexFlatIP",
+    "similarity_metric": "cosine",
+    "extension": "hybrid search (keyword + vector)",
+    "top_k": 5,
+    "hybrid_alpha": 0.55,
+    "evaluation_queries": 16
+  },
+  "corpus": {
+    "chunk_file": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\data\\processed\\chunks_large.jsonl",
+    "chunks_indexed": 796
+  },
+  "artifacts": {
+    "faiss_index": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\indexes\\faiss\\retrieval.index",
+    "embeddings": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\indexes\\faiss\\chunk_embeddings.npy",
+    "chunk_lookup": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\indexes\\metadata\\chunk_lookup.json",
+    "queries": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\eval\\retrieval_queries.json"
+  },
+  "baseline": {
+    "summary": {
+      "method": "vector_only",
+      "top_k": 5,
+      "queries_evaluated": 16,
+      "precision_at_k": 0.1125,
+      "recall_at_k": 0.5104166666666666,
+      "mrr_at_k": 0.4395833333333333,
+      "top1_accuracy": 0.375
+    },
+    "per_query": [
+      {
+        "query_id": "r01_csv_2020_ashanti_npp_votes",
+        "query": "How many votes did Nana Akufo Addo receive in Ashanti Region in 2020?",
+        "failure_case": false,
+        "expected_source": "csv",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 1.0,
+        "top1_relevant": true,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_csv_2020_ashanti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_ashanti_region",
+            "vector_score": 0.7916934490203857,
+            "hybrid_score": 0.7916934490203857,
+            "text_preview": "in 2020, nana akufo addo of npp received 1795824 votes which is 72.79 percent in ashanti region. in 2020, john dramani mahama of ndc received 653149 votes which is 26.47 percent in ashanti region. in 2020, christian kwab",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_csv_2008_ashanti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2008_ashanti_region",
+            "vector_score": 0.7831059694290161,
+            "hybrid_score": 0.7831059694290161,
+            "text_preview": "in 2008, nana addo of npp received 1214350 votes which is 72.40 percent in ashanti region. in 2008, j. a mills of ndc received 438234 votes which is 26.13 percent in ashanti region. in 2008, papa k. nduom of cpp received",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_csv_2016_ashanti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2016_ashanti_region",
+            "vector_score": 0.7432375550270081,
+            "hybrid_score": 0.7432375550270081,
+            "text_preview": "in 2016, nana akufo addo of npp received 1640694 votes which is 75.98 percent in ashanti region. in 2016, john dramani mahama of ndc received 503497 votes which is 23.32 percent in ashanti region. in 2016, bridget dzogbe",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_csv_2012_ashanti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2012_ashanti_region",
+            "vector_score": 0.7209442853927612,
+            "hybrid_score": 0.7209442853927612,
+            "text_preview": "in 2012, nana akufo addo of npp received 1531152 votes which is 70.86 percent in ashanti region. in 2012, john dramani mahama of ndc received 612616 votes which is 28.35 percent in ashanti region. in 2012, bridget dzogbe",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_csv_2008_eastern_region_001",
+            "source": "csv",
+            "doc_id": "csv_2008_eastern_region",
+            "vector_score": 0.6858869791030884,
+            "hybrid_score": 0.6858869791030884,
+            "text_preview": "in 2008, nana addo of npp received 491520 votes which is 57.14 percent in eastern region. in 2008, j. a mills of ndc received 353522 votes which is 41.10 percent in eastern region. in 2008, papa k. nduom of cpp received ",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r02_csv_2020_ahafo_ndc_percent",
+        "query": "What percentage did John Dramani Mahama get in Ahafo Region in 2020?",
+        "failure_case": false,
+        "expected_source": "csv",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 0.3333333333333333,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_csv_2016_ahafo_region_001",
+            "source": "csv",
+            "doc_id": "csv_2016_ahafo_region",
+            "vector_score": 0.6167920827865601,
+            "hybrid_score": 0.6167920827865601,
+            "text_preview": "in 2016, nana akufo addo of npp received 123139 votes which is 55.11 percent in ahafo region. in 2016, john dramani mahama of ndc received 98272 votes which is 43.98 percent in ahafo region. in 2016, bridget dzogbenuku o",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_csv_2012_ahafo_region_001",
+            "source": "csv",
+            "doc_id": "csv_2012_ahafo_region",
+            "vector_score": 0.6117497682571411,
+            "hybrid_score": 0.6117497682571411,
+            "text_preview": "in 2012, nana akufo addo of npp received 115226 votes which is 50.78 percent in ahafo region. in 2012, john dramani mahama of ndc received 109600 votes which is 48.30 percent in ahafo region. in 2012, henry herbert larte",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_csv_2020_ahafo_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_ahafo_region",
+            "vector_score": 0.5946623086929321,
+            "hybrid_score": 0.5946623086929321,
+            "text_preview": "in 2020, nana akufo addo of npp received 145584 votes which is 55.04 percent in ahafo region. in 2020, john dramani mahama of ndc received 116485 votes which is 44.04 percent in ahafo region. in 2020, christian kwabena a",
+            "relevant": true
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_csv_2000_brong_ahafo_region_001",
+            "source": "csv",
+            "doc_id": "csv_2000_brong_ahafo_region",
+            "vector_score": 0.5815816521644592,
+            "hybrid_score": 0.5815816521644592,
+            "text_preview": "in 2000, j. a. kuffour of npp received 649473 votes which is 54.38 percent in brong ahafo region. in 2000, j. a. mills of ndc received 515765 votes which is 43.18 percent in brong ahafo region. in 2000, edward mahama of ",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_csv_2012_western_region_001",
+            "source": "csv",
+            "doc_id": "csv_2012_western_region",
+            "vector_score": 0.5738861560821533,
+            "hybrid_score": 0.5738861560821533,
+            "text_preview": "in 2012, john dramani mahama of ndc received 360542 votes which is 50.24 percent in western region. in 2012, nana akufo addo of npp received 342217 votes which is 47.69 percent in western region. in 2012, bridget dzogben",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r03_csv_2016_eastern_npp_votes",
+        "query": "What were Nana Akufo Addo's votes in Eastern Region in 2016?",
+        "failure_case": false,
+        "expected_source": "csv",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "mrr_at_k": 0.0,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_csv_2016_ahafo_region_001",
+            "source": "csv",
+            "doc_id": "csv_2016_ahafo_region",
+            "vector_score": 0.7119970321655273,
+            "hybrid_score": 0.7119970321655273,
+            "text_preview": "in 2016, nana akufo addo of npp received 123139 votes which is 55.11 percent in ahafo region. in 2016, john dramani mahama of ndc received 98272 votes which is 43.98 percent in ahafo region. in 2016, bridget dzogbenuku o",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_csv_2008_eastern_region_001",
+            "source": "csv",
+            "doc_id": "csv_2008_eastern_region",
+            "vector_score": 0.7085578441619873,
+            "hybrid_score": 0.7085578441619873,
+            "text_preview": "in 2008, nana addo of npp received 491520 votes which is 57.14 percent in eastern region. in 2008, j. a mills of ndc received 353522 votes which is 41.10 percent in eastern region. in 2008, papa k. nduom of cpp received ",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_csv_2008_upper_east_region_001",
+            "source": "csv",
+            "doc_id": "csv_2008_upper_east_region",
+            "vector_score": 0.6989755630493164,
+            "hybrid_score": 0.6989755630493164,
+            "text_preview": "in 2008, j. a mills of ndc received 188405 votes which is 56.06 percent in upper east region. in 2008, nana addo of npp received 118454 votes which is 35.25 percent in upper east region. in 2008, edward mahama of pnc rec",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_csv_2008_brong_ahafo_region_001",
+            "source": "csv",
+            "doc_id": "csv_2008_brong_ahafo_region",
+            "vector_score": 0.6919474601745605,
+            "hybrid_score": 0.6919474601745605,
+            "text_preview": "in 2008, nana addo of npp received 392588 votes which is 50.56 percent in brong ahafo region. in 2008, j. a mills of ndc received 370404 votes which is 47.70 percent in brong ahafo region. in 2008, edward mahama of pnc r",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_csv_2020_ahafo_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_ahafo_region",
+            "vector_score": 0.6908756494522095,
+            "hybrid_score": 0.6908756494522095,
+            "text_preview": "in 2020, nana akufo addo of npp received 145584 votes which is 55.04 percent in ahafo region. in 2020, john dramani mahama of ndc received 116485 votes which is 44.04 percent in ahafo region. in 2020, christian kwabena a",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r04_csv_2020_oti_ndc_votes",
+        "query": "How many votes did John Dramani Mahama receive in Oti Region in 2020?",
+        "failure_case": false,
+        "expected_source": "csv",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 1.0,
+        "top1_relevant": true,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_csv_2020_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_oti_region",
+            "vector_score": 0.6571449637413025,
+            "hybrid_score": 0.6571449637413025,
+            "text_preview": "in 2020, john dramani mahama of ndc received 181021 votes which is 62.53 percent in oti region. in 2020, nana akufo addo of npp received 103865 votes which is 35.88 percent in oti region. in 2020, christian kwabena andre",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_csv_2016_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2016_oti_region",
+            "vector_score": 0.6382713317871094,
+            "hybrid_score": 0.6382713317871094,
+            "text_preview": "in 2016, john dramani mahama of ndc received 136257 votes which is 63.43 percent in oti region. in 2016, nana akufo addo of npp received 74275 votes which is 34.58 percent in oti region. in 2016, bridget dzogbenuku of pp",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_csv_2012_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2012_oti_region",
+            "vector_score": 0.6368645429611206,
+            "hybrid_score": 0.6368645429611206,
+            "text_preview": "in 2012, john dramani mahama of ndc received 155343 votes which is 68.81 percent in oti region. in 2012, nana akufo addo of npp received 64207 votes which is 28.44 percent in oti region. in 2012, henry herbert lartey of ",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_csv_2012_western_region_001",
+            "source": "csv",
+            "doc_id": "csv_2012_western_region",
+            "vector_score": 0.616522490978241,
+            "hybrid_score": 0.616522490978241,
+            "text_preview": "in 2012, john dramani mahama of ndc received 360542 votes which is 50.24 percent in western region. in 2012, nana akufo addo of npp received 342217 votes which is 47.69 percent in western region. in 2012, bridget dzogben",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_csv_2020_western_north_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_western_north_region",
+            "vector_score": 0.6133840680122375,
+            "hybrid_score": 0.6133840680122375,
+            "text_preview": "in 2020, john dramani mahama of ndc received 196556 votes which is 52.05 percent in western north region. in 2020, nana akufo addo of npp received 175240 votes which is 46.41 percent in western north region. in 2020, chr",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r05_pdf_theme",
+        "query": "What is the theme of the 2025 budget statement?",
+        "failure_case": false,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 3,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "mrr_at_k": 0.0,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_004_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_004",
+            "vector_score": 0.6335564851760864,
+            "hybrid_score": 0.6335564851760864,
+            "text_preview": "the 2025 budget statement and economic policy of government the budget statement and economic policy of the government of ghana for the 2025 financial year is available for public access. to purchase a physical copy, ple",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_015_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_015",
+            "vector_score": 0.6204164028167725,
+            "hybrid_score": 0.6204164028167725,
+            "text_preview": "21. that notwithstanding, our youth face an uncertain future with growing unemployment and hopelessness. this suggests that the dividends of democracy, such as economic prosperity and social justice, remain elusive. 22. ",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_145_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_145",
+            "vector_score": 0.6168557405471802,
+            "hybrid_score": 0.6168557405471802,
+            "text_preview": "summary of central government operations \u2013 2025 2025 2026 2027 2028 budget indicative indicative indicative i.",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_003_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_003",
+            "vector_score": 0.6068165302276611,
+            "hybrid_score": 0.6068165302276611,
+            "text_preview": "the budget statement and economic policy of the government of ghana for the 2025 financial year presented to parliament by dr. cassiel ato forson (mp) minister for finance on tuesday march 11, 2025 on the authority of hi",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_145_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_145",
+            "vector_score": 0.5973871350288391,
+            "hybrid_score": 0.5973871350288391,
+            "text_preview": "appendix 3a: summary of central government operations \u2013 2025 2025 2026 2027 2028 budget indicative indicative indicative i.",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r06_pdf_presenter",
+        "query": "Who presented the 2025 budget and in what role?",
+        "failure_case": false,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 1.0,
+        "top1_relevant": true,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_003_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_003",
+            "vector_score": 0.6483374834060669,
+            "hybrid_score": 0.6483374834060669,
+            "text_preview": "the budget statement and economic policy of the government of ghana for the 2025 financial year presented to parliament by dr. cassiel ato forson (mp) minister for finance on tuesday march 11, 2025 on the authority of hi",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_145_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_145",
+            "vector_score": 0.6253972053527832,
+            "hybrid_score": 0.6253972053527832,
+            "text_preview": "summary of central government operations \u2013 2025 2025 2026 2027 2028 budget indicative indicative indicative i.",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_063_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_063",
+            "vector_score": 0.6234419345855713,
+            "hybrid_score": 0.6234419345855713,
+            "text_preview": "2025 macroeconomic targets 250. mr. speaker, in pursuit of the overarching macroeconomic objectives, the following macroeconomic targets are set for the 2025 fiscal year: i. overall real gdp growth of at least 4.0 percen",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_004_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_004",
+            "vector_score": 0.6209681630134583,
+            "hybrid_score": 0.6209681630134583,
+            "text_preview": "the 2025 budget statement and economic policy of government the budget statement and economic policy of the government of ghana for the 2025 financial year is available for public access. to purchase a physical copy, ple",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_145_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_145",
+            "vector_score": 0.608640730381012,
+            "hybrid_score": 0.608640730381012,
+            "text_preview": "appendix 3a: summary of central government operations \u2013 2025 2025 2026 2027 2028 budget indicative indicative indicative i.",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r07_pdf_legal_basis",
+        "query": "Which legal act is cited for presenting the budget statement?",
+        "failure_case": false,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 6,
+        "precision_at_k": 0.2,
+        "recall_at_k": 0.16666666666666666,
+        "mrr_at_k": 0.2,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_145_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_145",
+            "vector_score": 0.48698198795318604,
+            "hybrid_score": 0.48698198795318604,
+            "text_preview": "appendix 3a: summary of central government operations \u2013 2025 2025 2026 2027 2028 budget indicative indicative indicative i.",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_038_008",
+            "source": "pdf",
+            "doc_id": "pdf_page_038",
+            "vector_score": 0.4804551899433136,
+            "hybrid_score": 0.4804551899433136,
+            "text_preview": "budget proj. prov.",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_141_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_141",
+            "vector_score": 0.47945910692214966,
+            "hybrid_score": 0.47945910692214966,
+            "text_preview": "appendix 2a: summary of central government operations in gh\u00a2 unless otherwise stated 2024 2024 2024 budget rev. prov budget outturn i.",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_159_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_159",
+            "vector_score": 0.47312062978744507,
+            "hybrid_score": 0.47312062978744507,
+            "text_preview": "mda expenditure allocation (gh\u00a2) \u2013 2025 [public safety sector \u2013 igf and fgl] sub-total grand total public safety 57,184,836 514,873,085 75,935,754 647,993,675 - - - 647,993,675 18,738,825,265 32 office of the attorney-ge",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_003_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_003",
+            "vector_score": 0.4597545862197876,
+            "hybrid_score": 0.4597545862197876,
+            "text_preview": "the budget statement and economic policy of the government of ghana for the 2025 financial year presented to parliament by dr. cassiel ato forson (mp) minister for finance on tuesday march 11, 2025 on the authority of hi",
+            "relevant": true
+          }
+        ]
+      },
+      {
+        "query_id": "r08_pdf_total_crude_output",
+        "query": "What was total crude oil production in 2024?",
+        "failure_case": false,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 1.0,
+        "top1_relevant": true,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_051_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_051",
+            "vector_score": 0.6655330657958984,
+            "hybrid_score": 0.6655330657958984,
+            "text_preview": "petroleum production, receipts and utilisation in 2024 petroleum production 190. mr. speaker, total crude oil production for ghana and its partners in 2024 was 48.24 million barrels. of the 48.24 million barrels, greater",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_072_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_072",
+            "vector_score": 0.6187566518783569,
+            "hybrid_score": 0.6187566518783569,
+            "text_preview": "2025 petroleum receipts and utilisation projection 308. mr. speaker, consistent with the first schedule (section 17) of the prma (act 815) as amended, the benchmark price for 2025 has been calculated as a seven-year movi",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_007_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_007",
+            "vector_score": 0.5813771486282349,
+            "hybrid_score": 0.5813771486282349,
+            "text_preview": "summary of 2024 revenue performance 26 table 25: summary of 2024 expenditure performance 28 table 26: summary of 2024 financing operations 30 table 27: total crude oil production in barrels 39 table 28: crude oil receipt",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_057_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_057",
+            "vector_score": 0.5485832691192627,
+            "hybrid_score": 0.5485832691192627,
+            "text_preview": "sector/subsectors 2016 2017 2018 2019 2020 2021 2022 2023 2024 1. industry 4.3 15.6 10.5 6.4 -2.5 -0.5 0.6 -1.7 7.1 2 mining and quarrying -0.2 30.8 23.3 12.6 -9.2 -12.2 8.9 1.7 9.4 3 o.w. oil*** -15.6 80.3 7.9 14.4 -4.6",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_038_010",
+            "source": "pdf",
+            "doc_id": "pdf_page_038",
+            "vector_score": 0.5412431359291077,
+            "hybrid_score": 0.5412431359291077,
+            "text_preview": "jan-dec dev y/y (%) (gh\u20b5) (%) 1 total revenue & grants 136,011 40.7 176,414 177,220 178,681 186,593 9,373 5.3 37.2 % of gdp 15.3 16.8 17.4 17.0 15.9 2 domestic revenue 133,360 39.6 173,299 174,105 175,566 184,878 10,773 ",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r09_pdf_field_breakdown",
+        "query": "Give the 2024 output breakdown for Greater Jubilee, TEN and SGN fields.",
+        "failure_case": false,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "mrr_at_k": 0.0,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_051_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_051",
+            "vector_score": 0.6406097412109375,
+            "hybrid_score": 0.6406097412109375,
+            "text_preview": "month jubilee field ten field sgn field total 1 jan-24 2,771,107 560,152 884,837 4,216,096 2 feb-24 2,629,031 530,542 798,463 3,958,036 3 mar-24 3,056,353 600,859 862,499 4,519,711 4 apr-24 2,679,895 594,128 832,218 4,10",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_040_006",
+            "source": "pdf",
+            "doc_id": "pdf_page_040",
+            "vector_score": 0.5788606405258179,
+            "hybrid_score": 0.5788606405258179,
+            "text_preview": "indicators (gh\u20b5 million) 2023 2024 prov. jan-dec y/y (%) budget rev. budget proj. prov. jan-dec dev y/y (%) (gh\u20b5) (%) 1 total exp.",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_038_004",
+            "source": "pdf",
+            "doc_id": "pdf_page_038",
+            "vector_score": 0.5706309676170349,
+            "hybrid_score": 0.5706309676170349,
+            "text_preview": "table 24: summary of 2024 revenue performance no. indicators (gh\u20b5 million) 2023 2024 prov. jan-dec y/y (%) budget rev. budget proj. prov.",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_038_005",
+            "source": "pdf",
+            "doc_id": "pdf_page_038",
+            "vector_score": 0.5700317621231079,
+            "hybrid_score": 0.5700317621231079,
+            "text_preview": "summary of 2024 revenue performance no. indicators (gh\u20b5 million) 2023 2024 prov. jan-dec y/y (%) budget rev. budget proj. prov.",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_038_006",
+            "source": "pdf",
+            "doc_id": "pdf_page_038",
+            "vector_score": 0.5393055081367493,
+            "hybrid_score": 0.5393055081367493,
+            "text_preview": "indicators (gh\u20b5 million) 2023 2024 prov. jan-dec y/y (%) budget rev. budget proj. prov.",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r10_pdf_athletics_medals",
+        "query": "How many medals did the national athletics team win at the 4-Nation Junior Championships?",
+        "failure_case": false,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 1.0,
+        "top1_relevant": true,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_121_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_121",
+            "vector_score": 0.3576936721801758,
+            "hybrid_score": 0.3576936721801758,
+            "text_preview": "662. the national athletics team placed 3rd and won a total of 18 medals comprising of 11 gold, 6 silver and 1 bronze at the 4-nation junior athletics championships held at the stade f\u00e9lix houphou\u00ebt boigny, abidjan, cote",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_120_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_120",
+            "vector_score": 0.3503064513206482,
+            "hybrid_score": 0.3503064513206482,
+            "text_preview": "speaker, the black challenge of ghana participated in the 2024 african amputee football cup of nations tournament hosted and organised in egypt from 18th to 30th may 2024 and won the trophy. the win has secured the team ",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_228_005",
+            "source": "pdf",
+            "doc_id": "pdf_page_228",
+            "vector_score": 0.27183061838150024,
+            "hybrid_score": 0.27183061838150024,
+            "text_preview": "1,726,172.66 6,441,098.91 462,977.43 8,630,249.00 university of ghana 89,462,792.85 232,603,261.41 71,570,234.28 393,636,288.54 university of health and allied sciences 3,548,639.29 39,003,062.50 21,419,714.65 63,971,416",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_221_004",
+            "source": "pdf",
+            "doc_id": "pdf_page_221",
+            "vector_score": 0.2633400559425354,
+            "hybrid_score": 0.2633400559425354,
+            "text_preview": "1,569,248 2,927,772 210,444 4,707,464 university of ghana 155,346,813 336,584,761 103,564,542 595,496,117 university of health and allied sciences 3,438,184 18,894,526 10,376,502 32,709,213 university of mines and techno",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_203_009",
+            "source": "pdf",
+            "doc_id": "pdf_page_203",
+            "vector_score": 0.2587536573410034,
+            "hybrid_score": 0.2587536573410034,
+            "text_preview": "hilla limann technical university 100 5,809.72 5,809.72 4,984.68 4,984.68 - 6,619.20 6,619.20 - colleges of education 100 205,037.01 205,037.01 252,579.62 252,579.62 - 184,758.36 184,758.36 - ghana tertiary education com",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r11_pdf_failure_nhf_invoice",
+        "query": "NHF outstanding IPC invoice end-Dec 2024",
+        "failure_case": true,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "mrr_at_k": 0.0,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_064_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_064",
+            "vector_score": 0.5140984058380127,
+            "hybrid_score": 0.5140984058380127,
+            "text_preview": "youstart and the one district one factory will be eliminated; x. reassign the functions of the development authorities (coda, nda, and mbda) to the district assemblies; xi. amend the petroleum revenue management act, 201",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_024_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_024",
+            "vector_score": 0.46911734342575073,
+            "hybrid_score": 0.46911734342575073,
+            "text_preview": "summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- economic sector sn covered entity outstanding ipc / invoice outstanding btas total 13 ministry of food and agriculture 2,228.7 154.6 2,383.3 14 ministry of fisherie",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_069_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_069",
+            "vector_score": 0.44255924224853516,
+            "hybrid_score": 0.44255924224853516,
+            "text_preview": "284. mr. speaker, aside the high vat rate, businesses are not permitted by law to claim their input for the nhil, getfund levy and covid-19 levy, compounding the burden on households. 285. mr. speaker, our vat regime has",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_025_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_025",
+            "vector_score": 0.42603203654289246,
+            "hybrid_score": 0.42603203654289246,
+            "text_preview": "table 10 : summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- social sector sn covered entity outstanding ipc / invoice outstanding btas total 25 ministry of education 4,324.8 380.4 4,705.2 26 ministry of labour, jo",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_040_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_040",
+            "vector_score": 0.4168480336666107,
+            "hybrid_score": 0.4168480336666107,
+            "text_preview": "137. mr. speaker, as at end-december 2024, total arrears amounted to gh\u00a267,516 million consisting of outstanding claims of gh\u00a249,237 million and outstanding btas of gh\u20b518,279 million. the total arrears reported exclude o",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r12_pdf_failure_dacf_btas",
+        "query": "DACF outstanding BTAs end-Dec 2024",
+        "failure_case": true,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "mrr_at_k": 0.0,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_079_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_079",
+            "vector_score": 0.47895655035972595,
+            "hybrid_score": 0.47895655035972595,
+            "text_preview": "speaker, the strategy for public debt management over the medium -term is strongly hinged on debt sustainability analysis, and the reform measures outlined under the imf-supported programme. 361. mr. speaker, on the dome",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_035_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_035",
+            "vector_score": 0.4787421226501465,
+            "hybrid_score": 0.4787421226501465,
+            "text_preview": "table 22: update on gfsf approved programme allocations (gh\u00a2mn) no. approved programme allocations committed allocations actual expenditure fund a gfsf (mitigating the impact of ddep on the financial sector) a1 world ban",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_193_014",
+            "source": "pdf",
+            "doc_id": "pdf_page_193",
+            "vector_score": 0.4765773415565491,
+            "hybrid_score": 0.4765773415565491,
+            "text_preview": "total goods & services capital expenditure dacf-rfg capacity grant dacf-rfg investment grant secondary cities soco project unicef-iss sw&cd sigra ashanti region 0 0 0 0 0 0 0 code no.",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_040_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_040",
+            "vector_score": 0.47529491782188416,
+            "hybrid_score": 0.47529491782188416,
+            "text_preview": "speaker, mdas\u2019 total outstanding claims of gh\u20b545.1 billion is as a result of a stock- taking exercise of mdas\u2019 end 2024 outstanding liabilities which included both claims which had already been submitted to mof and those",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_192_014",
+            "source": "pdf",
+            "doc_id": "pdf_page_192",
+            "vector_score": 0.47392815351486206,
+            "hybrid_score": 0.47392815351486206,
+            "text_preview": "total goods & services capital expenditure dacf-rfg capacity grant dacf-rfg investment grant secondary cities soco project unicef-iss sw&cd sigra western region 0 0 0 0 0 0 0 code no.",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r13_pdf_failure_appendix_7b",
+        "query": "Appendix 7B NTR/IGF 2024 actuals and 2025 projections",
+        "failure_case": true,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 6,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "mrr_at_k": 0.0,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_156_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_156",
+            "vector_score": 0.48464301228523254,
+            "hybrid_score": 0.48464301228523254,
+            "text_preview": "appendix 4a:",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_155_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_155",
+            "vector_score": 0.48464301228523254,
+            "hybrid_score": 0.48464301228523254,
+            "text_preview": "appendix 4a:",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_152_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_152",
+            "vector_score": 0.48464301228523254,
+            "hybrid_score": 0.48464301228523254,
+            "text_preview": "appendix 4a:",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_150_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_150",
+            "vector_score": 0.48464301228523254,
+            "hybrid_score": 0.48464301228523254,
+            "text_preview": "appendix 4a:",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_149_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_149",
+            "vector_score": 0.48464301228523254,
+            "hybrid_score": 0.48464301228523254,
+            "text_preview": "appendix 4a:",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r14_pdf_failure_ten_output",
+        "query": "TEN field output in 2024 million barrels",
+        "failure_case": true,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 0.5,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_072_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_072",
+            "vector_score": 0.5415006875991821,
+            "hybrid_score": 0.5415006875991821,
+            "text_preview": "2025 petroleum receipts and utilisation projection 308. mr. speaker, consistent with the first schedule (section 17) of the prma (act 815) as amended, the benchmark price for 2025 has been calculated as a seven-year movi",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_051_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_051",
+            "vector_score": 0.4753932058811188,
+            "hybrid_score": 0.4753932058811188,
+            "text_preview": "petroleum production, receipts and utilisation in 2024 petroleum production 190. mr. speaker, total crude oil production for ghana and its partners in 2024 was 48.24 million barrels. of the 48.24 million barrels, greater",
+            "relevant": true
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_051_003",
+            "source": "pdf",
+            "doc_id": "pdf_page_051",
+            "vector_score": 0.4685334861278534,
+            "hybrid_score": 0.4685334861278534,
+            "text_preview": "out of the total crude oil production of 48.24 million, ghana national petroleum corporation (gnpc), on behalf of the state, lifted 8.55 million barrels. the liftings by gnpc included 5.72 million barrels from the jubile",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_057_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_057",
+            "vector_score": 0.40265798568725586,
+            "hybrid_score": 0.40265798568725586,
+            "text_preview": "sector/subsectors 2016 2017 2018 2019 2020 2021 2022 2023 2024 1. industry 4.3 15.6 10.5 6.4 -2.5 -0.5 0.6 -1.7 7.1 2 mining and quarrying -0.2 30.8 23.3 12.6 -9.2 -12.2 8.9 1.7 9.4 3 o.w. oil*** -15.6 80.3 7.9 14.4 -4.6",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_019_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_019",
+            "vector_score": 0.399728387594223,
+            "hybrid_score": 0.399728387594223,
+            "text_preview": "projections for 2025 suggest prices will remain stable at us$2,325 per troy ounce, supported by sustained demand from investors and central banks due to easing global uncertainties. 53. mr. speaker, according to world ba",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r15_csv_failure_ga_shortform",
+        "query": "NPP votes in GA for 2020",
+        "failure_case": true,
+        "expected_source": "csv",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "mrr_at_k": 0.0,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_csv_2020_savannah_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_savannah_region",
+            "vector_score": 0.5756876468658447,
+            "hybrid_score": 0.5756876468658447,
+            "text_preview": "in 2020, john dramani mahama of ndc received 144244 votes which is 62.97 percent in savannah region. in 2020, nana akufo addo of npp received 80605 votes which is 35.19 percent in savannah region. in 2020, christian kwab",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_csv_2020_north_east_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_north_east_region",
+            "vector_score": 0.5344693660736084,
+            "hybrid_score": 0.5344693660736084,
+            "text_preview": "in 2020, nana akufo addo of npp received 122742 votes which is 51.33 percent in north east region. in 2020, john dramani mahama of ndc received 112306 votes which is 46.97 percent in north east region. in 2020, christian",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_csv_2012_savannah_region_001",
+            "source": "csv",
+            "doc_id": "csv_2012_savannah_region",
+            "vector_score": 0.5316516160964966,
+            "hybrid_score": 0.5316516160964966,
+            "text_preview": "in 2012, john dramani mahama of ndc received 99413 votes which is 63.04 percent in savannah region. in 2012, nana akufo addo of npp received 54425 votes which is 34.51 percent in savannah region. in 2012, henry herbert l",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_csv_2020_eastern_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_eastern_region",
+            "vector_score": 0.5305951833724976,
+            "hybrid_score": 0.5305951833724976,
+            "text_preview": "in 2020, nana akufo addo of npp received 752061 votes which is 60.80 percent in eastern region. in 2020, john dramani mahama of ndc received 470999 votes which is 38.08 percent in eastern region. in 2020, christian kwabe",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_csv_2020_volta_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_volta_region",
+            "vector_score": 0.5293161273002625,
+            "hybrid_score": 0.5293161273002625,
+            "text_preview": "in 2020, john dramani mahama of ndc received 606508 votes which is 84.83 percent in volta region. in 2020, nana akufo addo of npp received 100481 votes which is 14.05 percent in volta region. in 2020, christian kwabena a",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r16_csv_failure_ndc_shortform",
+        "query": "NDC Oti 2020 vote count",
+        "failure_case": true,
+        "expected_source": "csv",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 1.0,
+        "top1_relevant": true,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_csv_2020_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_oti_region",
+            "vector_score": 0.6231419444084167,
+            "hybrid_score": 0.6231419444084167,
+            "text_preview": "in 2020, john dramani mahama of ndc received 181021 votes which is 62.53 percent in oti region. in 2020, nana akufo addo of npp received 103865 votes which is 35.88 percent in oti region. in 2020, christian kwabena andre",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_csv_2016_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2016_oti_region",
+            "vector_score": 0.573581337928772,
+            "hybrid_score": 0.573581337928772,
+            "text_preview": "in 2016, john dramani mahama of ndc received 136257 votes which is 63.43 percent in oti region. in 2016, nana akufo addo of npp received 74275 votes which is 34.58 percent in oti region. in 2016, bridget dzogbenuku of pp",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_csv_2012_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2012_oti_region",
+            "vector_score": 0.562281608581543,
+            "hybrid_score": 0.562281608581543,
+            "text_preview": "in 2012, john dramani mahama of ndc received 155343 votes which is 68.81 percent in oti region. in 2012, nana akufo addo of npp received 64207 votes which is 28.44 percent in oti region. in 2012, henry herbert lartey of ",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_csv_1992_northern_region_001",
+            "source": "csv",
+            "doc_id": "csv_1992_northern_region",
+            "vector_score": 0.5511518716812134,
+            "hybrid_score": 0.5511518716812134,
+            "text_preview": "in 1992, jerry john rawlings of ndc received 203004 votes which is 62.97 percent in northern region. in 1992, others of others received 66849 votes which is 20.74 percent in northern region. in 1992, albert adu boahen of",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_csv_1992_eastern_region_001",
+            "source": "csv",
+            "doc_id": "csv_1992_eastern_region",
+            "vector_score": 0.5382297039031982,
+            "hybrid_score": 0.5382297039031982,
+            "text_preview": "in 1992, jerry john rawlings of ndc received 240076 votes which is 52.60 percent in eastern region. in 1992, albert adu boahen of npp received 194724 votes which is 42.66 percent in eastern region. in 1992, others of oth",
+            "relevant": false
+          }
+        ]
+      }
+    ]
+  },
+  "hybrid": {
+    "summary": {
+      "method": "hybrid",
+      "top_k": 5,
+      "queries_evaluated": 16,
+      "precision_at_k": 0.21250000000000002,
+      "recall_at_k": 0.7708333333333334,
+      "mrr_at_k": 0.6635416666666667,
+      "top1_accuracy": 0.5625
+    },
+    "per_query": [
+      {
+        "query_id": "r01_csv_2020_ashanti_npp_votes",
+        "query": "How many votes did Nana Akufo Addo receive in Ashanti Region in 2020?",
+        "failure_case": false,
+        "expected_source": "csv",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 1.0,
+        "top1_relevant": true,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_csv_2020_ashanti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_ashanti_region",
+            "vector_score": 0.7916934490203857,
+            "keyword_score": 0.4736067471536499,
+            "hybrid_score": 1.000000011920929,
+            "text_preview": "in 2020, nana akufo addo of npp received 1795824 votes which is 72.79 percent in ashanti region. in 2020, john dramani mahama of ndc received 653149 votes which is 26.47 percent in ashanti region. in 2020, christian kwab",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_csv_2016_ashanti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2016_ashanti_region",
+            "vector_score": 0.7432376146316528,
+            "keyword_score": 0.30155253444952634,
+            "hybrid_score": 0.8040221046546218,
+            "text_preview": "in 2016, nana akufo addo of npp received 1640694 votes which is 75.98 percent in ashanti region. in 2016, john dramani mahama of ndc received 503497 votes which is 23.32 percent in ashanti region. in 2016, bridget dzogbe",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_csv_2008_ashanti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2008_ashanti_region",
+            "vector_score": 0.7831060290336609,
+            "keyword_score": 0.24915494813182798,
+            "hybrid_score": 0.7809762705375193,
+            "text_preview": "in 2008, nana addo of npp received 1214350 votes which is 72.40 percent in ashanti region. in 2008, j. a mills of ndc received 438234 votes which is 26.13 percent in ashanti region. in 2008, papa k. nduom of cpp received",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_csv_2012_ashanti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2012_ashanti_region",
+            "vector_score": 0.720944344997406,
+            "keyword_score": 0.288876218463566,
+            "hybrid_score": 0.7770253924157731,
+            "text_preview": "in 2012, nana akufo addo of npp received 1531152 votes which is 70.86 percent in ashanti region. in 2012, john dramani mahama of ndc received 612616 votes which is 28.35 percent in ashanti region. in 2012, bridget dzogbe",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_csv_2020_ahafo_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_ahafo_region",
+            "vector_score": 0.6767551898956299,
+            "keyword_score": 0.2848607875461274,
+            "hybrid_score": 0.7435721763390762,
+            "text_preview": "in 2020, nana akufo addo of npp received 145584 votes which is 55.04 percent in ahafo region. in 2020, john dramani mahama of ndc received 116485 votes which is 44.04 percent in ahafo region. in 2020, christian kwabena a",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r02_csv_2020_ahafo_ndc_percent",
+        "query": "What percentage did John Dramani Mahama get in Ahafo Region in 2020?",
+        "failure_case": false,
+        "expected_source": "csv",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 1.0,
+        "top1_relevant": true,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_csv_2020_ahafo_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_ahafo_region",
+            "vector_score": 0.5946623682975769,
+            "keyword_score": 0.4321486458004121,
+            "hybrid_score": 0.9799627780914306,
+            "text_preview": "in 2020, nana akufo addo of npp received 145584 votes which is 55.04 percent in ahafo region. in 2020, john dramani mahama of ndc received 116485 votes which is 44.04 percent in ahafo region. in 2020, christian kwabena a",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_csv_2016_ahafo_region_001",
+            "source": "csv",
+            "doc_id": "csv_2016_ahafo_region",
+            "vector_score": 0.6167921423912048,
+            "keyword_score": 0.2546135185690129,
+            "hybrid_score": 0.8151311987694763,
+            "text_preview": "in 2016, nana akufo addo of npp received 123139 votes which is 55.11 percent in ahafo region. in 2016, john dramani mahama of ndc received 98272 votes which is 43.98 percent in ahafo region. in 2016, bridget dzogbenuku o",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_csv_2012_ahafo_region_001",
+            "source": "csv",
+            "doc_id": "csv_2012_ahafo_region",
+            "vector_score": 0.6117498278617859,
+            "keyword_score": 0.2522230249885938,
+            "hybrid_score": 0.8080764208307147,
+            "text_preview": "in 2012, nana akufo addo of npp received 115226 votes which is 50.78 percent in ahafo region. in 2012, john dramani mahama of ndc received 109600 votes which is 48.30 percent in ahafo region. in 2012, henry herbert larte",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_csv_2020_northern_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_northern_region",
+            "vector_score": 0.5372514724731445,
+            "keyword_score": 0.25216100555194065,
+            "hybrid_score": 0.7405577994219992,
+            "text_preview": "in 2020, john dramani mahama of ndc received 476650 votes which is 53.14 percent in northern region. in 2020, nana akufo addo of npp received 409063 votes which is 45.61 percent in northern region. in 2020, christian kwa",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_csv_2020_western_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_western_region",
+            "vector_score": 0.5307168364524841,
+            "keyword_score": 0.2520331723296173,
+            "hybrid_score": 0.7345079709499346,
+            "text_preview": "in 2020, nana akufo addo of npp received 439724 votes which is 50.93 percent in western region. in 2020, john dramani mahama of ndc received 398549 votes which is 46.16 percent in western region. in 2020, christian kwabe",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r03_csv_2016_eastern_npp_votes",
+        "query": "What were Nana Akufo Addo's votes in Eastern Region in 2016?",
+        "failure_case": false,
+        "expected_source": "csv",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 1.0,
+        "top1_relevant": true,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_csv_2016_eastern_region_001",
+            "source": "csv",
+            "doc_id": "csv_2016_eastern_region",
+            "vector_score": 0.6769776344299316,
+            "keyword_score": 0.5845176068251329,
+            "hybrid_score": 0.9741022706031799,
+            "text_preview": "in 2016, nana akufo addo of npp received 678514 votes which is 62.37 percent in eastern region. in 2016, john dramani mahama of ndc received 397786 votes which is 36.56 percent in eastern region. in 2016, bridget dzogben",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_csv_2016_ahafo_region_001",
+            "source": "csv",
+            "doc_id": "csv_2016_ahafo_region",
+            "vector_score": 0.7119969129562378,
+            "keyword_score": 0.35836812774874954,
+            "hybrid_score": 0.825895306782735,
+            "text_preview": "in 2016, nana akufo addo of npp received 123139 votes which is 55.11 percent in ahafo region. in 2016, john dramani mahama of ndc received 98272 votes which is 43.98 percent in ahafo region. in 2016, bridget dzogbenuku o",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_csv_2016_central_region_001",
+            "source": "csv",
+            "doc_id": "csv_2016_central_region",
+            "vector_score": 0.6546484231948853,
+            "keyword_score": 0.37310071522479427,
+            "hybrid_score": 0.7948265686027967,
+            "text_preview": "in 2016, nana akufo addo of npp received 496668 votes which is 53.22 percent in central region. in 2016, john dramani mahama of ndc received 405262 votes which is 43.43 percent in central region. in 2016, bridget dzogben",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_csv_2020_eastern_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_eastern_region",
+            "vector_score": 0.6656932830810547,
+            "keyword_score": 0.35813676304747816,
+            "hybrid_score": 0.7914743186339537,
+            "text_preview": "in 2020, nana akufo addo of npp received 752061 votes which is 60.80 percent in eastern region. in 2020, john dramani mahama of ndc received 470999 votes which is 38.08 percent in eastern region. in 2020, christian kwabe",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_csv_2016_western_region_001",
+            "source": "csv",
+            "doc_id": "csv_2016_western_region",
+            "vector_score": 0.6483262777328491,
+            "keyword_score": 0.37056854612079454,
+            "hybrid_score": 0.7882016907671394,
+            "text_preview": "in 2016, nana akufo addo of npp received 384211 votes which is 55.83 percent in western region. in 2016, john dramani mahama of ndc received 285938 votes which is 41.55 percent in western region. in 2016, bridget dzogben",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r04_csv_2020_oti_ndc_votes",
+        "query": "How many votes did John Dramani Mahama receive in Oti Region in 2020?",
+        "failure_case": false,
+        "expected_source": "csv",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 1.0,
+        "top1_relevant": true,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_csv_2020_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_oti_region",
+            "vector_score": 0.6571450233459473,
+            "keyword_score": 0.5394821694073971,
+            "hybrid_score": 1.000000011920929,
+            "text_preview": "in 2020, john dramani mahama of ndc received 181021 votes which is 62.53 percent in oti region. in 2020, nana akufo addo of npp received 103865 votes which is 35.88 percent in oti region. in 2020, christian kwabena andre",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_csv_2016_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2016_oti_region",
+            "vector_score": 0.6382713317871094,
+            "keyword_score": 0.3756058634684555,
+            "hybrid_score": 0.8480155574153165,
+            "text_preview": "in 2016, john dramani mahama of ndc received 136257 votes which is 63.43 percent in oti region. in 2016, nana akufo addo of npp received 74275 votes which is 34.58 percent in oti region. in 2016, bridget dzogbenuku of pp",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_csv_2012_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2012_oti_region",
+            "vector_score": 0.6368645429611206,
+            "keyword_score": 0.3718030604968268,
+            "hybrid_score": 0.8437038723131195,
+            "text_preview": "in 2012, john dramani mahama of ndc received 155343 votes which is 68.81 percent in oti region. in 2012, nana akufo addo of npp received 64207 votes which is 28.44 percent in oti region. in 2012, henry herbert lartey of ",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_csv_2020_northern_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_northern_region",
+            "vector_score": 0.5962918996810913,
+            "keyword_score": 0.2792722296673331,
+            "hybrid_score": 0.7336524469747959,
+            "text_preview": "in 2020, john dramani mahama of ndc received 476650 votes which is 53.14 percent in northern region. in 2020, nana akufo addo of npp received 409063 votes which is 45.61 percent in northern region. in 2020, christian kwa",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_csv_2020_western_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_western_region",
+            "vector_score": 0.5899757146835327,
+            "keyword_score": 0.27913065238838136,
+            "hybrid_score": 0.7284175323276008,
+            "text_preview": "in 2020, nana akufo addo of npp received 439724 votes which is 50.93 percent in western region. in 2020, john dramani mahama of ndc received 398549 votes which is 46.16 percent in western region. in 2020, christian kwabe",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r05_pdf_theme",
+        "query": "What is the theme of the 2025 budget statement?",
+        "failure_case": false,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 3,
+        "precision_at_k": 0.4,
+        "recall_at_k": 0.6666666666666666,
+        "mrr_at_k": 0.3333333333333333,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_004_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_004",
+            "vector_score": 0.6335565447807312,
+            "keyword_score": 0.2598009883725897,
+            "hybrid_score": 1.000000011920929,
+            "text_preview": "the 2025 budget statement and economic policy of government the budget statement and economic policy of the government of ghana for the 2025 financial year is available for public access. to purchase a physical copy, ple",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_003_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_003",
+            "vector_score": 0.6068165898323059,
+            "keyword_score": 0.15481674842496596,
+            "hybrid_score": 0.7960133123783614,
+            "text_preview": "the budget statement and economic policy of the government of ghana for the 2025 financial year presented to parliament by dr. cassiel ato forson (mp) minister for finance on tuesday march 11, 2025 on the authority of hi",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_014_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_014",
+            "vector_score": 0.5520869493484497,
+            "keyword_score": 0.14153351834949168,
+            "hybrid_score": 0.727682600570545,
+            "text_preview": "and increasingly export -driven industrial economy that fully utilises our national resources, capital and labour power. 8. we will be presenting the 24-hour economy policy to parliament in due course. in this respect, t",
+            "relevant": true
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_001_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_001",
+            "vector_score": 0.4512587785720825,
+            "keyword_score": 0.15119867834350878,
+            "hybrid_score": 0.6609253664175736,
+            "text_preview": "theme: resetting the economy for the ghana we want",
+            "relevant": true
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_015_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_015",
+            "vector_score": 0.6204164028167725,
+            "keyword_score": 0.061107071517635524,
+            "hybrid_score": 0.6449616042494765,
+            "text_preview": "21. that notwithstanding, our youth face an uncertain future with growing unemployment and hopelessness. this suggests that the dividends of democracy, such as economic prosperity and social justice, remain elusive. 22. ",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r06_pdf_presenter",
+        "query": "Who presented the 2025 budget and in what role?",
+        "failure_case": false,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 1.0,
+        "top1_relevant": true,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_003_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_003",
+            "vector_score": 0.6483375430107117,
+            "keyword_score": 0.09150800037816792,
+            "hybrid_score": 0.970267046790191,
+            "text_preview": "the budget statement and economic policy of the government of ghana for the 2025 financial year presented to parliament by dr. cassiel ato forson (mp) minister for finance on tuesday march 11, 2025 on the authority of hi",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_004_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_004",
+            "vector_score": 0.6209681034088135,
+            "keyword_score": 0.08191323540073958,
+            "hybrid_score": 0.9033355818092684,
+            "text_preview": "the 2025 budget statement and economic policy of government the budget statement and economic policy of the government of ghana for the 2025 financial year is available for public access. to purchase a physical copy, ple",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_038_007",
+            "source": "pdf",
+            "doc_id": "pdf_page_038",
+            "vector_score": 0.5246167182922363,
+            "keyword_score": 0.0979819894343736,
+            "hybrid_score": 0.896637600660324,
+            "text_preview": "jan-dec y/y (%) budget rev. budget proj. prov.",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_145_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_145",
+            "vector_score": 0.6253972053527832,
+            "keyword_score": 0.06769361807182983,
+            "hybrid_score": 0.841729734506993,
+            "text_preview": "summary of central government operations \u2013 2025 2025 2026 2027 2028 budget indicative indicative indicative i.",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_038_008",
+            "source": "pdf",
+            "doc_id": "pdf_page_038",
+            "vector_score": 0.5175830125808716,
+            "keyword_score": 0.08241324199965804,
+            "hybrid_score": 0.8192590107753156,
+            "text_preview": "budget proj. prov.",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r07_pdf_legal_basis",
+        "query": "Which legal act is cited for presenting the budget statement?",
+        "failure_case": false,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 6,
+        "precision_at_k": 0.4,
+        "recall_at_k": 0.3333333333333333,
+        "mrr_at_k": 1.0,
+        "top1_relevant": true,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_013_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_013",
+            "vector_score": 0.4594472646713257,
+            "keyword_score": 0.23608002212926196,
+            "hybrid_score": 0.9738590836524963,
+            "text_preview": "section 1: introduction 1. right honourable speaker, on the authority of his excellency the president, john dramani mahama and pursuant to articles 179 and 180 of the 1992 constitution of the republic of ghana, and secti",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_004_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_004",
+            "vector_score": 0.45917725563049316,
+            "keyword_score": 0.2109692746398023,
+            "hybrid_score": 0.9257382912091183,
+            "text_preview": "the 2025 budget statement and economic policy of government the budget statement and economic policy of the government of ghana for the 2025 financial year is available for public access. to purchase a physical copy, ple",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_003_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_003",
+            "vector_score": 0.4597546458244324,
+            "keyword_score": 0.18831886824480576,
+            "hybrid_score": 0.8831117804375025,
+            "text_preview": "the budget statement and economic policy of the government of ghana for the 2025 financial year presented to parliament by dr. cassiel ato forson (mp) minister for finance on tuesday march 11, 2025 on the authority of hi",
+            "relevant": true
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_014_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_014",
+            "vector_score": 0.4254043698310852,
+            "keyword_score": 0.14708999466983935,
+            "hybrid_score": 0.7719125608397538,
+            "text_preview": "and increasingly export -driven industrial economy that fully utilises our national resources, capital and labour power. 8. we will be presenting the 24-hour economy policy to parliament in due course. in this respect, t",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_038_008",
+            "source": "pdf",
+            "doc_id": "pdf_page_038",
+            "vector_score": 0.4804551899433136,
+            "keyword_score": 0.07022036915608536,
+            "hybrid_score": 0.6776530187311169,
+            "text_preview": "budget proj. prov.",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r08_pdf_total_crude_output",
+        "query": "What was total crude oil production in 2024?",
+        "failure_case": false,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 1.0,
+        "top1_relevant": true,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_051_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_051",
+            "vector_score": 0.6655330657958984,
+            "keyword_score": 0.3226850404858966,
+            "hybrid_score": 1.000000011920929,
+            "text_preview": "petroleum production, receipts and utilisation in 2024 petroleum production 190. mr. speaker, total crude oil production for ghana and its partners in 2024 was 48.24 million barrels. of the 48.24 million barrels, greater",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_007_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_007",
+            "vector_score": 0.5813772082328796,
+            "keyword_score": 0.2725518269670965,
+            "hybrid_score": 0.8640133870956919,
+            "text_preview": "summary of 2024 revenue performance 26 table 25: summary of 2024 expenditure performance 28 table 26: summary of 2024 financing operations 30 table 27: total crude oil production in barrels 39 table 28: crude oil receipt",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_072_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_072",
+            "vector_score": 0.6187566518783569,
+            "keyword_score": 0.11707404530776544,
+            "hybrid_score": 0.676539887567005,
+            "text_preview": "2025 petroleum receipts and utilisation projection 308. mr. speaker, consistent with the first schedule (section 17) of the prma (act 815) as amended, the benchmark price for 2025 has been calculated as a seven-year movi",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_052_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_052",
+            "vector_score": 0.5274216532707214,
+            "keyword_score": 0.15772740137358238,
+            "hybrid_score": 0.6615229814492796,
+            "text_preview": "petroleum receipts for jan-dec 2024 195. mr. speaker, receipts from crude oil liftings only for the period january to december 2024 amounted to us$843.52 million (gh\u00a212 .4 billion), comprising the 75th \u2013 80th jubilee lif",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_072_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_072",
+            "vector_score": 0.5163832306861877,
+            "keyword_score": 0.14428773691955823,
+            "hybrid_score": 0.6341140804517494,
+            "text_preview": "the total petroleum receipts are made up of royalties (us$191.52 million), carried and participating interest (us$495.92 million), corporate income tax (us$319.70 million) and surface rentals (us$4.22 million) as shown i",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r09_pdf_field_breakdown",
+        "query": "Give the 2024 output breakdown for Greater Jubilee, TEN and SGN fields.",
+        "failure_case": false,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 0.3333333333333333,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_051_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_051",
+            "vector_score": 0.6406097412109375,
+            "keyword_score": 0.12662914379014595,
+            "hybrid_score": 0.9264212480600484,
+            "text_preview": "month jubilee field ten field sgn field total 1 jan-24 2,771,107 560,152 884,837 4,216,096 2 feb-24 2,629,031 530,542 798,463 3,958,036 3 mar-24 3,056,353 600,859 862,499 4,519,711 4 apr-24 2,679,895 594,128 832,218 4,10",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_051_003",
+            "source": "pdf",
+            "doc_id": "pdf_page_051",
+            "vector_score": 0.4001452922821045,
+            "keyword_score": 0.15138124323173302,
+            "hybrid_score": 0.791904878616333,
+            "text_preview": "out of the total crude oil production of 48.24 million, ghana national petroleum corporation (gnpc), on behalf of the state, lifted 8.55 million barrels. the liftings by gnpc included 5.72 million barrels from the jubile",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_051_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_051",
+            "vector_score": 0.4588482975959778,
+            "keyword_score": 0.10855749190860554,
+            "hybrid_score": 0.7154067206972176,
+            "text_preview": "petroleum production, receipts and utilisation in 2024 petroleum production 190. mr. speaker, total crude oil production for ghana and its partners in 2024 was 48.24 million barrels. of the 48.24 million barrels, greater",
+            "relevant": true
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_143_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_143",
+            "vector_score": 0.47695744037628174,
+            "keyword_score": 0.058200054396323156,
+            "hybrid_score": 0.5813842646435252,
+            "text_preview": "economic classification of central gov't revenue \u2013 2024 in gh\u00a2 unless otherwise stated 2024 2024 2024 budget rev.",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_052_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_052",
+            "vector_score": 0.4381212592124939,
+            "keyword_score": 0.06946871363893205,
+            "hybrid_score": 0.5812734105464465,
+            "text_preview": "item unit jubilee ten sgn other receipts total 1 royalties us$mn 132.37 39.07 68.54 0 239.98 2 carried and participating interest us$mn 343.08 111.35 149.11 0 603.54 3 corporate income tax us$mn 0 0 0 502.87 502.87 4 sur",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r10_pdf_athletics_medals",
+        "query": "How many medals did the national athletics team win at the 4-Nation Junior Championships?",
+        "failure_case": false,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 1.0,
+        "top1_relevant": true,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_121_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_121",
+            "vector_score": 0.3576936721801758,
+            "keyword_score": 0.13241124802583212,
+            "hybrid_score": 1.000000011920929,
+            "text_preview": "662. the national athletics team placed 3rd and won a total of 18 medals comprising of 11 gold, 6 silver and 1 bronze at the 4-nation junior athletics championships held at the stade f\u00e9lix houphou\u00ebt boigny, abidjan, cote",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_120_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_120",
+            "vector_score": 0.3503064215183258,
+            "keyword_score": 0.1262766915541084,
+            "hybrid_score": 0.9703701521290209,
+            "text_preview": "speaker, the black challenge of ghana participated in the 2024 african amputee football cup of nations tournament hosted and organised in egypt from 18th to 30th may 2024 and won the trophy. the win has secured the team ",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_228_005",
+            "source": "pdf",
+            "doc_id": "pdf_page_228",
+            "vector_score": 0.27183064818382263,
+            "keyword_score": 0.0,
+            "hybrid_score": 0.44793060421943665,
+            "text_preview": "1,726,172.66 6,441,098.91 462,977.43 8,630,249.00 university of ghana 89,462,792.85 232,603,261.41 71,570,234.28 393,636,288.54 university of health and allied sciences 3,548,639.29 39,003,062.50 21,419,714.65 63,971,416",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_221_004",
+            "source": "pdf",
+            "doc_id": "pdf_page_221",
+            "vector_score": 0.2633400857448578,
+            "keyword_score": 0.0,
+            "hybrid_score": 0.43783748149871826,
+            "text_preview": "1,569,248 2,927,772 210,444 4,707,464 university of ghana 155,346,813 336,584,761 103,564,542 595,496,117 university of health and allied sciences 3,438,184 18,894,526 10,376,502 32,709,213 university of mines and techno",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_212_009",
+            "source": "pdf",
+            "doc_id": "pdf_page_212",
+            "vector_score": 0.2556292712688446,
+            "keyword_score": 0.0019531085837270852,
+            "hybrid_score": 0.43530891564118596,
+            "text_preview": "4,707.46 4,707.46 - 8,630.25 8,630.25 - 9,650.74 9,650.74 - 10,857.83 10,857.83 - university of ghana 595,496.12 595,496.12 - 393,636.29 393,636.29 - 474,413.30 474,413.30 - 483,322.49 483,322.49 - university of health a",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r11_pdf_failure_nhf_invoice",
+        "query": "NHF outstanding IPC invoice end-Dec 2024",
+        "failure_case": true,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 0.2,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_025_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_025",
+            "vector_score": 0.42603200674057007,
+            "keyword_score": 0.3686750520068169,
+            "hybrid_score": 0.9026771903038024,
+            "text_preview": "table 10 : summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- social sector sn covered entity outstanding ipc / invoice outstanding btas total 25 ministry of education 4,324.8 380.4 4,705.2 26 ministry of labour, jo",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_024_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_024",
+            "vector_score": 0.46911734342575073,
+            "keyword_score": 0.3110878452429866,
+            "hybrid_score": 0.8800009093477694,
+            "text_preview": "summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- economic sector sn covered entity outstanding ipc / invoice outstanding btas total 13 ministry of food and agriculture 2,228.7 154.6 2,383.3 14 ministry of fisherie",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_024_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_024",
+            "vector_score": 0.33716851472854614,
+            "keyword_score": 0.3010082160949104,
+            "hybrid_score": 0.721880236739326,
+            "text_preview": "table 7: summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- admin sector sn covered entity outstanding ipc / invoice outstanding btas total 1 office of government machinery 192.2 575.2 767.5 2 office of the head of ",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_023_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_023",
+            "vector_score": 0.4163152575492859,
+            "keyword_score": 0.21428543187467172,
+            "hybrid_score": 0.7034932016862295,
+            "text_preview": "update on arrears/payable accumulation 68. mr. speaker, at the end of december 2024, total central government arrears/payables amounted to gh\u00a267.5 billion (5.7% of gdp) consisting of mda outstanding interim payment certi",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_026_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_026",
+            "vector_score": 0.3980761170387268,
+            "keyword_score": 0.15618294508242883,
+            "hybrid_score": 0.6124178233081259,
+            "text_preview": "table 13: summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- other covered entities sn covered entity outstanding ipc / invoice outstanding btas total 1 national health fund (nhf) 571.0 2,886.4 3,457.4 2 district as",
+            "relevant": true
+          }
+        ]
+      },
+      {
+        "query_id": "r12_pdf_failure_dacf_btas",
+        "query": "DACF outstanding BTAs end-Dec 2024",
+        "failure_case": true,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "mrr_at_k": 0.0,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_023_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_023",
+            "vector_score": 0.40744954347610474,
+            "keyword_score": 0.23967815740947265,
+            "hybrid_score": 0.7849650676034609,
+            "text_preview": "update on arrears/payable accumulation 68. mr. speaker, at the end of december 2024, total central government arrears/payables amounted to gh\u00a267.5 billion (5.7% of gdp) consisting of mda outstanding interim payment certi",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_040_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_040",
+            "vector_score": 0.4434485137462616,
+            "keyword_score": 0.19355923645341605,
+            "hybrid_score": 0.7664634483289776,
+            "text_preview": "137. mr. speaker, as at end-december 2024, total arrears amounted to gh\u00a267,516 million consisting of outstanding claims of gh\u00a249,237 million and outstanding btas of gh\u20b518,279 million. the total arrears reported exclude o",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_024_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_024",
+            "vector_score": 0.32369017601013184,
+            "keyword_score": 0.28364948067215795,
+            "hybrid_score": 0.7432299754812686,
+            "text_preview": "summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- economic sector sn covered entity outstanding ipc / invoice outstanding btas total 13 ministry of food and agriculture 2,228.7 154.6 2,383.3 14 ministry of fisherie",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_025_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_025",
+            "vector_score": 0.25765281915664673,
+            "keyword_score": 0.33615741867649207,
+            "hybrid_score": 0.7342071950435638,
+            "text_preview": "table 10 : summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- social sector sn covered entity outstanding ipc / invoice outstanding btas total 25 ministry of education 4,324.8 380.4 4,705.2 26 ministry of labour, jo",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_040_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_040",
+            "vector_score": 0.47529491782188416,
+            "keyword_score": 0.139136220670678,
+            "hybrid_score": 0.731858152335774,
+            "text_preview": "speaker, mdas\u2019 total outstanding claims of gh\u20b545.1 billion is as a result of a stock- taking exercise of mdas\u2019 end 2024 outstanding liabilities which included both claims which had already been submitted to mof and those",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r13_pdf_failure_appendix_7b",
+        "query": "Appendix 7B NTR/IGF 2024 actuals and 2025 projections",
+        "failure_case": true,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 6,
+        "precision_at_k": 0.4,
+        "recall_at_k": 0.3333333333333333,
+        "mrr_at_k": 0.25,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_204_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_204",
+            "vector_score": 0.4434416890144348,
+            "keyword_score": 0.5240034603216968,
+            "hybrid_score": 0.9544927597045898,
+            "text_preview": "appendix 7b:",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_199_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_199",
+            "vector_score": 0.4434416890144348,
+            "keyword_score": 0.5240034603216968,
+            "hybrid_score": 0.9544927597045898,
+            "text_preview": "appendix 7b:",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_202_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_202",
+            "vector_score": 0.4434416890144348,
+            "keyword_score": 0.5240034603216968,
+            "hybrid_score": 0.9544927597045898,
+            "text_preview": "appendix 7b:",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_205_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_205",
+            "vector_score": 0.43562576174736023,
+            "keyword_score": 0.27702811952504947,
+            "hybrid_score": 0.7337642671813353,
+            "text_preview": "appendix 7b: non-tax revenue / internally generated funds (ntr/igf) 2024 proj vs actuals and 2025 projections (gh\u00a2'000) capped retention (%) collection retention lodgement collection retention lodgement collection retent",
+            "relevant": true
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_201_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_201",
+            "vector_score": 0.4326743185520172,
+            "keyword_score": 0.27766849767397306,
+            "hybrid_score": 0.7310543093844862,
+            "text_preview": "appendix 7b: non-tax revenue / internally generated funds (ntr/igf) 2024 proj vs actuals and 2025 projections (gh\u00a2'000) capped retention (%) collection retention lodgement collection retention lodgement collection retent",
+            "relevant": true
+          }
+        ]
+      },
+      {
+        "query_id": "r14_pdf_failure_ten_output",
+        "query": "TEN field output in 2024 million barrels",
+        "failure_case": true,
+        "expected_source": "pdf",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 0.5,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_072_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_072",
+            "vector_score": 0.5415006875991821,
+            "keyword_score": 0.37458139917337574,
+            "hybrid_score": 0.9615870250902724,
+            "text_preview": "2025 petroleum receipts and utilisation projection 308. mr. speaker, consistent with the first schedule (section 17) of the prma (act 815) as amended, the benchmark price for 2025 has been calculated as a seven-year movi",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_051_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_051",
+            "vector_score": 0.47539323568344116,
+            "keyword_score": 0.4095406906307465,
+            "hybrid_score": 0.9410517036914825,
+            "text_preview": "petroleum production, receipts and utilisation in 2024 petroleum production 190. mr. speaker, total crude oil production for ghana and its partners in 2024 was 48.24 million barrels. of the 48.24 million barrels, greater",
+            "relevant": true
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_051_003",
+            "source": "pdf",
+            "doc_id": "pdf_page_051",
+            "vector_score": 0.4685335159301758,
+            "keyword_score": 0.3563735726161485,
+            "hybrid_score": 0.8765152669748479,
+            "text_preview": "out of the total crude oil production of 48.24 million, ghana national petroleum corporation (gnpc), on behalf of the state, lifted 8.55 million barrels. the liftings by gnpc included 5.72 million barrels from the jubile",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_pdf_page_051_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_051",
+            "vector_score": 0.2962493896484375,
+            "keyword_score": 0.38247014254132333,
+            "hybrid_score": 0.7515634058703016,
+            "text_preview": "month jubilee field ten field sgn field total 1 jan-24 2,771,107 560,152 884,837 4,216,096 2 feb-24 2,629,031 530,542 798,463 3,958,036 3 mar-24 3,056,353 600,859 862,499 4,519,711 4 apr-24 2,679,895 594,128 832,218 4,10",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_pdf_page_052_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_052",
+            "vector_score": 0.391265869140625,
+            "keyword_score": 0.057353137974576585,
+            "hybrid_score": 0.4790541310515841,
+            "text_preview": "petroleum receipts for jan-dec 2024 195. mr. speaker, receipts from crude oil liftings only for the period january to december 2024 amounted to us$843.52 million (gh\u00a212 .4 billion), comprising the 75th \u2013 80th jubilee lif",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r15_csv_failure_ga_shortform",
+        "query": "NPP votes in GA for 2020",
+        "failure_case": true,
+        "expected_source": "csv",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.0,
+        "recall_at_k": 0.0,
+        "mrr_at_k": 0.0,
+        "top1_relevant": false,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_csv_2020_central_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_central_region",
+            "vector_score": 0.5290396213531494,
+            "keyword_score": 0.23594533338434787,
+            "hybrid_score": 0.9599033117294311,
+            "text_preview": "in 2020, nana akufo addo of npp received 613804 votes which is 52.31 percent in central region. in 2020, john dramani mahama of ndc received 538829 votes which is 45.92 percent in central region. in 2020, christian kwabe",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_csv_2020_eastern_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_eastern_region",
+            "vector_score": 0.5305951833724976,
+            "keyword_score": 0.23101656452575783,
+            "hybrid_score": 0.9518401690544063,
+            "text_preview": "in 2020, nana akufo addo of npp received 752061 votes which is 60.80 percent in eastern region. in 2020, john dramani mahama of ndc received 470999 votes which is 38.08 percent in eastern region. in 2020, christian kwabe",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_csv_2020_western_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_western_region",
+            "vector_score": 0.5236061811447144,
+            "keyword_score": 0.23413822992427236,
+            "hybrid_score": 0.951786383708557,
+            "text_preview": "in 2020, nana akufo addo of npp received 439724 votes which is 50.93 percent in western region. in 2020, john dramani mahama of ndc received 398549 votes which is 46.16 percent in western region. in 2020, christian kwabe",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_csv_2020_volta_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_volta_region",
+            "vector_score": 0.5293161273002625,
+            "keyword_score": 0.23145893285661878,
+            "hybrid_score": 0.9515843961446895,
+            "text_preview": "in 2020, john dramani mahama of ndc received 606508 votes which is 84.83 percent in volta region. in 2020, nana akufo addo of npp received 100481 votes which is 14.05 percent in volta region. in 2020, christian kwabena a",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_csv_2020_savannah_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_savannah_region",
+            "vector_score": 0.5756876468658447,
+            "keyword_score": 0.20957460488630655,
+            "hybrid_score": 0.949705192973237,
+            "text_preview": "in 2020, john dramani mahama of ndc received 144244 votes which is 62.97 percent in savannah region. in 2020, nana akufo addo of npp received 80605 votes which is 35.19 percent in savannah region. in 2020, christian kwab",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r16_csv_failure_ndc_shortform",
+        "query": "NDC Oti 2020 vote count",
+        "failure_case": true,
+        "expected_source": "csv",
+        "total_relevant_chunks": 1,
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0,
+        "mrr_at_k": 1.0,
+        "top1_relevant": true,
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "large_csv_2020_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_oti_region",
+            "vector_score": 0.623141884803772,
+            "keyword_score": 0.3090553426703532,
+            "hybrid_score": 1.000000011920929,
+            "text_preview": "in 2020, john dramani mahama of ndc received 181021 votes which is 62.53 percent in oti region. in 2020, nana akufo addo of npp received 103865 votes which is 35.88 percent in oti region. in 2020, christian kwabena andre",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_csv_2016_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2016_oti_region",
+            "vector_score": 0.5735812783241272,
+            "keyword_score": 0.19300602583010792,
+            "hybrid_score": 0.7847742845750292,
+            "text_preview": "in 2016, john dramani mahama of ndc received 136257 votes which is 63.43 percent in oti region. in 2016, nana akufo addo of npp received 74275 votes which is 34.58 percent in oti region. in 2016, bridget dzogbenuku of pp",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_csv_2012_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2012_oti_region",
+            "vector_score": 0.5622817277908325,
+            "keyword_score": 0.1910519458756809,
+            "hybrid_score": 0.7713838227064467,
+            "text_preview": "in 2012, john dramani mahama of ndc received 155343 votes which is 68.81 percent in oti region. in 2012, nana akufo addo of npp received 64207 votes which is 28.44 percent in oti region. in 2012, henry herbert lartey of ",
+            "relevant": false
+          },
+          {
+            "rank": 4,
+            "chunk_id": "large_csv_2020_northern_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_northern_region",
+            "vector_score": 0.5058479309082031,
+            "keyword_score": 0.13126171989913243,
+            "hybrid_score": 0.6316597849954786,
+            "text_preview": "in 2020, john dramani mahama of ndc received 476650 votes which is 53.14 percent in northern region. in 2020, nana akufo addo of npp received 409063 votes which is 45.61 percent in northern region. in 2020, christian kwa",
+            "relevant": false
+          },
+          {
+            "rank": 5,
+            "chunk_id": "large_csv_2020_eastern_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_eastern_region",
+            "vector_score": 0.5076678395271301,
+            "keyword_score": 0.12944600719622926,
+            "hybrid_score": 0.6307144212511792,
+            "text_preview": "in 2020, nana akufo addo of npp received 752061 votes which is 60.80 percent in eastern region. in 2020, john dramani mahama of ndc received 470999 votes which is 38.08 percent in eastern region. in 2020, christian kwabe",
+            "relevant": false
+          }
+        ]
+      }
+    ]
+  },
+  "failure_case_analysis": {
+    "failure_queries_evaluated": 6,
+    "baseline_failure_count": 5,
+    "improved_count": 2,
+    "details": [
+      {
+        "query_id": "r11_pdf_failure_nhf_invoice",
+        "query": "NHF outstanding IPC invoice end-Dec 2024",
+        "baseline_failed": true,
+        "baseline_top1_relevant": false,
+        "hybrid_top1_relevant": false,
+        "baseline_mrr_at_k": 0.0,
+        "hybrid_mrr_at_k": 0.2,
+        "improved_with_hybrid": true,
+        "baseline_top3": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_064_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_064",
+            "vector_score": 0.5140984058380127,
+            "hybrid_score": 0.5140984058380127,
+            "text_preview": "youstart and the one district one factory will be eliminated; x. reassign the functions of the development authorities (coda, nda, and mbda) to the district assemblies; xi. amend the petroleum revenue management act, 201",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_024_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_024",
+            "vector_score": 0.46911734342575073,
+            "hybrid_score": 0.46911734342575073,
+            "text_preview": "summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- economic sector sn covered entity outstanding ipc / invoice outstanding btas total 13 ministry of food and agriculture 2,228.7 154.6 2,383.3 14 ministry of fisherie",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_069_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_069",
+            "vector_score": 0.44255924224853516,
+            "hybrid_score": 0.44255924224853516,
+            "text_preview": "284. mr. speaker, aside the high vat rate, businesses are not permitted by law to claim their input for the nhil, getfund levy and covid-19 levy, compounding the burden on households. 285. mr. speaker, our vat regime has",
+            "relevant": false
+          }
+        ],
+        "hybrid_top3": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_025_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_025",
+            "vector_score": 0.42603200674057007,
+            "keyword_score": 0.3686750520068169,
+            "hybrid_score": 0.9026771903038024,
+            "text_preview": "table 10 : summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- social sector sn covered entity outstanding ipc / invoice outstanding btas total 25 ministry of education 4,324.8 380.4 4,705.2 26 ministry of labour, jo",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_024_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_024",
+            "vector_score": 0.46911734342575073,
+            "keyword_score": 0.3110878452429866,
+            "hybrid_score": 0.8800009093477694,
+            "text_preview": "summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- economic sector sn covered entity outstanding ipc / invoice outstanding btas total 13 ministry of food and agriculture 2,228.7 154.6 2,383.3 14 ministry of fisherie",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_024_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_024",
+            "vector_score": 0.33716851472854614,
+            "keyword_score": 0.3010082160949104,
+            "hybrid_score": 0.721880236739326,
+            "text_preview": "table 7: summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- admin sector sn covered entity outstanding ipc / invoice outstanding btas total 1 office of government machinery 192.2 575.2 767.5 2 office of the head of ",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r12_pdf_failure_dacf_btas",
+        "query": "DACF outstanding BTAs end-Dec 2024",
+        "baseline_failed": true,
+        "baseline_top1_relevant": false,
+        "hybrid_top1_relevant": false,
+        "baseline_mrr_at_k": 0.0,
+        "hybrid_mrr_at_k": 0.0,
+        "improved_with_hybrid": false,
+        "baseline_top3": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_079_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_079",
+            "vector_score": 0.47895655035972595,
+            "hybrid_score": 0.47895655035972595,
+            "text_preview": "speaker, the strategy for public debt management over the medium -term is strongly hinged on debt sustainability analysis, and the reform measures outlined under the imf-supported programme. 361. mr. speaker, on the dome",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_035_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_035",
+            "vector_score": 0.4787421226501465,
+            "hybrid_score": 0.4787421226501465,
+            "text_preview": "table 22: update on gfsf approved programme allocations (gh\u00a2mn) no. approved programme allocations committed allocations actual expenditure fund a gfsf (mitigating the impact of ddep on the financial sector) a1 world ban",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_193_014",
+            "source": "pdf",
+            "doc_id": "pdf_page_193",
+            "vector_score": 0.4765773415565491,
+            "hybrid_score": 0.4765773415565491,
+            "text_preview": "total goods & services capital expenditure dacf-rfg capacity grant dacf-rfg investment grant secondary cities soco project unicef-iss sw&cd sigra ashanti region 0 0 0 0 0 0 0 code no.",
+            "relevant": false
+          }
+        ],
+        "hybrid_top3": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_023_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_023",
+            "vector_score": 0.40744954347610474,
+            "keyword_score": 0.23967815740947265,
+            "hybrid_score": 0.7849650676034609,
+            "text_preview": "update on arrears/payable accumulation 68. mr. speaker, at the end of december 2024, total central government arrears/payables amounted to gh\u00a267.5 billion (5.7% of gdp) consisting of mda outstanding interim payment certi",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_040_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_040",
+            "vector_score": 0.4434485137462616,
+            "keyword_score": 0.19355923645341605,
+            "hybrid_score": 0.7664634483289776,
+            "text_preview": "137. mr. speaker, as at end-december 2024, total arrears amounted to gh\u00a267,516 million consisting of outstanding claims of gh\u00a249,237 million and outstanding btas of gh\u20b518,279 million. the total arrears reported exclude o",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_024_002",
+            "source": "pdf",
+            "doc_id": "pdf_page_024",
+            "vector_score": 0.32369017601013184,
+            "keyword_score": 0.28364948067215795,
+            "hybrid_score": 0.7432299754812686,
+            "text_preview": "summary of arrears/payables as at end-dec 2024 (gh\u00a2mn)- economic sector sn covered entity outstanding ipc / invoice outstanding btas total 13 ministry of food and agriculture 2,228.7 154.6 2,383.3 14 ministry of fisherie",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r13_pdf_failure_appendix_7b",
+        "query": "Appendix 7B NTR/IGF 2024 actuals and 2025 projections",
+        "baseline_failed": true,
+        "baseline_top1_relevant": false,
+        "hybrid_top1_relevant": false,
+        "baseline_mrr_at_k": 0.0,
+        "hybrid_mrr_at_k": 0.25,
+        "improved_with_hybrid": true,
+        "baseline_top3": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_156_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_156",
+            "vector_score": 0.48464301228523254,
+            "hybrid_score": 0.48464301228523254,
+            "text_preview": "appendix 4a:",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_155_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_155",
+            "vector_score": 0.48464301228523254,
+            "hybrid_score": 0.48464301228523254,
+            "text_preview": "appendix 4a:",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_152_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_152",
+            "vector_score": 0.48464301228523254,
+            "hybrid_score": 0.48464301228523254,
+            "text_preview": "appendix 4a:",
+            "relevant": false
+          }
+        ],
+        "hybrid_top3": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_204_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_204",
+            "vector_score": 0.4434416890144348,
+            "keyword_score": 0.5240034603216968,
+            "hybrid_score": 0.9544927597045898,
+            "text_preview": "appendix 7b:",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_199_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_199",
+            "vector_score": 0.4434416890144348,
+            "keyword_score": 0.5240034603216968,
+            "hybrid_score": 0.9544927597045898,
+            "text_preview": "appendix 7b:",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_202_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_202",
+            "vector_score": 0.4434416890144348,
+            "keyword_score": 0.5240034603216968,
+            "hybrid_score": 0.9544927597045898,
+            "text_preview": "appendix 7b:",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r14_pdf_failure_ten_output",
+        "query": "TEN field output in 2024 million barrels",
+        "baseline_failed": true,
+        "baseline_top1_relevant": false,
+        "hybrid_top1_relevant": false,
+        "baseline_mrr_at_k": 0.5,
+        "hybrid_mrr_at_k": 0.5,
+        "improved_with_hybrid": false,
+        "baseline_top3": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_072_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_072",
+            "vector_score": 0.5415006875991821,
+            "hybrid_score": 0.5415006875991821,
+            "text_preview": "2025 petroleum receipts and utilisation projection 308. mr. speaker, consistent with the first schedule (section 17) of the prma (act 815) as amended, the benchmark price for 2025 has been calculated as a seven-year movi",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_051_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_051",
+            "vector_score": 0.4753932058811188,
+            "hybrid_score": 0.4753932058811188,
+            "text_preview": "petroleum production, receipts and utilisation in 2024 petroleum production 190. mr. speaker, total crude oil production for ghana and its partners in 2024 was 48.24 million barrels. of the 48.24 million barrels, greater",
+            "relevant": true
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_051_003",
+            "source": "pdf",
+            "doc_id": "pdf_page_051",
+            "vector_score": 0.4685334861278534,
+            "hybrid_score": 0.4685334861278534,
+            "text_preview": "out of the total crude oil production of 48.24 million, ghana national petroleum corporation (gnpc), on behalf of the state, lifted 8.55 million barrels. the liftings by gnpc included 5.72 million barrels from the jubile",
+            "relevant": false
+          }
+        ],
+        "hybrid_top3": [
+          {
+            "rank": 1,
+            "chunk_id": "large_pdf_page_072_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_072",
+            "vector_score": 0.5415006875991821,
+            "keyword_score": 0.37458139917337574,
+            "hybrid_score": 0.9615870250902724,
+            "text_preview": "2025 petroleum receipts and utilisation projection 308. mr. speaker, consistent with the first schedule (section 17) of the prma (act 815) as amended, the benchmark price for 2025 has been calculated as a seven-year movi",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_pdf_page_051_001",
+            "source": "pdf",
+            "doc_id": "pdf_page_051",
+            "vector_score": 0.47539323568344116,
+            "keyword_score": 0.4095406906307465,
+            "hybrid_score": 0.9410517036914825,
+            "text_preview": "petroleum production, receipts and utilisation in 2024 petroleum production 190. mr. speaker, total crude oil production for ghana and its partners in 2024 was 48.24 million barrels. of the 48.24 million barrels, greater",
+            "relevant": true
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_pdf_page_051_003",
+            "source": "pdf",
+            "doc_id": "pdf_page_051",
+            "vector_score": 0.4685335159301758,
+            "keyword_score": 0.3563735726161485,
+            "hybrid_score": 0.8765152669748479,
+            "text_preview": "out of the total crude oil production of 48.24 million, ghana national petroleum corporation (gnpc), on behalf of the state, lifted 8.55 million barrels. the liftings by gnpc included 5.72 million barrels from the jubile",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r15_csv_failure_ga_shortform",
+        "query": "NPP votes in GA for 2020",
+        "baseline_failed": true,
+        "baseline_top1_relevant": false,
+        "hybrid_top1_relevant": false,
+        "baseline_mrr_at_k": 0.0,
+        "hybrid_mrr_at_k": 0.0,
+        "improved_with_hybrid": false,
+        "baseline_top3": [
+          {
+            "rank": 1,
+            "chunk_id": "large_csv_2020_savannah_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_savannah_region",
+            "vector_score": 0.5756876468658447,
+            "hybrid_score": 0.5756876468658447,
+            "text_preview": "in 2020, john dramani mahama of ndc received 144244 votes which is 62.97 percent in savannah region. in 2020, nana akufo addo of npp received 80605 votes which is 35.19 percent in savannah region. in 2020, christian kwab",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_csv_2020_north_east_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_north_east_region",
+            "vector_score": 0.5344693660736084,
+            "hybrid_score": 0.5344693660736084,
+            "text_preview": "in 2020, nana akufo addo of npp received 122742 votes which is 51.33 percent in north east region. in 2020, john dramani mahama of ndc received 112306 votes which is 46.97 percent in north east region. in 2020, christian",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_csv_2012_savannah_region_001",
+            "source": "csv",
+            "doc_id": "csv_2012_savannah_region",
+            "vector_score": 0.5316516160964966,
+            "hybrid_score": 0.5316516160964966,
+            "text_preview": "in 2012, john dramani mahama of ndc received 99413 votes which is 63.04 percent in savannah region. in 2012, nana akufo addo of npp received 54425 votes which is 34.51 percent in savannah region. in 2012, henry herbert l",
+            "relevant": false
+          }
+        ],
+        "hybrid_top3": [
+          {
+            "rank": 1,
+            "chunk_id": "large_csv_2020_central_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_central_region",
+            "vector_score": 0.5290396213531494,
+            "keyword_score": 0.23594533338434787,
+            "hybrid_score": 0.9599033117294311,
+            "text_preview": "in 2020, nana akufo addo of npp received 613804 votes which is 52.31 percent in central region. in 2020, john dramani mahama of ndc received 538829 votes which is 45.92 percent in central region. in 2020, christian kwabe",
+            "relevant": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_csv_2020_eastern_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_eastern_region",
+            "vector_score": 0.5305951833724976,
+            "keyword_score": 0.23101656452575783,
+            "hybrid_score": 0.9518401690544063,
+            "text_preview": "in 2020, nana akufo addo of npp received 752061 votes which is 60.80 percent in eastern region. in 2020, john dramani mahama of ndc received 470999 votes which is 38.08 percent in eastern region. in 2020, christian kwabe",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_csv_2020_western_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_western_region",
+            "vector_score": 0.5236061811447144,
+            "keyword_score": 0.23413822992427236,
+            "hybrid_score": 0.951786383708557,
+            "text_preview": "in 2020, nana akufo addo of npp received 439724 votes which is 50.93 percent in western region. in 2020, john dramani mahama of ndc received 398549 votes which is 46.16 percent in western region. in 2020, christian kwabe",
+            "relevant": false
+          }
+        ]
+      },
+      {
+        "query_id": "r16_csv_failure_ndc_shortform",
+        "query": "NDC Oti 2020 vote count",
+        "baseline_failed": false,
+        "baseline_top1_relevant": true,
+        "hybrid_top1_relevant": true,
+        "baseline_mrr_at_k": 1.0,
+        "hybrid_mrr_at_k": 1.0,
+        "improved_with_hybrid": false,
+        "baseline_top3": [
+          {
+            "rank": 1,
+            "chunk_id": "large_csv_2020_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_oti_region",
+            "vector_score": 0.6231419444084167,
+            "hybrid_score": 0.6231419444084167,
+            "text_preview": "in 2020, john dramani mahama of ndc received 181021 votes which is 62.53 percent in oti region. in 2020, nana akufo addo of npp received 103865 votes which is 35.88 percent in oti region. in 2020, christian kwabena andre",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_csv_2016_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2016_oti_region",
+            "vector_score": 0.573581337928772,
+            "hybrid_score": 0.573581337928772,
+            "text_preview": "in 2016, john dramani mahama of ndc received 136257 votes which is 63.43 percent in oti region. in 2016, nana akufo addo of npp received 74275 votes which is 34.58 percent in oti region. in 2016, bridget dzogbenuku of pp",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_csv_2012_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2012_oti_region",
+            "vector_score": 0.562281608581543,
+            "hybrid_score": 0.562281608581543,
+            "text_preview": "in 2012, john dramani mahama of ndc received 155343 votes which is 68.81 percent in oti region. in 2012, nana akufo addo of npp received 64207 votes which is 28.44 percent in oti region. in 2012, henry herbert lartey of ",
+            "relevant": false
+          }
+        ],
+        "hybrid_top3": [
+          {
+            "rank": 1,
+            "chunk_id": "large_csv_2020_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2020_oti_region",
+            "vector_score": 0.623141884803772,
+            "keyword_score": 0.3090553426703532,
+            "hybrid_score": 1.000000011920929,
+            "text_preview": "in 2020, john dramani mahama of ndc received 181021 votes which is 62.53 percent in oti region. in 2020, nana akufo addo of npp received 103865 votes which is 35.88 percent in oti region. in 2020, christian kwabena andre",
+            "relevant": true
+          },
+          {
+            "rank": 2,
+            "chunk_id": "large_csv_2016_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2016_oti_region",
+            "vector_score": 0.5735812783241272,
+            "keyword_score": 0.19300602583010792,
+            "hybrid_score": 0.7847742845750292,
+            "text_preview": "in 2016, john dramani mahama of ndc received 136257 votes which is 63.43 percent in oti region. in 2016, nana akufo addo of npp received 74275 votes which is 34.58 percent in oti region. in 2016, bridget dzogbenuku of pp",
+            "relevant": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "large_csv_2012_oti_region_001",
+            "source": "csv",
+            "doc_id": "csv_2012_oti_region",
+            "vector_score": 0.5622817277908325,
+            "keyword_score": 0.1910519458756809,
+            "hybrid_score": 0.7713838227064467,
+            "text_preview": "in 2012, john dramani mahama of ndc received 155343 votes which is 68.81 percent in oti region. in 2012, nana akufo addo of npp received 64207 votes which is 28.44 percent in oti region. in 2012, henry herbert lartey of ",
+            "relevant": false
+          }
+        ]
+      }
+    ]
+  }
+}

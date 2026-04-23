@@ -1,0 +1,148 @@
+{
+  "run_id": "rag_run_20260423T174924Z_21ebae88",
+  "generated_at_utc": "2026-04-23T17:49:33.578824+00:00",
+  "input": {
+    "query": "What is the theme of the 2025 budget statement?",
+    "top_k": 5,
+    "hybrid_alpha": 0.55,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "llm_model": "gpt-4o-mini",
+    "max_context_tokens": 1200
+  },
+  "stage_times": {
+    "retrieval_start": "2026-04-23T17:49:24.206738+00:00",
+    "retrieval_end": "2026-04-23T17:49:30.772854+00:00",
+    "context_selection_start": "2026-04-23T17:49:30.772869+00:00",
+    "context_selection_end": "2026-04-23T17:49:30.963948+00:00",
+    "prompt_construction_start": "2026-04-23T17:49:30.963975+00:00",
+    "prompt_construction_end": "2026-04-23T17:49:30.964006+00:00",
+    "llm_generation_start": "2026-04-23T17:49:30.964014+00:00",
+    "llm_generation_end": "2026-04-23T17:49:33.578810+00:00"
+  },
+  "pipeline": {
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "chunk_id": "large_pdf_page_004_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_004",
+        "similarity_scores": {
+          "vector_score": 0.6335565447807312,
+          "keyword_score": 0.2598009883725897,
+          "hybrid_score": 1.000000011920929
+        },
+        "text_preview": "the 2025 budget statement and economic policy of government the budget statement and economic policy of the government of ghana for the 2025 financial year is available for public access. to purchase a physical copy, please contact the ministry\u2019s public relations office at: ministry of finance publi"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "large_pdf_page_003_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_003",
+        "similarity_scores": {
+          "vector_score": 0.6068165898323059,
+          "keyword_score": 0.15481674842496596,
+          "hybrid_score": 0.7960133123783614
+        },
+        "text_preview": "the budget statement and economic policy of the government of ghana for the 2025 financial year presented to parliament by dr. cassiel ato forson (mp) minister for finance on tuesday march 11, 2025 on the authority of his excellency john dramani mahama president of the republic of ghana in accordanc"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "large_pdf_page_014_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_014",
+        "similarity_scores": {
+          "vector_score": 0.5520869493484497,
+          "keyword_score": 0.14153351834949168,
+          "hybrid_score": 0.727682600570545
+        },
+        "text_preview": "and increasingly export -driven industrial economy that fully utilises our national resources, capital and labour power. 8. we will be presenting the 24-hour economy policy to parliament in due course. in this respect, the labour act, the ghana investment promotion centre act and other enabling legi"
+      },
+      {
+        "rank": 4,
+        "chunk_id": "large_pdf_page_001_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_001",
+        "similarity_scores": {
+          "vector_score": 0.4512587785720825,
+          "keyword_score": 0.15119867834350878,
+          "hybrid_score": 0.6609253664175736
+        },
+        "text_preview": "theme: resetting the economy for the ghana we want"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "large_pdf_page_015_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_015",
+        "similarity_scores": {
+          "vector_score": 0.6204164028167725,
+          "keyword_score": 0.061107071517635524,
+          "hybrid_score": 0.6449616042494765
+        },
+        "text_preview": "21. that notwithstanding, our youth face an uncertain future with growing unemployment and hopelessness. this suggests that the dividends of democracy, such as economic prosperity and social justice, remain elusive. 22. mr. speaker, the choices before us are clear: we can either continue on a path o"
+      }
+    ],
+    "context_selection": {
+      "used_context_tokens": 1200,
+      "selected_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "large_pdf_page_004_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_004",
+          "vector_score": 0.6335565447807312,
+          "keyword_score": 0.2598009883725897,
+          "hybrid_score": 1.000000011920929,
+          "used_tokens": 119,
+          "truncated": false
+        },
+        {
+          "rank": 2,
+          "chunk_id": "large_pdf_page_003_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_003",
+          "vector_score": 0.6068165898323059,
+          "keyword_score": 0.15481674842496596,
+          "hybrid_score": 0.7960133123783614,
+          "used_tokens": 106,
+          "truncated": false
+        },
+        {
+          "rank": 3,
+          "chunk_id": "large_pdf_page_014_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_014",
+          "vector_score": 0.5520869493484497,
+          "keyword_score": 0.14153351834949168,
+          "hybrid_score": 0.727682600570545,
+          "used_tokens": 598,
+          "truncated": false
+        },
+        {
+          "rank": 4,
+          "chunk_id": "large_pdf_page_001_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_001",
+          "vector_score": 0.4512587785720825,
+          "keyword_score": 0.15119867834350878,
+          "hybrid_score": 0.6609253664175736,
+          "used_tokens": 30,
+          "truncated": false
+        },
+        {
+          "rank": 5,
+          "chunk_id": "large_pdf_page_015_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_015",
+          "vector_score": 0.6204164028167725,
+          "keyword_score": 0.061107071517635524,
+          "hybrid_score": 0.6449616042494765,
+          "used_tokens": 347,
+          "truncated": true
+        }
+      ]
+    },
+    "final_prompt_sent_to_llm": "SYSTEM:\nYou are a strict grounded assistant for Academic City RAG. Use only retrieved context, cite chunk IDs like [chunk_id] for factual claims, and if evidence is missing output exactly: Insufficient evidence in retrieved context.\n\nUSER:\nUser query:\nWhat is the theme of the 2025 budget statement?\n\nRetrieved context:\n[large_pdf_page_004_001] source=pdf doc=pdf_page_004\nthe 2025 budget statement and economic policy of government the budget statement and economic policy of the government of ghana for the 2025 financial year is available for public access. to purchase a physical copy, please contact the ministry\u2019s public relations office at: ministry of finance public relations office new building, ground floor, rooms 001 and 003 p. o. box mb 40 accra \u2013 ghana electronic copies can be downloaded from our website (www.mofep.gov.gh)\n\n[large_pdf_page_003_001] source=pdf doc=pdf_page_003\nthe budget statement and economic policy of the government of ghana for the 2025 financial year presented to parliament by dr. cassiel ato forson (mp) minister for finance on tuesday march 11, 2025 on the authority of his excellency john dramani mahama president of the republic of ghana in accordance with section 28 of the public financial management act, 2016 (act 921)\n\n[large_pdf_page_014_001] source=pdf doc=pdf_page_014\nand increasingly export -driven industrial economy that fully utilises our national resources, capital and labour power. 8. we will be presenting the 24-hour economy policy to parliament in due course. in this respect, the labour act, the ghana investment promotion centre act and other enabling legislations will be reviewed. 9. mr. speaker, as part of efforts to stabilise the cedi through foreign exchange and gold reserve accumulation, i will also submit a bill to provide a legal framework for the establishment of the ghana gold board for the consideration of this honourable house. 10. mr. speaker, this budget speech is an abridged version of the 2025 budget statement and economic policy of government. 11. i respectfully request the hansard department to capture the entire budget statement and economic policy of government for the year ending 31st december 2025. 12. mr. speaker, standing here evokes a sense of nostalgia as i reflect on my journey in public service. from my early days as a young parliamentarian in 2009, destiny has guided my path \u2014from a backbencher and a member of the finance committee, to deputy minister for finance, to ranking member of the finance committee, to minority leader, to majority leader and now, minister responsible for finance. 13. the invaluable experience i gained in this chamber has shaped my perspective, sharpened my focus, and prepared me for the task at hand. i fully commit to supporting the president to fix the economy. 14. i take this opportunity to extend my profound gratitude to the people of ajumako enyan essiam, and to mr. speaker and members of this house, for your unwavering support throughout the years. 15. mr. speaker, this esteemed house is a sanctuary of rigorous debate, principled cooperation, and at times, constructive disagreement\u2014all in the pursuit of the greater good of our beloved country. 16. i look forward to working with you, the right honourable speaker, and my colleagues on both sides of the aisle, to reset ghana\u2019s economy through sound policy and structural reforms that will propel our nation forward. 17. mr. speaker, there comes a time in a nation\u2019s history when fundamental challenges must be confronted, difficult choices must be made, and a new course must be set for the future. 18. for ghana, that defining moment is now! 19. president john dramani mahama made a commitment to reset ghana for jobs, accountability and prosperity for all, as captured in the ndc manifesto. in this regard, the theme for this budget is \u201cresetting the economy for the ghana we want\u201d. 20. mr. speaker, the democratic ideals we tirelessly fought for, are being hailed. our democracy has been consolidated with yet another peaceful transition of power.\n\n[large_pdf_page_001_001] source=pdf doc=pdf_page_001\ntheme: resetting the economy for the ghana we want\n\n[large_pdf_page_015_001] source=pdf doc=pdf_page_015\n21. that notwithstanding, our youth face an uncertain future with growing unemployment and hopelessness. this suggests that the dividends of democracy, such as economic prosperity and social justice, remain elusive. 22. mr. speaker, the choices before us are clear: we can either continue on a path of self- destruction by not confronting the problems or we can embark on a journey of fundamental reforms and transformation \u2014one that resets our economic model, redefines our priorities, honours our social contract and provides opportunities for all. 23. mr. speaker, president mahama has chosen the path of reforms and transformation. he will fix the economy. he will restore hope. and lead us to build the ghana we want together. 24. this budget was preceded by the national economic dialogue on the theme \u201cresetting ghana \u2013 building the economy we want together\u201d on 3rd and 4th march, 2025. through this consensus-building dialogue, the people demanded decisive action and real solutions to the severe challenges that plaque us. 25. mr. speaker, the 2025 budget is the culmination of the true aspirations, felt needs and genuine desires of the people of ghana, expressed through engagements with diverse stakeholders. 26. as part of our broad consultations ahead of the budget, we recently engaged traders at major trading centers, including the makola market, to listen to their concerns, gauge their expectations and elicit their inputs. 27. mr. speaker, the extensive consultations revealed that the overriding concern among ghanaian traders and the business community, remains price and exchange rate instability. 28. apart\n\nRules:\n- Use only the retrieved context.\n- Do not invent facts.\n- Include citations like [chunk_id].\n- If context is insufficient, output exactly: Insufficient evidence in retrieved context.\n",
+    "response": "The theme of the 2025 budget statement is \"resetting the economy for the Ghana we want\" [large_pdf_page_001_001]."
+  }
+}

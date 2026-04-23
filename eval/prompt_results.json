@@ -1,0 +1,1966 @@
+{
+  "generated_at_utc": "2026-04-23T17:27:02.039710+00:00",
+  "design_choices": {
+    "model": "gpt-4o-mini",
+    "context_window_management": "ranked retrieval + token-budget truncation/filtering",
+    "max_context_tokens": 1200,
+    "hallucination_control": "strict insufficient-evidence fallback + citation requirement",
+    "queries_evaluated": 12,
+    "prompt_variants": [
+      "v1_basic",
+      "v2_grounded",
+      "v3_structured"
+    ]
+  },
+  "variants_summary": {
+    "v1_basic": {
+      "queries_evaluated": 12,
+      "avg_keyword_coverage": 0.7152777777777778,
+      "avg_citation_count": 0.0,
+      "citation_compliance_rate": 0.0,
+      "insufficient_evidence_rate": 0.0
+    },
+    "v2_grounded": {
+      "queries_evaluated": 12,
+      "avg_keyword_coverage": 0.7222222222222222,
+      "avg_citation_count": 2.0833333333333335,
+      "citation_compliance_rate": 1.0,
+      "insufficient_evidence_rate": 0.0
+    },
+    "v3_structured": {
+      "queries_evaluated": 12,
+      "avg_keyword_coverage": 0.8055555555555556,
+      "avg_citation_count": 1.3333333333333333,
+      "citation_compliance_rate": 0.9166666666666666,
+      "insufficient_evidence_rate": 0.0
+    }
+  },
+  "runs": {
+    "v1_basic": [
+      {
+        "query_id": "r01_csv_2020_ashanti_npp_votes",
+        "category": "normal",
+        "query": "How many votes did Nana Akufo Addo receive in Ashanti Region in 2020?",
+        "expected_source": "csv",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_csv_2020_ashanti_region_001",
+              "rank": 1,
+              "source": "csv",
+              "doc_id": "csv_2020_ashanti_region",
+              "used_tokens": 398,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_ashanti_region_001",
+              "rank": 2,
+              "source": "csv",
+              "doc_id": "csv_2016_ashanti_region",
+              "used_tokens": 250,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2008_ashanti_region_001",
+              "rank": 3,
+              "source": "csv",
+              "doc_id": "csv_2008_ashanti_region",
+              "used_tokens": 179,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2012_ashanti_region_001",
+              "rank": 4,
+              "source": "csv",
+              "doc_id": "csv_2012_ashanti_region",
+              "used_tokens": 248,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_ahafo_region_001",
+              "rank": 5,
+              "source": "csv",
+              "doc_id": "csv_2020_ahafo_region",
+              "used_tokens": 125,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v1_basic",
+        "response": "In the 2020 elections, Nana Akufo Addo received 1,795,824 votes in the Ashanti Region, which accounted for 72.79 percent of the total votes cast in that region.",
+        "evaluation": {
+          "keyword_coverage": 0.75,
+          "citation_count": 0,
+          "has_citation": false,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r02_csv_2020_ahafo_ndc_percent",
+        "category": "normal",
+        "query": "What percentage did John Dramani Mahama get in Ahafo Region in 2020?",
+        "expected_source": "csv",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_csv_2020_ahafo_region_001",
+              "rank": 1,
+              "source": "csv",
+              "doc_id": "csv_2020_ahafo_region",
+              "used_tokens": 408,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_ahafo_region_001",
+              "rank": 2,
+              "source": "csv",
+              "doc_id": "csv_2016_ahafo_region",
+              "used_tokens": 254,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2012_ahafo_region_001",
+              "rank": 3,
+              "source": "csv",
+              "doc_id": "csv_2012_ahafo_region",
+              "used_tokens": 250,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_northern_region_001",
+              "rank": 4,
+              "source": "csv",
+              "doc_id": "csv_2020_northern_region",
+              "used_tokens": 288,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v1_basic",
+        "response": "In the Ahafo Region during the 2020 elections, John Dramani Mahama of the NDC received 116,485 votes, which accounted for 44.04 percent of the total votes.",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 0,
+          "has_citation": false,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r04_csv_2020_oti_ndc_votes",
+        "category": "normal",
+        "query": "How many votes did John Dramani Mahama receive in Oti Region in 2020?",
+        "expected_source": "csv",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_csv_2020_oti_region_001",
+              "rank": 1,
+              "source": "csv",
+              "doc_id": "csv_2020_oti_region",
+              "used_tokens": 394,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_oti_region_001",
+              "rank": 2,
+              "source": "csv",
+              "doc_id": "csv_2016_oti_region",
+              "used_tokens": 246,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2012_oti_region_001",
+              "rank": 3,
+              "source": "csv",
+              "doc_id": "csv_2012_oti_region",
+              "used_tokens": 244,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_northern_region_001",
+              "rank": 4,
+              "source": "csv",
+              "doc_id": "csv_2020_northern_region",
+              "used_tokens": 316,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v1_basic",
+        "response": "In the 2020 election, John Dramani Mahama received 181,021 votes in the Oti Region, which accounted for 62.53 percent of the total votes.",
+        "evaluation": {
+          "keyword_coverage": 0.75,
+          "citation_count": 0,
+          "has_citation": false,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r05_pdf_theme",
+        "category": "normal",
+        "query": "What is the theme of the 2025 budget statement?",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_004_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_004",
+              "used_tokens": 119,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_003_001",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_003",
+              "used_tokens": 106,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_014_001",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_014",
+              "used_tokens": 598,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_001_001",
+              "rank": 4,
+              "source": "pdf",
+              "doc_id": "pdf_page_001",
+              "used_tokens": 30,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_015_001",
+              "rank": 5,
+              "source": "pdf",
+              "doc_id": "pdf_page_015",
+              "used_tokens": 347,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v1_basic",
+        "response": "The theme of the 2025 budget statement is \"resetting the economy for the Ghana we want.\" This theme reflects a commitment to confront fundamental challenges, implement reforms, and transform the economic model to provide opportunities for all Ghanaians.",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 0,
+          "has_citation": false,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r06_pdf_presenter",
+        "category": "normal",
+        "query": "Who presented the 2025 budget and in what role?",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 328,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_003_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_003",
+              "used_tokens": 106,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_004_001",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_004",
+              "used_tokens": 119,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_038_007",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_038",
+              "used_tokens": 33,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_145_002",
+              "rank": 4,
+              "source": "pdf",
+              "doc_id": "pdf_page_145",
+              "used_tokens": 46,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_038_008",
+              "rank": 5,
+              "source": "pdf",
+              "doc_id": "pdf_page_038",
+              "used_tokens": 24,
+              "truncated": false
+            }
+          ]
+        },
+        "prompt_variant": "v1_basic",
+        "response": "The 2025 budget was presented to Parliament by Dr. Cassiel Ato Forson, who is the Minister for Finance. This presentation took place on Tuesday, March 11, 2025, on the authority of His Excellency John Dramani Mahama, the President of the Republic of Ghana.",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 0,
+          "has_citation": false,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r10_pdf_athletics_medals",
+        "category": "normal",
+        "query": "How many medals did the national athletics team win at the 4-Nation Junior Championships?",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_121_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_121",
+              "used_tokens": 598,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_120_002",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_120",
+              "used_tokens": 146,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_228_005",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_228",
+              "used_tokens": 456,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v1_basic",
+        "response": "The national athletics team won a total of 18 medals at the 4-Nation Junior Championships, comprising 11 gold, 6 silver, and 1 bronze. They placed 3rd in the competition held at the Stade F\u00e9lix Houphou\u00ebt Boigny in Abidjan, C\u00f4te d'Ivoire, from April 19 to 21, 2024.",
+        "evaluation": {
+          "keyword_coverage": 0.75,
+          "citation_count": 0,
+          "has_citation": false,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r03_csv_2016_eastern_npp_votes",
+        "category": "hard",
+        "query": "What were Nana Akufo Addo's votes in Eastern Region in 2016?",
+        "expected_source": "csv",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_csv_2016_eastern_region_001",
+              "rank": 1,
+              "source": "csv",
+              "doc_id": "csv_2016_eastern_region",
+              "used_tokens": 241,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_ahafo_region_001",
+              "rank": 2,
+              "source": "csv",
+              "doc_id": "csv_2016_ahafo_region",
+              "used_tokens": 254,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_central_region_001",
+              "rank": 3,
+              "source": "csv",
+              "doc_id": "csv_2016_central_region",
+              "used_tokens": 239,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_eastern_region_001",
+              "rank": 4,
+              "source": "csv",
+              "doc_id": "csv_2020_eastern_region",
+              "used_tokens": 384,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_western_region_001",
+              "rank": 5,
+              "source": "csv",
+              "doc_id": "csv_2016_western_region",
+              "used_tokens": 82,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v1_basic",
+        "response": "In the 2016 elections, Nana Akufo-Addo of the NPP received 678,514 votes in the Eastern Region, which accounted for 62.37 percent of the total votes. His main opponent, John Dramani Mahama of the NDC, received 397,786 votes, representing 36.56 percent.",
+        "evaluation": {
+          "keyword_coverage": 0.5,
+          "citation_count": 0,
+          "has_citation": false,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r07_pdf_legal_basis",
+        "category": "hard",
+        "query": "Which legal act is cited for presenting the budget statement?",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_013_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_013",
+              "used_tokens": 613,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_004_001",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_004",
+              "used_tokens": 119,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_003_001",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_003",
+              "used_tokens": 106,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_014_001",
+              "rank": 4,
+              "source": "pdf",
+              "doc_id": "pdf_page_014",
+              "used_tokens": 362,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v1_basic",
+        "response": "The legal acts cited for presenting the budget statement are articles 179 and 180 of the 1992 Constitution of the Republic of Ghana, and sections 21 and 23 of the Public Financial Management Act, 2016 (Act 921). Additionally, section 28 of the Public Financial Management Act is also mentioned in relation to the budget presentation.",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 0,
+          "has_citation": false,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r08_pdf_total_crude_output",
+        "category": "hard",
+        "query": "What was total crude oil production in 2024?",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_051_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_051",
+              "used_tokens": 583,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_007_002",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_007",
+              "used_tokens": 204,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_072_001",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_072",
+              "used_tokens": 413,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v1_basic",
+        "response": "Total crude oil production for Ghana and its partners in 2024 was 48.24 million barrels. This included outputs from the Greater Jubilee field (31.85 million barrels), Tweneboa Enyenra-Ntomme (6.78 million barrels), and Sankofa-Gye Nyame (9.61 million barrels).",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 0,
+          "has_citation": false,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r09_pdf_field_breakdown",
+        "category": "hard",
+        "query": "Give the 2024 output breakdown for Greater Jubilee, TEN and SGN fields.",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_051_002",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_051",
+              "used_tokens": 604,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_051_003",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_051",
+              "used_tokens": 247,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_051_001",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_051",
+              "used_tokens": 349,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v1_basic",
+        "response": "The 2024 output breakdown for the Greater Jubilee, TEN, and SGN fields is as follows: Greater Jubilee produced 31,849,046 barrels, TEN produced 6,784,440 barrels, and SGN produced 9,606,544 barrels. This represents 66.02%, 14.06%, and 19.91% of the total crude oil production of 48.24 million barrels, respectively.",
+        "evaluation": {
+          "keyword_coverage": 0.25,
+          "citation_count": 0,
+          "has_citation": false,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r13_pdf_failure_appendix_7b",
+        "category": "adversarial",
+        "query": "Appendix 7B NTR/IGF 2024 actuals and 2025 projections",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 360,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_204_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_204",
+              "used_tokens": 25,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_199_001",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_199",
+              "used_tokens": 25,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_202_001",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_202",
+              "used_tokens": 25,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_205_001",
+              "rank": 4,
+              "source": "pdf",
+              "doc_id": "pdf_page_205",
+              "used_tokens": 143,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_201_001",
+              "rank": 5,
+              "source": "pdf",
+              "doc_id": "pdf_page_201",
+              "used_tokens": 142,
+              "truncated": false
+            }
+          ]
+        },
+        "prompt_variant": "v1_basic",
+        "response": "The retrieved context provides information on the Non-Tax Revenue/Internally Generated Funds (NTR/IGF) for 2024 actuals and 2025 projections, detailing figures in gh\u00a2'000 for various sectors. For the social sector, the 2024 actuals are 7,985,345.66, with projections for 2025 at 8,014,992.76. In the economic sector, the 2024 actuals are 2,739,416.84, with 2025 projections at 2,824,594.77. Further details on retention and lodgement are included in the context.",
+        "evaluation": {
+          "keyword_coverage": 0.3333333333333333,
+          "citation_count": 0,
+          "has_citation": false,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r15_csv_failure_ga_shortform",
+        "category": "adversarial",
+        "query": "NPP votes in GA for 2020",
+        "expected_source": "csv",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_csv_2020_central_region_001",
+              "rank": 1,
+              "source": "csv",
+              "doc_id": "csv_2020_central_region",
+              "used_tokens": 384,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_eastern_region_001",
+              "rank": 2,
+              "source": "csv",
+              "doc_id": "csv_2020_eastern_region",
+              "used_tokens": 384,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_western_region_001",
+              "rank": 3,
+              "source": "csv",
+              "doc_id": "csv_2020_western_region",
+              "used_tokens": 385,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_volta_region_001",
+              "rank": 4,
+              "source": "csv",
+              "doc_id": "csv_2020_volta_region",
+              "used_tokens": 47,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v1_basic",
+        "response": "In the 2020 elections in Ghana, the New Patriotic Party (NPP) led by Nana Akufo-Addo received the following votes in various regions: 613,804 votes (52.31%) in the Central Region, 752,061 votes (60.80%) in the Eastern Region, and 439,724 votes (50.93%) in the Western Region. There is no information provided about the NPP's votes in the Greater Accra (GA) region.",
+        "evaluation": {
+          "keyword_coverage": 0.25,
+          "citation_count": 0,
+          "has_citation": false,
+          "insufficient_evidence_used": false
+        }
+      }
+    ],
+    "v2_grounded": [
+      {
+        "query_id": "r01_csv_2020_ashanti_npp_votes",
+        "category": "normal",
+        "query": "How many votes did Nana Akufo Addo receive in Ashanti Region in 2020?",
+        "expected_source": "csv",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_csv_2020_ashanti_region_001",
+              "rank": 1,
+              "source": "csv",
+              "doc_id": "csv_2020_ashanti_region",
+              "used_tokens": 398,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_ashanti_region_001",
+              "rank": 2,
+              "source": "csv",
+              "doc_id": "csv_2016_ashanti_region",
+              "used_tokens": 250,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2008_ashanti_region_001",
+              "rank": 3,
+              "source": "csv",
+              "doc_id": "csv_2008_ashanti_region",
+              "used_tokens": 179,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2012_ashanti_region_001",
+              "rank": 4,
+              "source": "csv",
+              "doc_id": "csv_2012_ashanti_region",
+              "used_tokens": 248,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_ahafo_region_001",
+              "rank": 5,
+              "source": "csv",
+              "doc_id": "csv_2020_ahafo_region",
+              "used_tokens": 125,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v2_grounded",
+        "response": "- In the 2020 elections, Nana Akufo-Addo received **1,795,824 votes** in the Ashanti Region, which accounted for **72.79%** of the total votes cast in that region [large_csv_2020_ashanti_region_001].",
+        "evaluation": {
+          "keyword_coverage": 0.5,
+          "citation_count": 1,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r02_csv_2020_ahafo_ndc_percent",
+        "category": "normal",
+        "query": "What percentage did John Dramani Mahama get in Ahafo Region in 2020?",
+        "expected_source": "csv",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_csv_2020_ahafo_region_001",
+              "rank": 1,
+              "source": "csv",
+              "doc_id": "csv_2020_ahafo_region",
+              "used_tokens": 408,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_ahafo_region_001",
+              "rank": 2,
+              "source": "csv",
+              "doc_id": "csv_2016_ahafo_region",
+              "used_tokens": 254,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2012_ahafo_region_001",
+              "rank": 3,
+              "source": "csv",
+              "doc_id": "csv_2012_ahafo_region",
+              "used_tokens": 250,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_northern_region_001",
+              "rank": 4,
+              "source": "csv",
+              "doc_id": "csv_2020_northern_region",
+              "used_tokens": 288,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v2_grounded",
+        "response": "- In the Ahafo Region in 2020, John Dramani Mahama received 116,485 votes, which is 44.04 percent of the total votes cast [large_csv_2020_ahafo_region_001].",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 1,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r04_csv_2020_oti_ndc_votes",
+        "category": "normal",
+        "query": "How many votes did John Dramani Mahama receive in Oti Region in 2020?",
+        "expected_source": "csv",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_csv_2020_oti_region_001",
+              "rank": 1,
+              "source": "csv",
+              "doc_id": "csv_2020_oti_region",
+              "used_tokens": 394,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_oti_region_001",
+              "rank": 2,
+              "source": "csv",
+              "doc_id": "csv_2016_oti_region",
+              "used_tokens": 246,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2012_oti_region_001",
+              "rank": 3,
+              "source": "csv",
+              "doc_id": "csv_2012_oti_region",
+              "used_tokens": 244,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_northern_region_001",
+              "rank": 4,
+              "source": "csv",
+              "doc_id": "csv_2020_northern_region",
+              "used_tokens": 316,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v2_grounded",
+        "response": "- In the 2020 elections, John Dramani Mahama received **181,021 votes** in the Oti Region. [large_csv_2020_oti_region_001] \n- This accounted for **62.53 percent** of the total votes in that region. [large_csv_2020_oti_region_001]",
+        "evaluation": {
+          "keyword_coverage": 0.75,
+          "citation_count": 2,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r05_pdf_theme",
+        "category": "normal",
+        "query": "What is the theme of the 2025 budget statement?",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_004_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_004",
+              "used_tokens": 119,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_003_001",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_003",
+              "used_tokens": 106,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_014_001",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_014",
+              "used_tokens": 598,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_001_001",
+              "rank": 4,
+              "source": "pdf",
+              "doc_id": "pdf_page_001",
+              "used_tokens": 30,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_015_001",
+              "rank": 5,
+              "source": "pdf",
+              "doc_id": "pdf_page_015",
+              "used_tokens": 347,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v2_grounded",
+        "response": "- The theme of the 2025 budget statement is \"resetting the economy for the Ghana we want\" [large_pdf_page_001_001].\n- This theme reflects a commitment to address fundamental challenges and implement reforms for economic transformation [large_pdf_page_014_001].\n- The budget follows a national economic dialogue that emphasized building the economy collaboratively [large_pdf_page_014_001].",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 3,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r06_pdf_presenter",
+        "category": "normal",
+        "query": "Who presented the 2025 budget and in what role?",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 328,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_003_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_003",
+              "used_tokens": 106,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_004_001",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_004",
+              "used_tokens": 119,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_038_007",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_038",
+              "used_tokens": 33,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_145_002",
+              "rank": 4,
+              "source": "pdf",
+              "doc_id": "pdf_page_145",
+              "used_tokens": 46,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_038_008",
+              "rank": 5,
+              "source": "pdf",
+              "doc_id": "pdf_page_038",
+              "used_tokens": 24,
+              "truncated": false
+            }
+          ]
+        },
+        "prompt_variant": "v2_grounded",
+        "response": "- The 2025 budget was presented to Parliament by Dr. Cassiel Ato Forson, who is the Minister for Finance [large_pdf_page_003_001].\n- The presentation occurred on Tuesday, March 11, 2025, on the authority of His Excellency John Dramani Mahama, President of the Republic of Ghana [large_pdf_page_003_001].",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 2,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r10_pdf_athletics_medals",
+        "category": "normal",
+        "query": "How many medals did the national athletics team win at the 4-Nation Junior Championships?",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_121_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_121",
+              "used_tokens": 598,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_120_002",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_120",
+              "used_tokens": 146,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_228_005",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_228",
+              "used_tokens": 456,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v2_grounded",
+        "response": "- The national athletics team won a total of 18 medals at the 4-Nation Junior Championships, comprising 11 gold, 6 silver, and 1 bronze [large_pdf_page_121_001].",
+        "evaluation": {
+          "keyword_coverage": 0.75,
+          "citation_count": 1,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r03_csv_2016_eastern_npp_votes",
+        "category": "hard",
+        "query": "What were Nana Akufo Addo's votes in Eastern Region in 2016?",
+        "expected_source": "csv",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_csv_2016_eastern_region_001",
+              "rank": 1,
+              "source": "csv",
+              "doc_id": "csv_2016_eastern_region",
+              "used_tokens": 241,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_ahafo_region_001",
+              "rank": 2,
+              "source": "csv",
+              "doc_id": "csv_2016_ahafo_region",
+              "used_tokens": 254,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_central_region_001",
+              "rank": 3,
+              "source": "csv",
+              "doc_id": "csv_2016_central_region",
+              "used_tokens": 239,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_eastern_region_001",
+              "rank": 4,
+              "source": "csv",
+              "doc_id": "csv_2020_eastern_region",
+              "used_tokens": 384,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_western_region_001",
+              "rank": 5,
+              "source": "csv",
+              "doc_id": "csv_2016_western_region",
+              "used_tokens": 82,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v2_grounded",
+        "response": "- In the 2016 elections, Nana Akufo-Addo received 678,514 votes in the Eastern Region.\n- This accounted for 62.37% of the total votes in that region [large_csv_2016_eastern_region_001].",
+        "evaluation": {
+          "keyword_coverage": 0.5,
+          "citation_count": 1,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r07_pdf_legal_basis",
+        "category": "hard",
+        "query": "Which legal act is cited for presenting the budget statement?",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_013_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_013",
+              "used_tokens": 613,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_004_001",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_004",
+              "used_tokens": 119,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_003_001",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_003",
+              "used_tokens": 106,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_014_001",
+              "rank": 4,
+              "source": "pdf",
+              "doc_id": "pdf_page_014",
+              "used_tokens": 362,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v2_grounded",
+        "response": "- The budget statement is presented pursuant to articles 179 and 180 of the 1992 Constitution of the Republic of Ghana, and sections 21 and 23 of the Public Financial Management Act, 2016 (Act 921) [large_pdf_page_013_001]. \n- Additionally, section 28 of the Public Financial Management Act, 2016 (Act 921) is also cited in relation to the presentation of the budget statement [large_pdf_page_003_001].",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 2,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r08_pdf_total_crude_output",
+        "category": "hard",
+        "query": "What was total crude oil production in 2024?",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_051_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_051",
+              "used_tokens": 583,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_007_002",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_007",
+              "used_tokens": 204,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_072_001",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_072",
+              "used_tokens": 413,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v2_grounded",
+        "response": "- Total crude oil production for Ghana and its partners in 2024 was 48.24 million barrels [large_pdf_page_051_001].\n- The breakdown of production included:\n  - Greater Jubilee: 31.85 million barrels (66.02%)\n  - Tweneboa Enyenra-Ntomme (TEN): 6.78 million barrels (14.06%)\n  - Sankofa-Gye Nyame (SGN): 9.61 million barrels (19.91%) [large_pdf_page_051_001].\n- This production level was 0.02% lower than the 2023 levels of 48.25 million barrels [large_pdf_page_051_001].",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 3,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r09_pdf_field_breakdown",
+        "category": "hard",
+        "query": "Give the 2024 output breakdown for Greater Jubilee, TEN and SGN fields.",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_051_002",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_051",
+              "used_tokens": 604,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_051_003",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_051",
+              "used_tokens": 247,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_051_001",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_051",
+              "used_tokens": 349,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v2_grounded",
+        "response": "- **Greater Jubilee Field Output**: 31,849,046 barrels for 2024 [large_pdf_page_051_001].\n- **TEN Field Output**: 6,784,440 barrels for 2024 [large_pdf_page_051_001].\n- **SGN Field Output**: 9,606,544 barrels for 2024 [large_pdf_page_051_001].\n- **Total Crude Oil Production**: 48,240,030 barrels for 2024 [large_pdf_page_051_001].",
+        "evaluation": {
+          "keyword_coverage": 0.25,
+          "citation_count": 4,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r13_pdf_failure_appendix_7b",
+        "category": "adversarial",
+        "query": "Appendix 7B NTR/IGF 2024 actuals and 2025 projections",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 360,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_204_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_204",
+              "used_tokens": 25,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_199_001",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_199",
+              "used_tokens": 25,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_202_001",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_202",
+              "used_tokens": 25,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_205_001",
+              "rank": 4,
+              "source": "pdf",
+              "doc_id": "pdf_page_205",
+              "used_tokens": 143,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_201_001",
+              "rank": 5,
+              "source": "pdf",
+              "doc_id": "pdf_page_201",
+              "used_tokens": 142,
+              "truncated": false
+            }
+          ]
+        },
+        "prompt_variant": "v2_grounded",
+        "response": "- Appendix 7B provides data on non-tax revenue and internally generated funds (NTR/IGF) for 2024 actuals and 2025 projections.\n- For the social sector in 2024, the actual collection was GH\u00a27,821,309.51, with a projection of GH\u00a29,626,349.66 for 2025. The projected collection for 2025 is GH\u00a27,865,439.42 [large_pdf_page_205_001].\n- In the economic sector, the actual collection for 2024 was GH\u00a22,287,259.80, with a projection of GH\u00a22,525,030.12 for 2025. The projected collection for 2025 is GH\u00a22,333,099.21 [large_pdf_page_201_001].",
+        "evaluation": {
+          "keyword_coverage": 0.6666666666666666,
+          "citation_count": 2,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r15_csv_failure_ga_shortform",
+        "category": "adversarial",
+        "query": "NPP votes in GA for 2020",
+        "expected_source": "csv",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_csv_2020_central_region_001",
+              "rank": 1,
+              "source": "csv",
+              "doc_id": "csv_2020_central_region",
+              "used_tokens": 384,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_eastern_region_001",
+              "rank": 2,
+              "source": "csv",
+              "doc_id": "csv_2020_eastern_region",
+              "used_tokens": 384,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_western_region_001",
+              "rank": 3,
+              "source": "csv",
+              "doc_id": "csv_2020_western_region",
+              "used_tokens": 385,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_volta_region_001",
+              "rank": 4,
+              "source": "csv",
+              "doc_id": "csv_2020_volta_region",
+              "used_tokens": 47,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v2_grounded",
+        "response": "- In the Central Region, Nana Akufo-Addo of the NPP received 613,804 votes, which is 52.31% of the total votes [large_csv_2020_central_region_001].\n- In the Eastern Region, Nana Akufo-Addo received 752,061 votes, accounting for 60.80% [large_csv_2020_eastern_region_001].\n- In the Western Region, Nana Akufo-Addo received 439,724 votes, which is 50.93% [large_csv_2020_western_region_001].\n- Overall, Nana Akufo-Addo's NPP performance in these regions shows significant support, with percentages ranging from approximately 50.93% to 60.80%. \n\nInsufficient evidence in retrieved context.",
+        "evaluation": {
+          "keyword_coverage": 0.25,
+          "citation_count": 3,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      }
+    ],
+    "v3_structured": [
+      {
+        "query_id": "r01_csv_2020_ashanti_npp_votes",
+        "category": "normal",
+        "query": "How many votes did Nana Akufo Addo receive in Ashanti Region in 2020?",
+        "expected_source": "csv",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_csv_2020_ashanti_region_001",
+              "rank": 1,
+              "source": "csv",
+              "doc_id": "csv_2020_ashanti_region",
+              "used_tokens": 398,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_ashanti_region_001",
+              "rank": 2,
+              "source": "csv",
+              "doc_id": "csv_2016_ashanti_region",
+              "used_tokens": 250,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2008_ashanti_region_001",
+              "rank": 3,
+              "source": "csv",
+              "doc_id": "csv_2008_ashanti_region",
+              "used_tokens": 179,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2012_ashanti_region_001",
+              "rank": 4,
+              "source": "csv",
+              "doc_id": "csv_2012_ashanti_region",
+              "used_tokens": 248,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_ahafo_region_001",
+              "rank": 5,
+              "source": "csv",
+              "doc_id": "csv_2020_ahafo_region",
+              "used_tokens": 125,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v3_structured",
+        "response": "**Answer:** Nana Akufo Addo received 1,795,824 votes in the Ashanti Region in 2020.\n\n**Evidence:** In 2020, Nana Akufo Addo of NPP received 1,795,824 votes which is 72.79 percent in Ashanti Region [large_csv_2020_ashanti_region_001].\n\n**Limits:** Insufficient evidence in retrieved context.",
+        "evaluation": {
+          "keyword_coverage": 0.75,
+          "citation_count": 1,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r02_csv_2020_ahafo_ndc_percent",
+        "category": "normal",
+        "query": "What percentage did John Dramani Mahama get in Ahafo Region in 2020?",
+        "expected_source": "csv",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_csv_2020_ahafo_region_001",
+              "rank": 1,
+              "source": "csv",
+              "doc_id": "csv_2020_ahafo_region",
+              "used_tokens": 408,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_ahafo_region_001",
+              "rank": 2,
+              "source": "csv",
+              "doc_id": "csv_2016_ahafo_region",
+              "used_tokens": 254,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2012_ahafo_region_001",
+              "rank": 3,
+              "source": "csv",
+              "doc_id": "csv_2012_ahafo_region",
+              "used_tokens": 250,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_northern_region_001",
+              "rank": 4,
+              "source": "csv",
+              "doc_id": "csv_2020_northern_region",
+              "used_tokens": 288,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v3_structured",
+        "response": "**Answer:** John Dramani Mahama received 44.04 percent of the votes in the Ahafo Region in 2020.\n\n**Evidence:** In 2020, John Dramani Mahama of NDC received 116485 votes which is 44.04 percent in Ahafo Region [large_csv_2020_ahafo_region_001].\n\n**Limits:** Insufficient evidence in retrieved context.",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 1,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r04_csv_2020_oti_ndc_votes",
+        "category": "normal",
+        "query": "How many votes did John Dramani Mahama receive in Oti Region in 2020?",
+        "expected_source": "csv",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_csv_2020_oti_region_001",
+              "rank": 1,
+              "source": "csv",
+              "doc_id": "csv_2020_oti_region",
+              "used_tokens": 394,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_oti_region_001",
+              "rank": 2,
+              "source": "csv",
+              "doc_id": "csv_2016_oti_region",
+              "used_tokens": 246,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2012_oti_region_001",
+              "rank": 3,
+              "source": "csv",
+              "doc_id": "csv_2012_oti_region",
+              "used_tokens": 244,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_northern_region_001",
+              "rank": 4,
+              "source": "csv",
+              "doc_id": "csv_2020_northern_region",
+              "used_tokens": 316,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v3_structured",
+        "response": "**Answer:**  \nJohn Dramani Mahama received 181,021 votes in the Oti Region in 2020.\n\n**Evidence:**  \n\"In 2020, john dramani mahama of ndc received 181021 votes which is 62.53 percent in oti region.\" [large_csv_2020_oti_region_001]\n\n**Limits:**  \nInsufficient evidence in retrieved context.",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 1,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r05_pdf_theme",
+        "category": "normal",
+        "query": "What is the theme of the 2025 budget statement?",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_004_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_004",
+              "used_tokens": 119,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_003_001",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_003",
+              "used_tokens": 106,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_014_001",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_014",
+              "used_tokens": 598,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_001_001",
+              "rank": 4,
+              "source": "pdf",
+              "doc_id": "pdf_page_001",
+              "used_tokens": 30,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_015_001",
+              "rank": 5,
+              "source": "pdf",
+              "doc_id": "pdf_page_015",
+              "used_tokens": 347,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v3_structured",
+        "response": "**Answer:**  \nThe theme of the 2025 budget statement is \"resetting the economy for the Ghana we want\" [large_pdf_page_001_001].\n\n**Evidence:**  \nThe budget statement emphasizes the need for fundamental reforms and transformation to address the economic challenges facing Ghana. It reflects a commitment to restoring hope and building a better future for the nation, as articulated by President John Dramami Mahama [large_pdf_page_014_001].\n\n**Limits:**  \nInsufficient evidence in retrieved context.",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 2,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r06_pdf_presenter",
+        "category": "normal",
+        "query": "Who presented the 2025 budget and in what role?",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 328,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_003_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_003",
+              "used_tokens": 106,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_004_001",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_004",
+              "used_tokens": 119,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_038_007",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_038",
+              "used_tokens": 33,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_145_002",
+              "rank": 4,
+              "source": "pdf",
+              "doc_id": "pdf_page_145",
+              "used_tokens": 46,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_038_008",
+              "rank": 5,
+              "source": "pdf",
+              "doc_id": "pdf_page_038",
+              "used_tokens": 24,
+              "truncated": false
+            }
+          ]
+        },
+        "prompt_variant": "v3_structured",
+        "response": "**Answer:** The 2025 budget was presented by Dr. Cassiel Ato Forson, who is the Minister for Finance.\n\n**Evidence:** The budget statement and economic policy of the government of Ghana for the 2025 financial year was presented to parliament by Dr. Cassiel Ato Forson (MP), Minister for Finance, on Tuesday, March 11, 2025, on the authority of His Excellency John Dramani Mahama, President of the Republic of Ghana [large_pdf_page_003_001].\n\n**Limits:** Insufficient evidence in retrieved context.",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 1,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r10_pdf_athletics_medals",
+        "category": "normal",
+        "query": "How many medals did the national athletics team win at the 4-Nation Junior Championships?",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_121_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_121",
+              "used_tokens": 598,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_120_002",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_120",
+              "used_tokens": 146,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_228_005",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_228",
+              "used_tokens": 456,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v3_structured",
+        "response": "**Answer:** The national athletics team won a total of 18 medals at the 4-Nation Junior Championships.\n\n**Evidence:** The team placed 3rd and won a total of 18 medals comprising 11 gold, 6 silver, and 1 bronze at the championships held from 19th to 21st April 2024 [large_pdf_page_121_001].\n\n**Limits:** Insufficient evidence in retrieved context.",
+        "evaluation": {
+          "keyword_coverage": 0.75,
+          "citation_count": 1,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r03_csv_2016_eastern_npp_votes",
+        "category": "hard",
+        "query": "What were Nana Akufo Addo's votes in Eastern Region in 2016?",
+        "expected_source": "csv",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_csv_2016_eastern_region_001",
+              "rank": 1,
+              "source": "csv",
+              "doc_id": "csv_2016_eastern_region",
+              "used_tokens": 241,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_ahafo_region_001",
+              "rank": 2,
+              "source": "csv",
+              "doc_id": "csv_2016_ahafo_region",
+              "used_tokens": 254,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_central_region_001",
+              "rank": 3,
+              "source": "csv",
+              "doc_id": "csv_2016_central_region",
+              "used_tokens": 239,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_eastern_region_001",
+              "rank": 4,
+              "source": "csv",
+              "doc_id": "csv_2020_eastern_region",
+              "used_tokens": 384,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2016_western_region_001",
+              "rank": 5,
+              "source": "csv",
+              "doc_id": "csv_2016_western_region",
+              "used_tokens": 82,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v3_structured",
+        "response": "**Answer:**  \nIn the 2016 elections, Nana Akufo Addo received 678,514 votes in the Eastern Region, which accounted for 62.37 percent of the total votes cast in that region.\n\n**Evidence:**  \n\"In 2016, nana akufo addo of npp received 678514 votes which is 62.37 percent in eastern region\" [large_csv_2016_eastern_region_001].\n\n**Limits:**  \nInsufficient evidence in retrieved context.",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 1,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r07_pdf_legal_basis",
+        "category": "hard",
+        "query": "Which legal act is cited for presenting the budget statement?",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_013_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_013",
+              "used_tokens": 613,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_004_001",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_004",
+              "used_tokens": 119,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_003_001",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_003",
+              "used_tokens": 106,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_014_001",
+              "rank": 4,
+              "source": "pdf",
+              "doc_id": "pdf_page_014",
+              "used_tokens": 362,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v3_structured",
+        "response": "**Answer:** The legal act cited for presenting the budget statement is the Public Financial Management Act, 2016 (Act 921) [large_pdf_page_013_001].\n\n**Evidence:** The budget statement is presented pursuant to articles 179 and 180 of the 1992 Constitution of the Republic of Ghana, and sections 21 and 23 of the Public Financial Management Act, 2016 (Act 921) [large_pdf_page_013_001].\n\n**Limits:** Insufficient evidence in retrieved context.",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 2,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r08_pdf_total_crude_output",
+        "category": "hard",
+        "query": "What was total crude oil production in 2024?",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_051_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_051",
+              "used_tokens": 583,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_007_002",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_007",
+              "used_tokens": 204,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_072_001",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_072",
+              "used_tokens": 413,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v3_structured",
+        "response": "**Answer:**  \nTotal crude oil production for Ghana and its partners in 2024 was 48.24 million barrels.\n\n**Evidence:**  \n\"total crude oil production for ghana and its partners in 2024 was 48.24 million barrels\" [large_pdf_page_051_001].\n\n**Limits:**  \nInsufficient evidence in retrieved context.",
+        "evaluation": {
+          "keyword_coverage": 1.0,
+          "citation_count": 1,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r09_pdf_field_breakdown",
+        "category": "hard",
+        "query": "Give the 2024 output breakdown for Greater Jubilee, TEN and SGN fields.",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_051_002",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_051",
+              "used_tokens": 604,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_051_003",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_051",
+              "used_tokens": 247,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_051_001",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_051",
+              "used_tokens": 349,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v3_structured",
+        "response": "**Answer:**\n\nThe 2024 output breakdown for the Greater Jubilee, TEN, and SGN fields is as follows:\n\n- **Greater Jubilee Field:** 31,849,046 barrels\n- **TEN Field:** 6,784,440 barrels\n- **SGN Field:** 9,606,544 barrels\n\n**Evidence:**\n\nThe total crude oil production for 2024 was 48.24 million barrels, with the breakdown being:\n- Greater Jubilee: 31,849,046 barrels\n- TEN: 6,784,440 barrels\n- SGN: 9,606,544 barrels [chunk_id: large_pdf_page_051_001].\n\n**Limits:**\n\nInsufficient evidence in retrieved context.",
+        "evaluation": {
+          "keyword_coverage": 0.25,
+          "citation_count": 0,
+          "has_citation": false,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r13_pdf_failure_appendix_7b",
+        "category": "adversarial",
+        "query": "Appendix 7B NTR/IGF 2024 actuals and 2025 projections",
+        "expected_source": "pdf",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 360,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_pdf_page_204_001",
+              "rank": 1,
+              "source": "pdf",
+              "doc_id": "pdf_page_204",
+              "used_tokens": 25,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_199_001",
+              "rank": 2,
+              "source": "pdf",
+              "doc_id": "pdf_page_199",
+              "used_tokens": 25,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_202_001",
+              "rank": 3,
+              "source": "pdf",
+              "doc_id": "pdf_page_202",
+              "used_tokens": 25,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_205_001",
+              "rank": 4,
+              "source": "pdf",
+              "doc_id": "pdf_page_205",
+              "used_tokens": 143,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_pdf_page_201_001",
+              "rank": 5,
+              "source": "pdf",
+              "doc_id": "pdf_page_201",
+              "used_tokens": 142,
+              "truncated": false
+            }
+          ]
+        },
+        "prompt_variant": "v3_structured",
+        "response": "**Answer:**  \nThe information regarding the NTR/IGF 2024 actuals and 2025 projections is presented in Appendix 7B. It includes data on non-tax revenue and internally generated funds for various sectors, specifically the social and economic sectors.\n\n**Evidence:**  \n1. For the social sector, the 2024 actuals are GH\u00a27,985,345.66 with a projected 2024 of GH\u00a29,773,235.72 and a 2025 projection of GH\u00a28,014,992.76, along with respective retention and lodgement figures [large_pdf_page_205_001].\n2. For the economic sector, the 2024 actuals are GH\u00a22,739,416.84 with a projected 2024 of GH\u00a22,817,339.63 and a 2025 projection of GH\u00a22,824,594.77, including retention and lodgement details [large_pdf_page_201_001].\n\n**Limits:**  \nInsufficient evidence in retrieved context.",
+        "evaluation": {
+          "keyword_coverage": 0.6666666666666666,
+          "citation_count": 2,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      },
+      {
+        "query_id": "r15_csv_failure_ga_shortform",
+        "category": "adversarial",
+        "query": "NPP votes in GA for 2020",
+        "expected_source": "csv",
+        "context_window": {
+          "max_context_tokens": 1200,
+          "used_context_tokens": 1200,
+          "selected_chunks": [
+            {
+              "chunk_id": "large_csv_2020_central_region_001",
+              "rank": 1,
+              "source": "csv",
+              "doc_id": "csv_2020_central_region",
+              "used_tokens": 384,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_eastern_region_001",
+              "rank": 2,
+              "source": "csv",
+              "doc_id": "csv_2020_eastern_region",
+              "used_tokens": 384,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_western_region_001",
+              "rank": 3,
+              "source": "csv",
+              "doc_id": "csv_2020_western_region",
+              "used_tokens": 385,
+              "truncated": false
+            },
+            {
+              "chunk_id": "large_csv_2020_volta_region_001",
+              "rank": 4,
+              "source": "csv",
+              "doc_id": "csv_2020_volta_region",
+              "used_tokens": 47,
+              "truncated": true
+            }
+          ]
+        },
+        "prompt_variant": "v3_structured",
+        "response": "**Answer:**  \nIn the 2020 elections, the New Patriotic Party (NPP) received the following votes in various regions of Ghana:  \n- Central Region: 613,804 votes (52.31%)  \n- Eastern Region: 752,061 votes (60.80%)  \n- Western Region: 439,724 votes (50.93%)  \n\n**Evidence:**  \n- In the Central Region, Nana Akufo-Addo of NPP received 613,804 votes, which is 52.31% of the total votes cast in that region [large_csv_2020_central_region_001].  \n- In the Eastern Region, Nana Akufo-Addo received 752,061 votes, accounting for 60.80% [large_csv_2020_eastern_region_001].  \n- In the Western Region, he received 439,724 votes, which is 50.93% [large_csv_2020_western_region_001].  \n\n**Limits:**  \nInsufficient evidence in retrieved context.",
+        "evaluation": {
+          "keyword_coverage": 0.25,
+          "citation_count": 3,
+          "has_citation": true,
+          "insufficient_evidence_used": false
+        }
+      }
+    ]
+  }
+}

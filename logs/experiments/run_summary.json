@@ -1,0 +1,2885 @@
+{
+  "generated_at_utc": "2026-04-23T15:51:51.959055+00:00",
+  "part_a_design_choices": {
+    "num_strategies": 3,
+    "chunk_unit": "tokens",
+    "boundary_rule": "sentence-aware",
+    "query_count": 20,
+    "relevance_method": "manual labels + metrics",
+    "primary_metric": "Recall@5",
+    "secondary_metrics": [
+      "MRR@5",
+      "Precision@5"
+    ]
+  },
+  "cleaning": {
+    "csv_stats": {
+      "rows_before": 615,
+      "rows_after": 615,
+      "duplicates_removed": 0,
+      "missing_votes_after_cleaning": 0,
+      "missing_votes_percent_after_cleaning": 0
+    },
+    "csv_clean_output": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\data\\interim\\ghana_election_results_cleaned.csv",
+    "pdf_clean_pages_output": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\data\\interim\\budget_2025_pages_cleaned.jsonl",
+    "csv_documents": 98,
+    "pdf_documents": 251,
+    "combined_documents_output": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\data\\processed\\documents.jsonl"
+  },
+  "strategy_results": [
+    {
+      "strategy": "small",
+      "strategy_config": {
+        "max_tokens": 180,
+        "overlap_tokens": 30,
+        "boundary_rule": "sentence-aware"
+      },
+      "chunk_file": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\data\\processed\\chunks_small.jsonl",
+      "chunk_stats": {
+        "num_chunks": 1363,
+        "avg_tokens": 127.77696258253852,
+        "median_tokens": 154.0,
+        "min_tokens": 2,
+        "max_tokens": 185,
+        "chunks_by_source": {
+          "csv": 162,
+          "pdf": 1201
+        }
+      },
+      "evaluation": {
+        "summary": {
+          "precision_at_k": 0.21000000000000002,
+          "recall_at_k": 0.7791666666666667,
+          "mrr_at_k": 0.5766666666666667,
+          "queries_evaluated": 20,
+          "top_k": 5
+        },
+        "per_query": [
+          {
+            "query_id": "q01_csv_ashanti_npp_votes",
+            "query": "How many votes did Nana Akufo Addo get in Ashanti Region in 2020?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_csv_2020_ashanti_region_001",
+                "source": "csv",
+                "score": 0.49796962327213806,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_csv_2020_ashanti_region_002",
+                "source": "csv",
+                "score": 0.42634252936616474,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_csv_2020_ashanti_region_003",
+                "source": "csv",
+                "score": 0.4053905978035796,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_csv_2016_ashanti_region_001",
+                "source": "csv",
+                "score": 0.37199986801677937,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_csv_2012_ashanti_region_001",
+                "source": "csv",
+                "score": 0.36631810337791165,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q02_csv_ahafo_ndc_percent",
+            "query": "What percentage did John Dramani Mahama get in Ahafo Region in 2020?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_csv_2020_ahafo_region_001",
+                "source": "csv",
+                "score": 0.4348657874301327,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_csv_2020_ahafo_region_002",
+                "source": "csv",
+                "score": 0.3768700493117879,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_csv_2020_ahafo_region_003",
+                "source": "csv",
+                "score": 0.3387516255565704,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_csv_2016_ahafo_region_001",
+                "source": "csv",
+                "score": 0.3196240850523992,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_csv_2012_ahafo_region_001",
+                "source": "csv",
+                "score": 0.31676414996395597,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q03_csv_greater_accra_ndc_votes",
+            "query": "How many votes did John Dramani Mahama receive in Greater Accra Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_csv_2020_greater_accra_region_001",
+                "source": "csv",
+                "score": 0.45890484721831226,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_csv_2012_greater_accra_region_001",
+                "source": "csv",
+                "score": 0.45463176832537405,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_csv_2016_greater_accra_region_001",
+                "source": "csv",
+                "score": 0.4542309732198749,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_csv_2020_greater_accra_region_002",
+                "source": "csv",
+                "score": 0.3982531580556891,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_csv_2000_greater_accra_region_001",
+                "source": "csv",
+                "score": 0.394451294737029,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q04_csv_eastern_npp_votes",
+            "query": "What were Nana Akufo Addo's votes in Eastern Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.5,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_csv_2016_eastern_region_001",
+                "source": "csv",
+                "score": 0.4609010290461071,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_csv_2020_eastern_region_001",
+                "source": "csv",
+                "score": 0.4584676236507989,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_csv_2012_eastern_region_001",
+                "source": "csv",
+                "score": 0.45526009418756863,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_csv_2020_eastern_region_002",
+                "source": "csv",
+                "score": 0.3869493726963203,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_csv_2008_eastern_region_001",
+                "source": "csv",
+                "score": 0.3800609059357881,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q05_csv_bono_east_ndc_votes",
+            "query": "Who led in Bono East Region and with how many votes?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.3333333333333333,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_csv_2020_bono_east_region_002",
+                "source": "csv",
+                "score": 0.5688902125725158,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_csv_2016_bono_east_region_001",
+                "source": "csv",
+                "score": 0.5627662504124546,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_csv_2020_bono_east_region_001",
+                "source": "csv",
+                "score": 0.5620284269136786,
+                "relevant": true
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_csv_2012_bono_east_region_001",
+                "source": "csv",
+                "score": 0.5556886031898025,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_csv_2020_bono_east_region_003",
+                "source": "csv",
+                "score": 0.527081924678868,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q06_csv_oti_ndc_votes",
+            "query": "What was John Dramani Mahama's vote count in Oti Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_csv_2020_oti_region_001",
+                "source": "csv",
+                "score": 0.4042940784523755,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_csv_2016_oti_region_001",
+                "source": "csv",
+                "score": 0.4032470543255636,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_csv_2012_oti_region_001",
+                "source": "csv",
+                "score": 0.397034109193238,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_csv_2020_oti_region_002",
+                "source": "csv",
+                "score": 0.3342063037923953,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_csv_2020_oti_region_003",
+                "source": "csv",
+                "score": 0.32336824179069235,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q07_csv_north_east_npp_percent",
+            "query": "What percentage did Nana Akufo Addo receive in North East Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.5,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_csv_2016_north_east_region_001",
+                "source": "csv",
+                "score": 0.40814929317477544,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_csv_2020_north_east_region_001",
+                "source": "csv",
+                "score": 0.4050382344081826,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_csv_2012_north_east_region_001",
+                "source": "csv",
+                "score": 0.4014010739517106,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_csv_2020_north_east_region_003",
+                "source": "csv",
+                "score": 0.3566348173638665,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_csv_2020_north_east_region_002",
+                "source": "csv",
+                "score": 0.35231110454453557,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q08_csv_central_gum_votes",
+            "query": "How many votes did Christian Kwabena Andrews get in Central Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_csv_2020_central_region_001",
+                "source": "csv",
+                "score": 0.37386686642903555,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_csv_2020_central_region_002",
+                "source": "csv",
+                "score": 0.2689723536172424,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_csv_2016_central_region_001",
+                "source": "csv",
+                "score": 0.2623605508587134,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_csv_2012_central_region_001",
+                "source": "csv",
+                "score": 0.2587753601310436,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_csv_2012_central_region_002",
+                "source": "csv",
+                "score": 0.2537079842864041,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q09_csv_central_gcpp_candidate",
+            "query": "Which candidate from GCPP appears in Central Region results?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 4,
+            "precision_at_k": 0.6,
+            "recall_at_k": 0.75,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_csv_2020_central_region_002",
+                "source": "csv",
+                "score": 0.35704708766385485,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_csv_2012_central_region_001",
+                "source": "csv",
+                "score": 0.3472342434554623,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_csv_2012_central_region_002",
+                "source": "csv",
+                "score": 0.3459100097000636,
+                "relevant": true
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_csv_2020_central_region_001",
+                "source": "csv",
+                "score": 0.34290422084123556,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_csv_2000_central_region_001",
+                "source": "csv",
+                "score": 0.33747730532151315,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q10_csv_ahafo_npp_votes",
+            "query": "How many votes did Nana Akufo Addo get in Ahafo Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.3333333333333333,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_csv_2016_ahafo_region_001",
+                "source": "csv",
+                "score": 0.4044806746149185,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_csv_2012_ahafo_region_001",
+                "source": "csv",
+                "score": 0.40086145901751213,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_csv_2020_ahafo_region_001",
+                "source": "csv",
+                "score": 0.4005451872691915,
+                "relevant": true
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_csv_2020_ahafo_region_002",
+                "source": "csv",
+                "score": 0.3406513663757673,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_csv_2016_ahafo_region_002",
+                "source": "csv",
+                "score": 0.3201707056606704,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q11_pdf_theme",
+            "query": "What is the theme of the 2025 budget statement?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 3,
+            "precision_at_k": 0.2,
+            "recall_at_k": 0.3333333333333333,
+            "mrr_at_k": 0.3333333333333333,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_pdf_page_004_001",
+                "source": "pdf",
+                "score": 0.25882384795270175,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_pdf_page_014_001",
+                "source": "pdf",
+                "score": 0.22869299501135254,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_pdf_page_001_001",
+                "source": "pdf",
+                "score": 0.15674302505362311,
+                "relevant": true
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_pdf_page_003_001",
+                "source": "pdf",
+                "score": 0.15374240418385898,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_pdf_page_013_001",
+                "source": "pdf",
+                "score": 0.10994058231157694,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q12_pdf_presenter",
+            "query": "Who presented the 2025 budget statement to parliament?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.3333333333333333,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_pdf_page_004_001",
+                "source": "pdf",
+                "score": 0.2480600020939942,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_pdf_page_014_001",
+                "source": "pdf",
+                "score": 0.2383207510627248,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_pdf_page_003_001",
+                "source": "pdf",
+                "score": 0.21638295176222896,
+                "relevant": true
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_pdf_page_090_002",
+                "source": "pdf",
+                "score": 0.11248050539424385,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_pdf_page_013_001",
+                "source": "pdf",
+                "score": 0.10536842448694472,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q13_pdf_authority",
+            "query": "Under whose authority was the budget presented?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.0,
+            "recall_at_k": 0.0,
+            "mrr_at_k": 0.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_pdf_page_023_004",
+                "source": "pdf",
+                "score": 0.1905575238518243,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_pdf_page_023_003",
+                "source": "pdf",
+                "score": 0.18836408442116048,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_pdf_page_042_003",
+                "source": "pdf",
+                "score": 0.1814416877451099,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_pdf_page_038_004",
+                "source": "pdf",
+                "score": 0.1814416877451099,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_pdf_page_038_005",
+                "source": "pdf",
+                "score": 0.15360113619039714,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q14_pdf_legal_basis",
+            "query": "Which law section is cited for presenting the budget?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 8,
+            "precision_at_k": 0.0,
+            "recall_at_k": 0.0,
+            "mrr_at_k": 0.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_pdf_page_038_004",
+                "source": "pdf",
+                "score": 0.13291064395234417,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_pdf_page_042_003",
+                "source": "pdf",
+                "score": 0.13291064395234417,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_pdf_page_005_001",
+                "source": "pdf",
+                "score": 0.11718063460148073,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_pdf_page_042_004",
+                "source": "pdf",
+                "score": 0.1125167329327139,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_pdf_page_038_005",
+                "source": "pdf",
+                "score": 0.1125167329327139,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q15_pdf_total_crude_output",
+            "query": "What was Ghana's total crude oil production in 2024?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 2,
+            "precision_at_k": 0.2,
+            "recall_at_k": 0.5,
+            "mrr_at_k": 0.2,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_pdf_page_051_005",
+                "source": "pdf",
+                "score": 0.806663448553173,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_pdf_page_051_004",
+                "source": "pdf",
+                "score": 0.6664441827015923,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_pdf_page_051_003",
+                "source": "pdf",
+                "score": 0.5634942037255839,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_pdf_page_051_007",
+                "source": "pdf",
+                "score": 0.40657743347886566,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_pdf_page_051_001",
+                "source": "pdf",
+                "score": 0.3934701245444713,
+                "relevant": true
+              }
+            ]
+          },
+          {
+            "query_id": "q16_pdf_jubilee_output",
+            "query": "How much output came from the Greater Jubilee field in 2024?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 2,
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.5,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_pdf_page_051_009",
+                "source": "pdf",
+                "score": 0.24164247889281049,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_pdf_page_051_002",
+                "source": "pdf",
+                "score": 0.14397235603590844,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_pdf_page_051_006",
+                "source": "pdf",
+                "score": 0.13124487865387333,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_pdf_page_051_001",
+                "source": "pdf",
+                "score": 0.12086137509480724,
+                "relevant": true
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_pdf_page_051_008",
+                "source": "pdf",
+                "score": 0.11128114049241894,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q17_pdf_ten_output",
+            "query": "How much crude oil was produced by TEN in 2024?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 2,
+            "precision_at_k": 0.0,
+            "recall_at_k": 0.0,
+            "mrr_at_k": 0.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_pdf_page_052_008",
+                "source": "pdf",
+                "score": 0.372840973043641,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_pdf_page_051_005",
+                "source": "pdf",
+                "score": 0.33483365251156805,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_pdf_page_051_003",
+                "source": "pdf",
+                "score": 0.3101321630520385,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_pdf_page_052_007",
+                "source": "pdf",
+                "score": 0.30476762288866627,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_pdf_page_051_004",
+                "source": "pdf",
+                "score": 0.2766307811384014,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q18_pdf_sgn_output",
+            "query": "How much output came from Sankofa-Gye Nyame in 2024?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 2,
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.5,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_pdf_page_051_008",
+                "source": "pdf",
+                "score": 0.2803494685095182,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_pdf_page_051_002",
+                "source": "pdf",
+                "score": 0.2167146646333355,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_pdf_page_052_001",
+                "source": "pdf",
+                "score": 0.20729717287680938,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_pdf_page_051_001",
+                "source": "pdf",
+                "score": 0.17758183787452114,
+                "relevant": true
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_pdf_page_051_009",
+                "source": "pdf",
+                "score": 0.1252207466268892,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q19_pdf_athletics_medals",
+            "query": "How many medals did the national athletics team win at the 4-Nation Junior Championships?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_pdf_page_121_001",
+                "source": "pdf",
+                "score": 0.2431720766619517,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_pdf_page_120_005",
+                "source": "pdf",
+                "score": 0.11136767906251216,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_pdf_page_120_004",
+                "source": "pdf",
+                "score": 0.06825503842597692,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_pdf_page_012_001",
+                "source": "pdf",
+                "score": 0.04242158515439583,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_pdf_page_031_007",
+                "source": "pdf",
+                "score": 0.03376539880303327,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q20_pdf_athletics_countries",
+            "query": "Which countries participated in the 4-Nation Junior Athletics Championships?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "small_pdf_page_121_001",
+                "source": "pdf",
+                "score": 0.21742445550193085,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "small_pdf_page_120_004",
+                "source": "pdf",
+                "score": 0.09180902160084897,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "small_pdf_page_120_005",
+                "source": "pdf",
+                "score": 0.0901719891302917,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "small_pdf_page_083_001",
+                "source": "pdf",
+                "score": 0.04071115221314439,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "small_pdf_page_014_004",
+                "source": "pdf",
+                "score": 0.03341826794744943,
+                "relevant": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "strategy": "medium",
+      "strategy_config": {
+        "max_tokens": 360,
+        "overlap_tokens": 60,
+        "boundary_rule": "sentence-aware"
+      },
+      "chunk_file": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\data\\processed\\chunks_medium.jsonl",
+      "chunk_stats": {
+        "num_chunks": 972,
+        "avg_tokens": 216.99897119341563,
+        "median_tokens": 247.0,
+        "min_tokens": 2,
+        "max_tokens": 365,
+        "chunks_by_source": {
+          "csv": 110,
+          "pdf": 862
+        }
+      },
+      "evaluation": {
+        "summary": {
+          "precision_at_k": 0.24000000000000002,
+          "recall_at_k": 0.8738095238095238,
+          "mrr_at_k": 0.7166666666666667,
+          "queries_evaluated": 20,
+          "top_k": 5
+        },
+        "per_query": [
+          {
+            "query_id": "q01_csv_ashanti_npp_votes",
+            "query": "How many votes did Nana Akufo Addo get in Ashanti Region in 2020?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_csv_2020_ashanti_region_001",
+                "source": "csv",
+                "score": 0.517244620866246,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_csv_2020_ashanti_region_002",
+                "source": "csv",
+                "score": 0.38822351164397223,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_csv_2016_ashanti_region_001",
+                "source": "csv",
+                "score": 0.3647358271275515,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_csv_2012_ashanti_region_001",
+                "source": "csv",
+                "score": 0.3498163532852224,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_csv_2008_ashanti_region_001",
+                "source": "csv",
+                "score": 0.3060366596188739,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q02_csv_ahafo_ndc_percent",
+            "query": "What percentage did John Dramani Mahama get in Ahafo Region in 2020?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_csv_2020_ahafo_region_001",
+                "source": "csv",
+                "score": 0.4471654374155678,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_csv_2020_ahafo_region_002",
+                "source": "csv",
+                "score": 0.30992171045298256,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_csv_2016_ahafo_region_001",
+                "source": "csv",
+                "score": 0.29604311533724836,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_csv_2012_ahafo_region_001",
+                "source": "csv",
+                "score": 0.2921962522635826,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_csv_2020_central_region_001",
+                "source": "csv",
+                "score": 0.23003899720610796,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q03_csv_greater_accra_ndc_votes",
+            "query": "How many votes did John Dramani Mahama receive in Greater Accra Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_csv_2020_greater_accra_region_001",
+                "source": "csv",
+                "score": 0.45639578893040633,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_csv_2016_greater_accra_region_001",
+                "source": "csv",
+                "score": 0.45362058674521477,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_csv_2012_greater_accra_region_001",
+                "source": "csv",
+                "score": 0.44852696185467217,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_csv_2000_greater_accra_region_001",
+                "source": "csv",
+                "score": 0.39837522789651253,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_csv_2008_greater_accra_region_001",
+                "source": "csv",
+                "score": 0.39646974047118955,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q04_csv_eastern_npp_votes",
+            "query": "What were Nana Akufo Addo's votes in Eastern Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.5,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_csv_2016_eastern_region_001",
+                "source": "csv",
+                "score": 0.46599616291253304,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_csv_2020_eastern_region_001",
+                "source": "csv",
+                "score": 0.4612728665357996,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_csv_2012_eastern_region_001",
+                "source": "csv",
+                "score": 0.4466671664667875,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_csv_2008_eastern_region_001",
+                "source": "csv",
+                "score": 0.3905294563966306,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_csv_2000_eastern_region_001",
+                "source": "csv",
+                "score": 0.35884202186956315,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q05_csv_bono_east_ndc_votes",
+            "query": "Who led in Bono East Region and with how many votes?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_csv_2020_bono_east_region_001",
+                "source": "csv",
+                "score": 0.6184585685277034,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_csv_2016_bono_east_region_001",
+                "source": "csv",
+                "score": 0.5889135755174842,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_csv_2012_bono_east_region_001",
+                "source": "csv",
+                "score": 0.5810545829162639,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_csv_2020_bono_east_region_002",
+                "source": "csv",
+                "score": 0.5284691390451819,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_csv_2020_upper_east_region_001",
+                "source": "csv",
+                "score": 0.3324102793223428,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q06_csv_oti_ndc_votes",
+            "query": "What was John Dramani Mahama's vote count in Oti Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_csv_2020_oti_region_001",
+                "source": "csv",
+                "score": 0.40767237481781043,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_csv_2016_oti_region_001",
+                "source": "csv",
+                "score": 0.4034550838615836,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_csv_2012_oti_region_001",
+                "source": "csv",
+                "score": 0.39800026832740787,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_csv_2020_oti_region_002",
+                "source": "csv",
+                "score": 0.33721867424549995,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_pdf_page_137_001",
+                "source": "pdf",
+                "score": 0.13163193845628868,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q07_csv_north_east_npp_percent",
+            "query": "What percentage did Nana Akufo Addo receive in North East Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_csv_2020_north_east_region_001",
+                "source": "csv",
+                "score": 0.40883175580513625,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_csv_2016_north_east_region_001",
+                "source": "csv",
+                "score": 0.4057785490995057,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_csv_2012_north_east_region_001",
+                "source": "csv",
+                "score": 0.3950133012974221,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_csv_2020_north_east_region_002",
+                "source": "csv",
+                "score": 0.3351404787796876,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_csv_2016_upper_east_region_001",
+                "source": "csv",
+                "score": 0.22919679111035943,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q08_csv_central_gum_votes",
+            "query": "How many votes did Christian Kwabena Andrews get in Central Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_csv_2020_central_region_001",
+                "source": "csv",
+                "score": 0.3444103444701079,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_csv_2016_central_region_001",
+                "source": "csv",
+                "score": 0.2740630149338659,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_csv_2012_central_region_001",
+                "source": "csv",
+                "score": 0.26923263264865727,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_csv_2000_central_region_001",
+                "source": "csv",
+                "score": 0.25497460863940535,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_csv_2008_central_region_001",
+                "source": "csv",
+                "score": 0.2523933036819006,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q09_csv_central_gcpp_candidate",
+            "query": "Which candidate from GCPP appears in Central Region results?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 2,
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_csv_2020_central_region_001",
+                "source": "csv",
+                "score": 0.3784659634136043,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_csv_2012_central_region_001",
+                "source": "csv",
+                "score": 0.35330401858770555,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_csv_2016_central_region_001",
+                "source": "csv",
+                "score": 0.34373902080993035,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_csv_2000_central_region_001",
+                "source": "csv",
+                "score": 0.34051215729517875,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_csv_2008_central_region_001",
+                "source": "csv",
+                "score": 0.31656014251881204,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q10_csv_ahafo_npp_votes",
+            "query": "How many votes did Nana Akufo Addo get in Ahafo Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.5,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_csv_2016_ahafo_region_001",
+                "source": "csv",
+                "score": 0.3953403030987868,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_csv_2020_ahafo_region_001",
+                "source": "csv",
+                "score": 0.3883202967807372,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_csv_2012_ahafo_region_001",
+                "source": "csv",
+                "score": 0.3805753904574214,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_csv_2008_brong_ahafo_region_001",
+                "source": "csv",
+                "score": 0.29236968769898547,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_csv_2000_brong_ahafo_region_001",
+                "source": "csv",
+                "score": 0.2715992937326577,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q11_pdf_theme",
+            "query": "What is the theme of the 2025 budget statement?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 3,
+            "precision_at_k": 0.2,
+            "recall_at_k": 0.3333333333333333,
+            "mrr_at_k": 0.25,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_pdf_page_004_001",
+                "source": "pdf",
+                "score": 0.2626357893818665,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_pdf_page_014_001",
+                "source": "pdf",
+                "score": 0.15896317133720939,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_pdf_page_003_001",
+                "source": "pdf",
+                "score": 0.15642328861831067,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_pdf_page_001_001",
+                "source": "pdf",
+                "score": 0.15206166642406374,
+                "relevant": true
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_pdf_page_038_007",
+                "source": "pdf",
+                "score": 0.09757608385982722,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q12_pdf_presenter",
+            "query": "Who presented the 2025 budget statement to parliament?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.5,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_pdf_page_004_001",
+                "source": "pdf",
+                "score": 0.25196566564679046,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_pdf_page_003_001",
+                "source": "pdf",
+                "score": 0.21729788217969498,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_pdf_page_014_001",
+                "source": "pdf",
+                "score": 0.16439293352447157,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_pdf_page_038_007",
+                "source": "pdf",
+                "score": 0.0936118530487145,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_pdf_page_042_004",
+                "source": "pdf",
+                "score": 0.0936118530487145,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q13_pdf_authority",
+            "query": "Under whose authority was the budget presented?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.0,
+            "recall_at_k": 0.0,
+            "mrr_at_k": 0.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_pdf_page_038_007",
+                "source": "pdf",
+                "score": 0.17974487962680624,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_pdf_page_042_004",
+                "source": "pdf",
+                "score": 0.17974487962680624,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_pdf_page_042_005",
+                "source": "pdf",
+                "score": 0.1520386838284099,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_pdf_page_038_008",
+                "source": "pdf",
+                "score": 0.1520386838284099,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_pdf_page_141_003",
+                "source": "pdf",
+                "score": 0.1332076165121458,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q14_pdf_legal_basis",
+            "query": "Which law section is cited for presenting the budget?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 7,
+            "precision_at_k": 0.2,
+            "recall_at_k": 0.14285714285714285,
+            "mrr_at_k": 0.25,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_pdf_page_005_001",
+                "source": "pdf",
+                "score": 0.12967162888773673,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_pdf_page_038_007",
+                "source": "pdf",
+                "score": 0.12849339768272686,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_pdf_page_042_004",
+                "source": "pdf",
+                "score": 0.12849339768272686,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_pdf_page_013_001",
+                "source": "pdf",
+                "score": 0.11115164520024434,
+                "relevant": true
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_pdf_page_042_005",
+                "source": "pdf",
+                "score": 0.10868719656929103,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q15_pdf_total_crude_output",
+            "query": "What was Ghana's total crude oil production in 2024?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 2,
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.5,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_pdf_page_051_003",
+                "source": "pdf",
+                "score": 0.573555260337659,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_pdf_page_051_001",
+                "source": "pdf",
+                "score": 0.3948801463274599,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_pdf_page_051_002",
+                "source": "pdf",
+                "score": 0.2740736038337383,
+                "relevant": true
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_pdf_page_051_006",
+                "source": "pdf",
+                "score": 0.2523398833178263,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_pdf_page_007_002",
+                "source": "pdf",
+                "score": 0.18453372883927835,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q16_pdf_jubilee_output",
+            "query": "How much output came from the Greater Jubilee field in 2024?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 2,
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.5,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_pdf_page_051_006",
+                "source": "pdf",
+                "score": 0.21332153520534114,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_pdf_page_051_002",
+                "source": "pdf",
+                "score": 0.13981133072898738,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_pdf_page_051_001",
+                "source": "pdf",
+                "score": 0.11744536672728564,
+                "relevant": true
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_pdf_page_051_005",
+                "source": "pdf",
+                "score": 0.10172363883515666,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_pdf_page_051_004",
+                "source": "pdf",
+                "score": 0.0999699378278739,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q17_pdf_ten_output",
+            "query": "How much crude oil was produced by TEN in 2024?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 2,
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.3333333333333333,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_pdf_page_051_003",
+                "source": "pdf",
+                "score": 0.3118678185659238,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_pdf_page_051_006",
+                "source": "pdf",
+                "score": 0.22999097901710971,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_pdf_page_051_001",
+                "source": "pdf",
+                "score": 0.17985743757359704,
+                "relevant": true
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_pdf_page_051_002",
+                "source": "pdf",
+                "score": 0.14478752279170226,
+                "relevant": true
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_pdf_page_072_003",
+                "source": "pdf",
+                "score": 0.14397435173398365,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q18_pdf_sgn_output",
+            "query": "How much output came from Sankofa-Gye Nyame in 2024?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 2,
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_pdf_page_051_002",
+                "source": "pdf",
+                "score": 0.21537539651459686,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_pdf_page_051_006",
+                "source": "pdf",
+                "score": 0.19237192576948925,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_pdf_page_051_001",
+                "source": "pdf",
+                "score": 0.17615924007876602,
+                "relevant": true
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_pdf_page_052_001",
+                "source": "pdf",
+                "score": 0.12581819445122477,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_pdf_page_012_001",
+                "source": "pdf",
+                "score": 0.08207761569636474,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q19_pdf_athletics_medals",
+            "query": "How many medals did the national athletics team win at the 4-Nation Junior Championships?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_pdf_page_121_001",
+                "source": "pdf",
+                "score": 0.18343323867623193,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_pdf_page_120_003",
+                "source": "pdf",
+                "score": 0.12727846313164976,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_pdf_page_120_002",
+                "source": "pdf",
+                "score": 0.11971398573917695,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_pdf_page_012_001",
+                "source": "pdf",
+                "score": 0.038468755545880626,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_pdf_page_014_002",
+                "source": "pdf",
+                "score": 0.02561860714672105,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q20_pdf_athletics_countries",
+            "query": "Which countries participated in the 4-Nation Junior Athletics Championships?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "medium_pdf_page_121_001",
+                "source": "pdf",
+                "score": 0.16104523756473943,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "medium_pdf_page_120_002",
+                "source": "pdf",
+                "score": 0.1204400891015949,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "medium_pdf_page_120_003",
+                "source": "pdf",
+                "score": 0.10182340523402109,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "medium_pdf_page_014_002",
+                "source": "pdf",
+                "score": 0.027416991342006224,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "medium_pdf_page_083_001",
+                "source": "pdf",
+                "score": 0.02679967253687235,
+                "relevant": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "strategy": "large",
+      "strategy_config": {
+        "max_tokens": 600,
+        "overlap_tokens": 100,
+        "boundary_rule": "sentence-aware"
+      },
+      "chunk_file": "C:\\Users\\nbens\\Desktop\\AI_exam\\code\\data\\processed\\chunks_large.jsonl",
+      "chunk_stats": {
+        "num_chunks": 796,
+        "avg_tokens": 307.4070351758794,
+        "median_tokens": 274.5,
+        "min_tokens": 2,
+        "max_tokens": 607,
+        "chunks_by_source": {
+          "csv": 98,
+          "pdf": 698
+        }
+      },
+      "evaluation": {
+        "summary": {
+          "precision_at_k": 0.21000000000000002,
+          "recall_at_k": 0.9333333333333333,
+          "mrr_at_k": 0.6333333333333333,
+          "queries_evaluated": 20,
+          "top_k": 5
+        },
+        "per_query": [
+          {
+            "query_id": "q01_csv_ashanti_npp_votes",
+            "query": "How many votes did Nana Akufo Addo get in Ashanti Region in 2020?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_csv_2020_ashanti_region_001",
+                "source": "csv",
+                "score": 0.5065206241489272,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_csv_2020_central_region_001",
+                "source": "csv",
+                "score": 0.3243223326302057,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_csv_2016_ashanti_region_001",
+                "source": "csv",
+                "score": 0.32250929464379313,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_csv_2020_northern_region_001",
+                "source": "csv",
+                "score": 0.32200158938706835,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_csv_2020_western_region_001",
+                "source": "csv",
+                "score": 0.3218383504252214,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q02_csv_ahafo_ndc_percent",
+            "query": "What percentage did John Dramani Mahama get in Ahafo Region in 2020?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_csv_2020_ahafo_region_001",
+                "source": "csv",
+                "score": 0.4321486458004121,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_csv_2016_ahafo_region_001",
+                "source": "csv",
+                "score": 0.2546135185690129,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_csv_2020_central_region_001",
+                "source": "csv",
+                "score": 0.253978390835446,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_csv_2012_ahafo_region_001",
+                "source": "csv",
+                "score": 0.2522230249885938,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_csv_2020_northern_region_001",
+                "source": "csv",
+                "score": 0.25216100555194065,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q03_csv_greater_accra_ndc_votes",
+            "query": "How many votes did John Dramani Mahama receive in Greater Accra Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.5,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_csv_2016_greater_accra_region_001",
+                "source": "csv",
+                "score": 0.44425048775653236,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_csv_2020_greater_accra_region_001",
+                "source": "csv",
+                "score": 0.442652486662101,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_csv_2012_greater_accra_region_001",
+                "source": "csv",
+                "score": 0.44069940461522544,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_csv_2000_greater_accra_region_001",
+                "source": "csv",
+                "score": 0.3910585500386353,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_csv_2008_greater_accra_region_001",
+                "source": "csv",
+                "score": 0.38917290600114657,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q04_csv_eastern_npp_votes",
+            "query": "What were Nana Akufo Addo's votes in Eastern Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.5,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_csv_2016_eastern_region_001",
+                "source": "csv",
+                "score": 0.42767700398773645,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_csv_2020_eastern_region_001",
+                "source": "csv",
+                "score": 0.4132187125756719,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_csv_2012_eastern_region_001",
+                "source": "csv",
+                "score": 0.4092969040151222,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_csv_2008_eastern_region_001",
+                "source": "csv",
+                "score": 0.3525758516568701,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_csv_2000_eastern_region_001",
+                "source": "csv",
+                "score": 0.3193378908041588,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q05_csv_bono_east_ndc_votes",
+            "query": "Who led in Bono East Region and with how many votes?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_csv_2020_bono_east_region_001",
+                "source": "csv",
+                "score": 0.594058305865589,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_csv_2016_bono_east_region_001",
+                "source": "csv",
+                "score": 0.5700119852660448,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_csv_2012_bono_east_region_001",
+                "source": "csv",
+                "score": 0.564023487414909,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_csv_2020_upper_east_region_001",
+                "source": "csv",
+                "score": 0.32167693323378543,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_csv_2020_north_east_region_001",
+                "source": "csv",
+                "score": 0.3068730836500256,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q06_csv_oti_ndc_votes",
+            "query": "What was John Dramani Mahama's vote count in Oti Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.5,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_csv_2016_oti_region_001",
+                "source": "csv",
+                "score": 0.4028543174149482,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_csv_2020_oti_region_001",
+                "source": "csv",
+                "score": 0.40238089656563236,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_csv_2012_oti_region_001",
+                "source": "csv",
+                "score": 0.39877563882017797,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_pdf_page_137_001",
+                "source": "pdf",
+                "score": 0.12642763642153168,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_pdf_page_003_001",
+                "source": "pdf",
+                "score": 0.09041836826279824,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q07_csv_north_east_npp_percent",
+            "query": "What percentage did Nana Akufo Addo receive in North East Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.5,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_csv_2016_north_east_region_001",
+                "source": "csv",
+                "score": 0.39099892831910815,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_csv_2020_north_east_region_001",
+                "source": "csv",
+                "score": 0.3883937480403119,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_csv_2012_north_east_region_001",
+                "source": "csv",
+                "score": 0.3813153364083073,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_csv_2016_upper_east_region_001",
+                "source": "csv",
+                "score": 0.21626129088579807,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_csv_2016_bono_east_region_001",
+                "source": "csv",
+                "score": 0.2112125838393465,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q08_csv_central_gum_votes",
+            "query": "How many votes did Christian Kwabena Andrews get in Central Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_csv_2020_central_region_001",
+                "source": "csv",
+                "score": 0.30724355888025867,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_csv_2016_central_region_001",
+                "source": "csv",
+                "score": 0.24242062431353603,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_csv_2012_central_region_001",
+                "source": "csv",
+                "score": 0.23895667456620745,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_csv_2000_central_region_001",
+                "source": "csv",
+                "score": 0.22520472521488077,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_csv_2008_central_region_001",
+                "source": "csv",
+                "score": 0.22287576124969552,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q09_csv_central_gcpp_candidate",
+            "query": "Which candidate from GCPP appears in Central Region results?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 2,
+            "precision_at_k": 0.4,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_csv_2020_central_region_001",
+                "source": "csv",
+                "score": 0.3213787072452069,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_csv_2012_central_region_001",
+                "source": "csv",
+                "score": 0.3071778624304585,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_csv_2000_central_region_001",
+                "source": "csv",
+                "score": 0.2959547513705535,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_csv_2016_central_region_001",
+                "source": "csv",
+                "score": 0.2942597087354017,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_csv_2008_central_region_001",
+                "source": "csv",
+                "score": 0.27053538359299717,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q10_csv_ahafo_npp_votes",
+            "query": "How many votes did Nana Akufo Addo get in Ahafo Region?",
+            "expected_source": "csv",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.3333333333333333,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_csv_2016_ahafo_region_001",
+                "source": "csv",
+                "score": 0.35949963353219405,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_csv_2012_ahafo_region_001",
+                "source": "csv",
+                "score": 0.34604430777506684,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_csv_2020_ahafo_region_001",
+                "source": "csv",
+                "score": 0.343548209922707,
+                "relevant": true
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_csv_2008_brong_ahafo_region_001",
+                "source": "csv",
+                "score": 0.26310645874147126,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_csv_2000_brong_ahafo_region_001",
+                "source": "csv",
+                "score": 0.24156889698989684,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q11_pdf_theme",
+            "query": "What is the theme of the 2025 budget statement?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 3,
+            "precision_at_k": 0.4,
+            "recall_at_k": 0.6666666666666666,
+            "mrr_at_k": 0.3333333333333333,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_pdf_page_004_001",
+                "source": "pdf",
+                "score": 0.2598009883725897,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_pdf_page_003_001",
+                "source": "pdf",
+                "score": 0.15481674842496596,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_pdf_page_001_001",
+                "source": "pdf",
+                "score": 0.15119867834350878,
+                "relevant": true
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_pdf_page_014_001",
+                "source": "pdf",
+                "score": 0.14153351834949168,
+                "relevant": true
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_pdf_page_038_007",
+                "source": "pdf",
+                "score": 0.0831955963138471,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q12_pdf_presenter",
+            "query": "Who presented the 2025 budget statement to parliament?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.5,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_pdf_page_004_001",
+                "source": "pdf",
+                "score": 0.24564710772039589,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_pdf_page_003_001",
+                "source": "pdf",
+                "score": 0.21950765533112077,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_pdf_page_014_001",
+                "source": "pdf",
+                "score": 0.1278931947584867,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_pdf_page_038_007",
+                "source": "pdf",
+                "score": 0.07866312494647287,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_pdf_page_090_001",
+                "source": "pdf",
+                "score": 0.07778541520287388,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q13_pdf_authority",
+            "query": "Under whose authority was the budget presented?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.5,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_pdf_page_038_007",
+                "source": "pdf",
+                "score": 0.15239382880967373,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_pdf_page_003_001",
+                "source": "pdf",
+                "score": 0.13192007079741333,
+                "relevant": true
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_pdf_page_038_008",
+                "source": "pdf",
+                "score": 0.12817936812109793,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_pdf_page_141_003",
+                "source": "pdf",
+                "score": 0.11319709458260417,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_pdf_page_038_006",
+                "source": "pdf",
+                "score": 0.10779900227683066,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q14_pdf_legal_basis",
+            "query": "Which law section is cited for presenting the budget?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 6,
+            "precision_at_k": 0.0,
+            "recall_at_k": 0.0,
+            "mrr_at_k": 0.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_pdf_page_005_001",
+                "source": "pdf",
+                "score": 0.1255733600258624,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_pdf_page_038_007",
+                "source": "pdf",
+                "score": 0.1082519864426617,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_pdf_page_038_008",
+                "source": "pdf",
+                "score": 0.09105139839621397,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_pdf_page_141_003",
+                "source": "pdf",
+                "score": 0.08040883573709978,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_pdf_page_038_006",
+                "source": "pdf",
+                "score": 0.0765743352217893,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q15_pdf_total_crude_output",
+            "query": "What was Ghana's total crude oil production in 2024?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_pdf_page_051_001",
+                "source": "pdf",
+                "score": 0.32061426737358745,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_pdf_page_007_002",
+                "source": "pdf",
+                "score": 0.269016890469305,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_pdf_page_051_002",
+                "source": "pdf",
+                "score": 0.2370206648753267,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_pdf_page_052_001",
+                "source": "pdf",
+                "score": 0.15568171210405268,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_pdf_page_072_002",
+                "source": "pdf",
+                "score": 0.14241635710495043,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q16_pdf_jubilee_output",
+            "query": "How much output came from the Greater Jubilee field in 2024?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.3333333333333333,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_pdf_page_051_003",
+                "source": "pdf",
+                "score": 0.2194454037773997,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_pdf_page_051_002",
+                "source": "pdf",
+                "score": 0.17218520158691075,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_pdf_page_051_001",
+                "source": "pdf",
+                "score": 0.14077887628302338,
+                "relevant": true
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_csv_2020_greater_accra_region_001",
+                "source": "csv",
+                "score": 0.08081108338620596,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_csv_2016_greater_accra_region_001",
+                "source": "csv",
+                "score": 0.07822683064518236,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q17_pdf_ten_output",
+            "query": "How much crude oil was produced by TEN in 2024?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.3333333333333333,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_pdf_page_007_002",
+                "source": "pdf",
+                "score": 0.2054251228299809,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_pdf_page_051_002",
+                "source": "pdf",
+                "score": 0.19565145042809187,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_pdf_page_051_001",
+                "source": "pdf",
+                "score": 0.1780162691787646,
+                "relevant": true
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_pdf_page_052_001",
+                "source": "pdf",
+                "score": 0.15430665334872834,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_pdf_page_051_003",
+                "source": "pdf",
+                "score": 0.14133686394854447,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q18_pdf_sgn_output",
+            "query": "How much output came from Sankofa-Gye Nyame in 2024?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 0.3333333333333333,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_pdf_page_051_003",
+                "source": "pdf",
+                "score": 0.203388908279295,
+                "relevant": false
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_pdf_page_051_002",
+                "source": "pdf",
+                "score": 0.17472220621415774,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_pdf_page_051_001",
+                "source": "pdf",
+                "score": 0.10340046094557953,
+                "relevant": true
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_pdf_page_052_001",
+                "source": "pdf",
+                "score": 0.09754632077225041,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_pdf_page_012_001",
+                "source": "pdf",
+                "score": 0.08149379091611075,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q19_pdf_athletics_medals",
+            "query": "How many medals did the national athletics team win at the 4-Nation Junior Championships?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_pdf_page_121_001",
+                "source": "pdf",
+                "score": 0.13241124802583212,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_pdf_page_120_002",
+                "source": "pdf",
+                "score": 0.1262766915541084,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_pdf_page_120_001",
+                "source": "pdf",
+                "score": 0.09249964470056872,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_pdf_page_012_001",
+                "source": "pdf",
+                "score": 0.03566427925744653,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_pdf_page_014_001",
+                "source": "pdf",
+                "score": 0.017710186658044327,
+                "relevant": false
+              }
+            ]
+          },
+          {
+            "query_id": "q20_pdf_athletics_countries",
+            "query": "Which countries participated in the 4-Nation Junior Athletics Championships?",
+            "expected_source": "pdf",
+            "total_relevant_chunks": 1,
+            "precision_at_k": 0.2,
+            "recall_at_k": 1.0,
+            "mrr_at_k": 1.0,
+            "retrieved": [
+              {
+                "rank": 1,
+                "chunk_id": "large_pdf_page_121_001",
+                "source": "pdf",
+                "score": 0.11320398454298272,
+                "relevant": true
+              },
+              {
+                "rank": 2,
+                "chunk_id": "large_pdf_page_120_002",
+                "source": "pdf",
+                "score": 0.10137969141916855,
+                "relevant": false
+              },
+              {
+                "rank": 3,
+                "chunk_id": "large_pdf_page_120_001",
+                "source": "pdf",
+                "score": 0.09157193903510541,
+                "relevant": false
+              },
+              {
+                "rank": 4,
+                "chunk_id": "large_pdf_page_012_001",
+                "source": "pdf",
+                "score": 0.023324824295595882,
+                "relevant": false
+              },
+              {
+                "rank": 5,
+                "chunk_id": "large_pdf_page_083_001",
+                "source": "pdf",
+                "score": 0.018853911341311543,
+                "relevant": false
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "best_strategy": "large"
+}

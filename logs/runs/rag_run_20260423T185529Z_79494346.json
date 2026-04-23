@@ -1,0 +1,126 @@
+{
+  "run_id": "rag_run_20260423T185529Z_79494346",
+  "generated_at_utc": "2026-04-23T18:55:36.380365+00:00",
+  "input": {
+    "query": "TEN field output in 2024 million barrels",
+    "top_k": 5,
+    "hybrid_alpha": 0.55,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "llm_model": "gpt-4o-mini",
+    "max_context_tokens": 1200
+  },
+  "stage_times": {
+    "retrieval_start": "2026-04-23T18:55:29.102891+00:00",
+    "retrieval_end": "2026-04-23T18:55:34.806129+00:00",
+    "context_selection_start": "2026-04-23T18:55:34.806142+00:00",
+    "context_selection_end": "2026-04-23T18:55:34.807732+00:00",
+    "prompt_construction_start": "2026-04-23T18:55:34.807738+00:00",
+    "prompt_construction_end": "2026-04-23T18:55:34.807747+00:00",
+    "llm_generation_start": "2026-04-23T18:55:34.807750+00:00",
+    "llm_generation_end": "2026-04-23T18:55:36.380356+00:00"
+  },
+  "pipeline": {
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "chunk_id": "large_pdf_page_072_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_072",
+        "similarity_scores": {
+          "vector_score": 0.5415006875991821,
+          "keyword_score": 0.37458139917337574,
+          "hybrid_score": 0.9615870250902724
+        },
+        "text_preview": "2025 petroleum receipts and utilisation projection 308. mr. speaker, consistent with the first schedule (section 17) of the prma (act 815) as amended, the benchmark price for 2025 has been calculated as a seven-year moving average of prices at us$74.70 per barrel. 309. mr. speaker, the gas price for"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "large_pdf_page_051_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_051",
+        "similarity_scores": {
+          "vector_score": 0.47539323568344116,
+          "keyword_score": 0.4095406906307465,
+          "hybrid_score": 0.9410517036914825
+        },
+        "text_preview": "petroleum production, receipts and utilisation in 2024 petroleum production 190. mr. speaker, total crude oil production for ghana and its partners in 2024 was 48.24 million barrels. of the 48.24 million barrels, greater jubilee\u2019s output was 31.85 million barrels, tweneboa enyenra-ntomme (ten) was 6"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "large_pdf_page_051_003",
+        "source": "pdf",
+        "doc_id": "pdf_page_051",
+        "similarity_scores": {
+          "vector_score": 0.4685335159301758,
+          "keyword_score": 0.3563735726161485,
+          "hybrid_score": 0.8765152669748479
+        },
+        "text_preview": "out of the total crude oil production of 48.24 million, ghana national petroleum corporation (gnpc), on behalf of the state, lifted 8.55 million barrels. the liftings by gnpc included 5.72 million barrels from the jubilee, 0.99 million barrels from ten, and 1.83 million barrels from sankofa gye nyam"
+      },
+      {
+        "rank": 4,
+        "chunk_id": "large_pdf_page_051_002",
+        "source": "pdf",
+        "doc_id": "pdf_page_051",
+        "similarity_scores": {
+          "vector_score": 0.2962493896484375,
+          "keyword_score": 0.38247014254132333,
+          "hybrid_score": 0.7515634058703016
+        },
+        "text_preview": "month jubilee field ten field sgn field total 1 jan-24 2,771,107 560,152 884,837 4,216,096 2 feb-24 2,629,031 530,542 798,463 3,958,036 3 mar-24 3,056,353 600,859 862,499 4,519,711 4 apr-24 2,679,895 594,128 832,218 4,106,241 5 may-24 2,698,329 593,453 829,714 4,121,496 6 jun-24 2,570,305 571,311 79"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "large_pdf_page_052_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_052",
+        "similarity_scores": {
+          "vector_score": 0.391265869140625,
+          "keyword_score": 0.057353137974576585,
+          "hybrid_score": 0.4790541310515841
+        },
+        "text_preview": "petroleum receipts for jan-dec 2024 195. mr. speaker, receipts from crude oil liftings only for the period january to december 2024 amounted to us$843.52 million (gh\u00a212 .4 billion), comprising the 75th \u2013 80th jubilee liftings, the 23rd & 24th ten liftings, and the 14th and 16th liftings from the san"
+      }
+    ],
+    "context_selection": {
+      "used_context_tokens": 1200,
+      "selected_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "large_pdf_page_072_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_072",
+          "vector_score": 0.5415006875991821,
+          "keyword_score": 0.37458139917337574,
+          "hybrid_score": 0.9615870250902724,
+          "used_tokens": 447,
+          "truncated": false
+        },
+        {
+          "rank": 2,
+          "chunk_id": "large_pdf_page_051_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_051",
+          "vector_score": 0.47539323568344116,
+          "keyword_score": 0.4095406906307465,
+          "hybrid_score": 0.9410517036914825,
+          "used_tokens": 583,
+          "truncated": false
+        },
+        {
+          "rank": 3,
+          "chunk_id": "large_pdf_page_051_003",
+          "source": "pdf",
+          "doc_id": "pdf_page_051",
+          "vector_score": 0.4685335159301758,
+          "keyword_score": 0.3563735726161485,
+          "hybrid_score": 0.8765152669748479,
+          "used_tokens": 170,
+          "truncated": true
+        }
+      ]
+    },
+    "final_prompt_sent_to_llm": "SYSTEM:\nYou are a strict grounded assistant for Academic City RAG. Use only retrieved context, cite chunk IDs like [chunk_id] for factual claims, and if evidence is missing output exactly: Insufficient evidence in retrieved context.\n\nUSER:\nUser query:\nTEN field output in 2024 million barrels\n\nRetrieved context:\n[large_pdf_page_072_001] source=pdf doc=pdf_page_072\n2025 petroleum receipts and utilisation projection 308. mr. speaker, consistent with the first schedule (section 17) of the prma (act 815) as amended, the benchmark price for 2025 has been calculated as a seven-year moving average of prices at us$74.70 per barrel. 309. mr. speaker, the gas price for 2025 is projected at us$7.11 per mmbtu, estimated as a seven-year moving average in line with the prma. 2025 petroleum benchmark output 310. mr. speaker, the 2025 benchmark crude oil output is projected to be 46.35 million barrels (126,994.49 barrels of crude oil per day), based on a three-year simple average of each producing field\u2019s actual and projected outputs in line with the prma. the ghana group share (liftings) of the total benchmark crude oil output projection (46.35 million barrels) is 9.20 million barrels consisting of: i. royalty volume of 2.56 million barrels; and ii. carried and participating interest volume of 6.64 million barrels. 311. similarly, the benchmark gas output, has been estimated at 118.14 trillion btu for 2025. 2025 total petroleum receipts 312. mr. speaker, the projected petroleum receipts for 2025 is us$1,011.36 million. the total petroleum receipts are made up of royalties (us$191.52 million), carried and participating interest (us$495.92 million), corporate income tax (us$319.70 million) and surface rentals (us$4.22 million) as shown in table 36. 313. of the total receipts of us$1,011.36 million, us$192.67million has been programmed for the national oil company (gnpc) in respect of the equity financing cost (us$139.15 million) and share of the net carried and participating interest (us$53.52 million) as shown in table 36. table 36:\n\n[large_pdf_page_051_001] source=pdf doc=pdf_page_051\npetroleum production, receipts and utilisation in 2024 petroleum production 190. mr. speaker, total crude oil production for ghana and its partners in 2024 was 48.24 million barrels. of the 48.24 million barrels, greater jubilee\u2019s output was 31.85 million barrels, tweneboa enyenra-ntomme (ten) was 6.78 million barrels, and sankofa-gye nyame (sgn) was 9.61 million barrels, representing 66.02 percent, 14.06 percent, and 19.91 percent of the total output respectively. the monthly production of crude oil is presented in table 27. table 27: total crude oil production in barrels no. month jubilee field ten field sgn field total 1 jan-24 2,771,107 560,152 884,837 4,216,096 2 feb-24 2,629,031 530,542 798,463 3,958,036 3 mar-24 3,056,353 600,859 862,499 4,519,711 4 apr-24 2,679,895 594,128 832,218 4,106,241 5 may-24 2,698,329 593,453 829,714 4,121,496 6 jun-24 2,570,305 571,311 794,281 3,935,897 7 jul-24 2,806,558 579,331 834,300 4,220,189 8 aug-24 2,717,975 576,507 772,734 4,067,216 9 sep-24 2,538,346 542,908 614,561 3,695,815 10 oct-24 2,562,588 568,224 792,191 3,923,003 11 nov-24 2,404,088 523,165 776,034 3,703,287 12 dec-24 2,414,471 543,860 814,712 3,773,043 13 total 31,849,046 6,784,440 9,606,544 48,240,030 source: mof 191. mr. speaker, the 2024 crude oil production of 48.24 million is 0.02 percent lower than the 2023 levels of 48.25 million barrels and 5.9 percent lower than the 2024 benchmark crude oil of 51.25 million barrels. 192.\n\n[large_pdf_page_051_003] source=pdf doc=pdf_page_051\nout of the total crude oil production of 48.24 million, ghana national petroleum corporation (gnpc), on behalf of the state, lifted 8.55 million barrels. the liftings by gnpc included 5.72 million barrels from the jubilee, 0.99 million barrels from ten, and 1.83 million barrels from sankofa gye nyame (sgn). 194. mr. speaker, a total of 280,441 mmscf of gas was produced in 2024 from the three producing fields, namely, sankofa gye-nyame, jubilee and ten field. of the total gas produced, 115,455 mmscf was delivered for power generation and non\n\nRules:\n- Use only the retrieved context.\n- Do not invent facts.\n- Include citations like [chunk_id].\n- If context is insufficient, output exactly: Insufficient evidence in retrieved context.\n",
+    "response": "The TEN field output in 2024 was 6.78 million barrels [large_pdf_page_051_001]."
+  }
+}

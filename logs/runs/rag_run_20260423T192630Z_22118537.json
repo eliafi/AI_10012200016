@@ -1,0 +1,148 @@
+{
+  "run_id": "rag_run_20260423T192630Z_22118537",
+  "generated_at_utc": "2026-04-23T19:26:42.025721+00:00",
+  "input": {
+    "query": "Who presented the 2025 budget and in what role?",
+    "top_k": 5,
+    "hybrid_alpha": 0.55,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "llm_model": "gpt-4o-mini",
+    "max_context_tokens": 1200
+  },
+  "stage_times": {
+    "retrieval_start": "2026-04-23T19:26:30.475070+00:00",
+    "retrieval_end": "2026-04-23T19:26:37.162981+00:00",
+    "context_selection_start": "2026-04-23T19:26:37.162998+00:00",
+    "context_selection_end": "2026-04-23T19:26:37.338793+00:00",
+    "prompt_construction_start": "2026-04-23T19:26:37.338811+00:00",
+    "prompt_construction_end": "2026-04-23T19:26:37.338820+00:00",
+    "llm_generation_start": "2026-04-23T19:26:37.338823+00:00",
+    "llm_generation_end": "2026-04-23T19:26:42.025708+00:00"
+  },
+  "pipeline": {
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "chunk_id": "large_pdf_page_003_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_003",
+        "similarity_scores": {
+          "vector_score": 0.6483375430107117,
+          "keyword_score": 0.09150800037816792,
+          "hybrid_score": 0.970267046790191
+        },
+        "text_preview": "the budget statement and economic policy of the government of ghana for the 2025 financial year presented to parliament by dr. cassiel ato forson (mp) minister for finance on tuesday march 11, 2025 on the authority of his excellency john dramani mahama president of the republic of ghana in accordanc"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "large_pdf_page_004_001",
+        "source": "pdf",
+        "doc_id": "pdf_page_004",
+        "similarity_scores": {
+          "vector_score": 0.6209681034088135,
+          "keyword_score": 0.08191323540073958,
+          "hybrid_score": 0.9033355818092684
+        },
+        "text_preview": "the 2025 budget statement and economic policy of government the budget statement and economic policy of the government of ghana for the 2025 financial year is available for public access. to purchase a physical copy, please contact the ministry\u2019s public relations office at: ministry of finance publi"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "large_pdf_page_038_007",
+        "source": "pdf",
+        "doc_id": "pdf_page_038",
+        "similarity_scores": {
+          "vector_score": 0.5246167182922363,
+          "keyword_score": 0.0979819894343736,
+          "hybrid_score": 0.896637600660324
+        },
+        "text_preview": "jan-dec y/y (%) budget rev. budget proj. prov."
+      },
+      {
+        "rank": 4,
+        "chunk_id": "large_pdf_page_145_002",
+        "source": "pdf",
+        "doc_id": "pdf_page_145",
+        "similarity_scores": {
+          "vector_score": 0.6253972053527832,
+          "keyword_score": 0.06769361807182983,
+          "hybrid_score": 0.841729734506993
+        },
+        "text_preview": "summary of central government operations \u2013 2025 2025 2026 2027 2028 budget indicative indicative indicative i."
+      },
+      {
+        "rank": 5,
+        "chunk_id": "large_pdf_page_038_008",
+        "source": "pdf",
+        "doc_id": "pdf_page_038",
+        "similarity_scores": {
+          "vector_score": 0.5175830125808716,
+          "keyword_score": 0.08241324199965804,
+          "hybrid_score": 0.8192590107753156
+        },
+        "text_preview": "budget proj. prov."
+      }
+    ],
+    "context_selection": {
+      "used_context_tokens": 328,
+      "selected_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "large_pdf_page_003_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_003",
+          "vector_score": 0.6483375430107117,
+          "keyword_score": 0.09150800037816792,
+          "hybrid_score": 0.970267046790191,
+          "used_tokens": 106,
+          "truncated": false
+        },
+        {
+          "rank": 2,
+          "chunk_id": "large_pdf_page_004_001",
+          "source": "pdf",
+          "doc_id": "pdf_page_004",
+          "vector_score": 0.6209681034088135,
+          "keyword_score": 0.08191323540073958,
+          "hybrid_score": 0.9033355818092684,
+          "used_tokens": 119,
+          "truncated": false
+        },
+        {
+          "rank": 3,
+          "chunk_id": "large_pdf_page_038_007",
+          "source": "pdf",
+          "doc_id": "pdf_page_038",
+          "vector_score": 0.5246167182922363,
+          "keyword_score": 0.0979819894343736,
+          "hybrid_score": 0.896637600660324,
+          "used_tokens": 33,
+          "truncated": false
+        },
+        {
+          "rank": 4,
+          "chunk_id": "large_pdf_page_145_002",
+          "source": "pdf",
+          "doc_id": "pdf_page_145",
+          "vector_score": 0.6253972053527832,
+          "keyword_score": 0.06769361807182983,
+          "hybrid_score": 0.841729734506993,
+          "used_tokens": 46,
+          "truncated": false
+        },
+        {
+          "rank": 5,
+          "chunk_id": "large_pdf_page_038_008",
+          "source": "pdf",
+          "doc_id": "pdf_page_038",
+          "vector_score": 0.5175830125808716,
+          "keyword_score": 0.08241324199965804,
+          "hybrid_score": 0.8192590107753156,
+          "used_tokens": 24,
+          "truncated": false
+        }
+      ]
+    },
+    "final_prompt_sent_to_llm": "SYSTEM:\nYou are a strict grounded assistant for Academic City RAG. Use only retrieved context, cite chunk IDs like [chunk_id] for factual claims, and if evidence is missing output exactly: Insufficient evidence in retrieved context.\n\nUSER:\nUser query:\nWho presented the 2025 budget and in what role?\n\nRetrieved context:\n[large_pdf_page_003_001] source=pdf doc=pdf_page_003\nthe budget statement and economic policy of the government of ghana for the 2025 financial year presented to parliament by dr. cassiel ato forson (mp) minister for finance on tuesday march 11, 2025 on the authority of his excellency john dramani mahama president of the republic of ghana in accordance with section 28 of the public financial management act, 2016 (act 921)\n\n[large_pdf_page_004_001] source=pdf doc=pdf_page_004\nthe 2025 budget statement and economic policy of government the budget statement and economic policy of the government of ghana for the 2025 financial year is available for public access. to purchase a physical copy, please contact the ministry\u2019s public relations office at: ministry of finance public relations office new building, ground floor, rooms 001 and 003 p. o. box mb 40 accra \u2013 ghana electronic copies can be downloaded from our website (www.mofep.gov.gh)\n\n[large_pdf_page_038_007] source=pdf doc=pdf_page_038\njan-dec y/y (%) budget rev. budget proj. prov.\n\n[large_pdf_page_145_002] source=pdf doc=pdf_page_145\nsummary of central government operations \u2013 2025 2025 2026 2027 2028 budget indicative indicative indicative i.\n\n[large_pdf_page_038_008] source=pdf doc=pdf_page_038\nbudget proj. prov.\n\nRules:\n- Use only the retrieved context.\n- Do not invent facts.\n- Include citations like [chunk_id].\n- If context is insufficient, output exactly: Insufficient evidence in retrieved context.\n",
+    "response": "The 2025 budget was presented to parliament by Dr. Cassiel Ato Forson, who is the Minister for Finance, on the authority of His Excellency John Dramani Mahama, the President of the Republic of Ghana, on March 11, 2025 [large_pdf_page_003_001]."
+  }
+}

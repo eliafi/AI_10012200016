@@ -1,0 +1,4781 @@
+{
+  "count": 796,
+  "items": [
+    {
+      "position": 0,
+      "chunk_id": "large_csv_1992_ashanti_region_001",
+      "source": "csv",
+      "doc_id": "csv_1992_ashanti_region"
+    },
+    {
+      "position": 1,
+      "chunk_id": "large_csv_1992_brong_ahafo_region_001",
+      "source": "csv",
+      "doc_id": "csv_1992_brong_ahafo_region"
+    },
+    {
+      "position": 2,
+      "chunk_id": "large_csv_1992_central_region_001",
+      "source": "csv",
+      "doc_id": "csv_1992_central_region"
+    },
+    {
+      "position": 3,
+      "chunk_id": "large_csv_1992_eastern_region_001",
+      "source": "csv",
+      "doc_id": "csv_1992_eastern_region"
+    },
+    {
+      "position": 4,
+      "chunk_id": "large_csv_1992_greater_accra_region_001",
+      "source": "csv",
+      "doc_id": "csv_1992_greater_accra_region"
+    },
+    {
+      "position": 5,
+      "chunk_id": "large_csv_1992_northern_region_001",
+      "source": "csv",
+      "doc_id": "csv_1992_northern_region"
+    },
+    {
+      "position": 6,
+      "chunk_id": "large_csv_1992_upper_east_region_001",
+      "source": "csv",
+      "doc_id": "csv_1992_upper_east_region"
+    },
+    {
+      "position": 7,
+      "chunk_id": "large_csv_1992_upper_west_region_001",
+      "source": "csv",
+      "doc_id": "csv_1992_upper_west_region"
+    },
+    {
+      "position": 8,
+      "chunk_id": "large_csv_1992_volta_region_001",
+      "source": "csv",
+      "doc_id": "csv_1992_volta_region"
+    },
+    {
+      "position": 9,
+      "chunk_id": "large_csv_1992_western_region_001",
+      "source": "csv",
+      "doc_id": "csv_1992_western_region"
+    },
+    {
+      "position": 10,
+      "chunk_id": "large_csv_1996_ashanti_region_001",
+      "source": "csv",
+      "doc_id": "csv_1996_ashanti_region"
+    },
+    {
+      "position": 11,
+      "chunk_id": "large_csv_1996_brong_ahafo_region_001",
+      "source": "csv",
+      "doc_id": "csv_1996_brong_ahafo_region"
+    },
+    {
+      "position": 12,
+      "chunk_id": "large_csv_1996_central_region_001",
+      "source": "csv",
+      "doc_id": "csv_1996_central_region"
+    },
+    {
+      "position": 13,
+      "chunk_id": "large_csv_1996_eastern_region_001",
+      "source": "csv",
+      "doc_id": "csv_1996_eastern_region"
+    },
+    {
+      "position": 14,
+      "chunk_id": "large_csv_1996_greater_accra_region_001",
+      "source": "csv",
+      "doc_id": "csv_1996_greater_accra_region"
+    },
+    {
+      "position": 15,
+      "chunk_id": "large_csv_1996_northern_region_001",
+      "source": "csv",
+      "doc_id": "csv_1996_northern_region"
+    },
+    {
+      "position": 16,
+      "chunk_id": "large_csv_1996_upper_east_region_001",
+      "source": "csv",
+      "doc_id": "csv_1996_upper_east_region"
+    },
+    {
+      "position": 17,
+      "chunk_id": "large_csv_1996_upper_west_region_001",
+      "source": "csv",
+      "doc_id": "csv_1996_upper_west_region"
+    },
+    {
+      "position": 18,
+      "chunk_id": "large_csv_1996_volta_region_001",
+      "source": "csv",
+      "doc_id": "csv_1996_volta_region"
+    },
+    {
+      "position": 19,
+      "chunk_id": "large_csv_1996_western_region_001",
+      "source": "csv",
+      "doc_id": "csv_1996_western_region"
+    },
+    {
+      "position": 20,
+      "chunk_id": "large_csv_2000_ashanti_region_001",
+      "source": "csv",
+      "doc_id": "csv_2000_ashanti_region"
+    },
+    {
+      "position": 21,
+      "chunk_id": "large_csv_2000_brong_ahafo_region_001",
+      "source": "csv",
+      "doc_id": "csv_2000_brong_ahafo_region"
+    },
+    {
+      "position": 22,
+      "chunk_id": "large_csv_2000_central_region_001",
+      "source": "csv",
+      "doc_id": "csv_2000_central_region"
+    },
+    {
+      "position": 23,
+      "chunk_id": "large_csv_2000_eastern_region_001",
+      "source": "csv",
+      "doc_id": "csv_2000_eastern_region"
+    },
+    {
+      "position": 24,
+      "chunk_id": "large_csv_2000_greater_accra_region_001",
+      "source": "csv",
+      "doc_id": "csv_2000_greater_accra_region"
+    },
+    {
+      "position": 25,
+      "chunk_id": "large_csv_2000_northern_region_001",
+      "source": "csv",
+      "doc_id": "csv_2000_northern_region"
+    },
+    {
+      "position": 26,
+      "chunk_id": "large_csv_2000_upper_east_region_001",
+      "source": "csv",
+      "doc_id": "csv_2000_upper_east_region"
+    },
+    {
+      "position": 27,
+      "chunk_id": "large_csv_2000_upper_west_region_001",
+      "source": "csv",
+      "doc_id": "csv_2000_upper_west_region"
+    },
+    {
+      "position": 28,
+      "chunk_id": "large_csv_2000_volta_region_001",
+      "source": "csv",
+      "doc_id": "csv_2000_volta_region"
+    },
+    {
+      "position": 29,
+      "chunk_id": "large_csv_2000_western_region_001",
+      "source": "csv",
+      "doc_id": "csv_2000_western_region"
+    },
+    {
+      "position": 30,
+      "chunk_id": "large_csv_2004_ashanti_region_001",
+      "source": "csv",
+      "doc_id": "csv_2004_ashanti_region"
+    },
+    {
+      "position": 31,
+      "chunk_id": "large_csv_2004_brong_ahafo_region_001",
+      "source": "csv",
+      "doc_id": "csv_2004_brong_ahafo_region"
+    },
+    {
+      "position": 32,
+      "chunk_id": "large_csv_2004_central_region_001",
+      "source": "csv",
+      "doc_id": "csv_2004_central_region"
+    },
+    {
+      "position": 33,
+      "chunk_id": "large_csv_2004_eastern_region_001",
+      "source": "csv",
+      "doc_id": "csv_2004_eastern_region"
+    },
+    {
+      "position": 34,
+      "chunk_id": "large_csv_2004_greater_accra_region_001",
+      "source": "csv",
+      "doc_id": "csv_2004_greater_accra_region"
+    },
+    {
+      "position": 35,
+      "chunk_id": "large_csv_2004_northern_region_001",
+      "source": "csv",
+      "doc_id": "csv_2004_northern_region"
+    },
+    {
+      "position": 36,
+      "chunk_id": "large_csv_2004_upper_east_region_001",
+      "source": "csv",
+      "doc_id": "csv_2004_upper_east_region"
+    },
+    {
+      "position": 37,
+      "chunk_id": "large_csv_2004_upper_west_region_001",
+      "source": "csv",
+      "doc_id": "csv_2004_upper_west_region"
+    },
+    {
+      "position": 38,
+      "chunk_id": "large_csv_2004_volta_region_001",
+      "source": "csv",
+      "doc_id": "csv_2004_volta_region"
+    },
+    {
+      "position": 39,
+      "chunk_id": "large_csv_2004_western_region_001",
+      "source": "csv",
+      "doc_id": "csv_2004_western_region"
+    },
+    {
+      "position": 40,
+      "chunk_id": "large_csv_2008_ashanti_region_001",
+      "source": "csv",
+      "doc_id": "csv_2008_ashanti_region"
+    },
+    {
+      "position": 41,
+      "chunk_id": "large_csv_2008_brong_ahafo_region_001",
+      "source": "csv",
+      "doc_id": "csv_2008_brong_ahafo_region"
+    },
+    {
+      "position": 42,
+      "chunk_id": "large_csv_2008_central_region_001",
+      "source": "csv",
+      "doc_id": "csv_2008_central_region"
+    },
+    {
+      "position": 43,
+      "chunk_id": "large_csv_2008_eastern_region_001",
+      "source": "csv",
+      "doc_id": "csv_2008_eastern_region"
+    },
+    {
+      "position": 44,
+      "chunk_id": "large_csv_2008_greater_accra_region_001",
+      "source": "csv",
+      "doc_id": "csv_2008_greater_accra_region"
+    },
+    {
+      "position": 45,
+      "chunk_id": "large_csv_2008_northern_region_001",
+      "source": "csv",
+      "doc_id": "csv_2008_northern_region"
+    },
+    {
+      "position": 46,
+      "chunk_id": "large_csv_2008_upper_east_region_001",
+      "source": "csv",
+      "doc_id": "csv_2008_upper_east_region"
+    },
+    {
+      "position": 47,
+      "chunk_id": "large_csv_2008_upper_west_region_001",
+      "source": "csv",
+      "doc_id": "csv_2008_upper_west_region"
+    },
+    {
+      "position": 48,
+      "chunk_id": "large_csv_2008_volta_region_001",
+      "source": "csv",
+      "doc_id": "csv_2008_volta_region"
+    },
+    {
+      "position": 49,
+      "chunk_id": "large_csv_2008_western_region_001",
+      "source": "csv",
+      "doc_id": "csv_2008_western_region"
+    },
+    {
+      "position": 50,
+      "chunk_id": "large_csv_2012_ahafo_region_001",
+      "source": "csv",
+      "doc_id": "csv_2012_ahafo_region"
+    },
+    {
+      "position": 51,
+      "chunk_id": "large_csv_2012_ashanti_region_001",
+      "source": "csv",
+      "doc_id": "csv_2012_ashanti_region"
+    },
+    {
+      "position": 52,
+      "chunk_id": "large_csv_2012_bono_east_region_001",
+      "source": "csv",
+      "doc_id": "csv_2012_bono_east_region"
+    },
+    {
+      "position": 53,
+      "chunk_id": "large_csv_2012_bono_region_001",
+      "source": "csv",
+      "doc_id": "csv_2012_bono_region"
+    },
+    {
+      "position": 54,
+      "chunk_id": "large_csv_2012_central_region_001",
+      "source": "csv",
+      "doc_id": "csv_2012_central_region"
+    },
+    {
+      "position": 55,
+      "chunk_id": "large_csv_2012_eastern_region_001",
+      "source": "csv",
+      "doc_id": "csv_2012_eastern_region"
+    },
+    {
+      "position": 56,
+      "chunk_id": "large_csv_2012_greater_accra_region_001",
+      "source": "csv",
+      "doc_id": "csv_2012_greater_accra_region"
+    },
+    {
+      "position": 57,
+      "chunk_id": "large_csv_2012_north_east_region_001",
+      "source": "csv",
+      "doc_id": "csv_2012_north_east_region"
+    },
+    {
+      "position": 58,
+      "chunk_id": "large_csv_2012_northern_region_001",
+      "source": "csv",
+      "doc_id": "csv_2012_northern_region"
+    },
+    {
+      "position": 59,
+      "chunk_id": "large_csv_2012_oti_region_001",
+      "source": "csv",
+      "doc_id": "csv_2012_oti_region"
+    },
+    {
+      "position": 60,
+      "chunk_id": "large_csv_2012_savannah_region_001",
+      "source": "csv",
+      "doc_id": "csv_2012_savannah_region"
+    },
+    {
+      "position": 61,
+      "chunk_id": "large_csv_2012_upper_east_region_001",
+      "source": "csv",
+      "doc_id": "csv_2012_upper_east_region"
+    },
+    {
+      "position": 62,
+      "chunk_id": "large_csv_2012_upper_west_region_001",
+      "source": "csv",
+      "doc_id": "csv_2012_upper_west_region"
+    },
+    {
+      "position": 63,
+      "chunk_id": "large_csv_2012_volta_region_001",
+      "source": "csv",
+      "doc_id": "csv_2012_volta_region"
+    },
+    {
+      "position": 64,
+      "chunk_id": "large_csv_2012_western_north_region_001",
+      "source": "csv",
+      "doc_id": "csv_2012_western_north_region"
+    },
+    {
+      "position": 65,
+      "chunk_id": "large_csv_2012_western_region_001",
+      "source": "csv",
+      "doc_id": "csv_2012_western_region"
+    },
+    {
+      "position": 66,
+      "chunk_id": "large_csv_2016_ahafo_region_001",
+      "source": "csv",
+      "doc_id": "csv_2016_ahafo_region"
+    },
+    {
+      "position": 67,
+      "chunk_id": "large_csv_2016_ashanti_region_001",
+      "source": "csv",
+      "doc_id": "csv_2016_ashanti_region"
+    },
+    {
+      "position": 68,
+      "chunk_id": "large_csv_2016_bono_east_region_001",
+      "source": "csv",
+      "doc_id": "csv_2016_bono_east_region"
+    },
+    {
+      "position": 69,
+      "chunk_id": "large_csv_2016_bono_region_001",
+      "source": "csv",
+      "doc_id": "csv_2016_bono_region"
+    },
+    {
+      "position": 70,
+      "chunk_id": "large_csv_2016_central_region_001",
+      "source": "csv",
+      "doc_id": "csv_2016_central_region"
+    },
+    {
+      "position": 71,
+      "chunk_id": "large_csv_2016_eastern_region_001",
+      "source": "csv",
+      "doc_id": "csv_2016_eastern_region"
+    },
+    {
+      "position": 72,
+      "chunk_id": "large_csv_2016_greater_accra_region_001",
+      "source": "csv",
+      "doc_id": "csv_2016_greater_accra_region"
+    },
+    {
+      "position": 73,
+      "chunk_id": "large_csv_2016_north_east_region_001",
+      "source": "csv",
+      "doc_id": "csv_2016_north_east_region"
+    },
+    {
+      "position": 74,
+      "chunk_id": "large_csv_2016_northern_region_001",
+      "source": "csv",
+      "doc_id": "csv_2016_northern_region"
+    },
+    {
+      "position": 75,
+      "chunk_id": "large_csv_2016_oti_region_001",
+      "source": "csv",
+      "doc_id": "csv_2016_oti_region"
+    },
+    {
+      "position": 76,
+      "chunk_id": "large_csv_2016_savannah_region_001",
+      "source": "csv",
+      "doc_id": "csv_2016_savannah_region"
+    },
+    {
+      "position": 77,
+      "chunk_id": "large_csv_2016_upper_east_region_001",
+      "source": "csv",
+      "doc_id": "csv_2016_upper_east_region"
+    },
+    {
+      "position": 78,
+      "chunk_id": "large_csv_2016_upper_west_region_001",
+      "source": "csv",
+      "doc_id": "csv_2016_upper_west_region"
+    },
+    {
+      "position": 79,
+      "chunk_id": "large_csv_2016_volta_region_001",
+      "source": "csv",
+      "doc_id": "csv_2016_volta_region"
+    },
+    {
+      "position": 80,
+      "chunk_id": "large_csv_2016_western_north_region_001",
+      "source": "csv",
+      "doc_id": "csv_2016_western_north_region"
+    },
+    {
+      "position": 81,
+      "chunk_id": "large_csv_2016_western_region_001",
+      "source": "csv",
+      "doc_id": "csv_2016_western_region"
+    },
+    {
+      "position": 82,
+      "chunk_id": "large_csv_2020_ahafo_region_001",
+      "source": "csv",
+      "doc_id": "csv_2020_ahafo_region"
+    },
+    {
+      "position": 83,
+      "chunk_id": "large_csv_2020_ashanti_region_001",
+      "source": "csv",
+      "doc_id": "csv_2020_ashanti_region"
+    },
+    {
+      "position": 84,
+      "chunk_id": "large_csv_2020_bono_east_region_001",
+      "source": "csv",
+      "doc_id": "csv_2020_bono_east_region"
+    },
+    {
+      "position": 85,
+      "chunk_id": "large_csv_2020_bono_region_001",
+      "source": "csv",
+      "doc_id": "csv_2020_bono_region"
+    },
+    {
+      "position": 86,
+      "chunk_id": "large_csv_2020_central_region_001",
+      "source": "csv",
+      "doc_id": "csv_2020_central_region"
+    },
+    {
+      "position": 87,
+      "chunk_id": "large_csv_2020_eastern_region_001",
+      "source": "csv",
+      "doc_id": "csv_2020_eastern_region"
+    },
+    {
+      "position": 88,
+      "chunk_id": "large_csv_2020_greater_accra_region_001",
+      "source": "csv",
+      "doc_id": "csv_2020_greater_accra_region"
+    },
+    {
+      "position": 89,
+      "chunk_id": "large_csv_2020_north_east_region_001",
+      "source": "csv",
+      "doc_id": "csv_2020_north_east_region"
+    },
+    {
+      "position": 90,
+      "chunk_id": "large_csv_2020_northern_region_001",
+      "source": "csv",
+      "doc_id": "csv_2020_northern_region"
+    },
+    {
+      "position": 91,
+      "chunk_id": "large_csv_2020_oti_region_001",
+      "source": "csv",
+      "doc_id": "csv_2020_oti_region"
+    },
+    {
+      "position": 92,
+      "chunk_id": "large_csv_2020_savannah_region_001",
+      "source": "csv",
+      "doc_id": "csv_2020_savannah_region"
+    },
+    {
+      "position": 93,
+      "chunk_id": "large_csv_2020_upper_east_region_001",
+      "source": "csv",
+      "doc_id": "csv_2020_upper_east_region"
+    },
+    {
+      "position": 94,
+      "chunk_id": "large_csv_2020_upper_west_region_001",
+      "source": "csv",
+      "doc_id": "csv_2020_upper_west_region"
+    },
+    {
+      "position": 95,
+      "chunk_id": "large_csv_2020_volta_region_001",
+      "source": "csv",
+      "doc_id": "csv_2020_volta_region"
+    },
+    {
+      "position": 96,
+      "chunk_id": "large_csv_2020_western_north_region_001",
+      "source": "csv",
+      "doc_id": "csv_2020_western_north_region"
+    },
+    {
+      "position": 97,
+      "chunk_id": "large_csv_2020_western_region_001",
+      "source": "csv",
+      "doc_id": "csv_2020_western_region"
+    },
+    {
+      "position": 98,
+      "chunk_id": "large_pdf_page_001_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_001"
+    },
+    {
+      "position": 99,
+      "chunk_id": "large_pdf_page_003_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_003"
+    },
+    {
+      "position": 100,
+      "chunk_id": "large_pdf_page_004_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_004"
+    },
+    {
+      "position": 101,
+      "chunk_id": "large_pdf_page_005_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_005"
+    },
+    {
+      "position": 102,
+      "chunk_id": "large_pdf_page_006_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_006"
+    },
+    {
+      "position": 103,
+      "chunk_id": "large_pdf_page_007_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_007"
+    },
+    {
+      "position": 104,
+      "chunk_id": "large_pdf_page_007_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_007"
+    },
+    {
+      "position": 105,
+      "chunk_id": "large_pdf_page_008_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_008"
+    },
+    {
+      "position": 106,
+      "chunk_id": "large_pdf_page_009_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_009"
+    },
+    {
+      "position": 107,
+      "chunk_id": "large_pdf_page_010_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_010"
+    },
+    {
+      "position": 108,
+      "chunk_id": "large_pdf_page_011_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_011"
+    },
+    {
+      "position": 109,
+      "chunk_id": "large_pdf_page_012_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_012"
+    },
+    {
+      "position": 110,
+      "chunk_id": "large_pdf_page_013_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_013"
+    },
+    {
+      "position": 111,
+      "chunk_id": "large_pdf_page_014_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_014"
+    },
+    {
+      "position": 112,
+      "chunk_id": "large_pdf_page_015_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_015"
+    },
+    {
+      "position": 113,
+      "chunk_id": "large_pdf_page_016_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_016"
+    },
+    {
+      "position": 114,
+      "chunk_id": "large_pdf_page_017_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_017"
+    },
+    {
+      "position": 115,
+      "chunk_id": "large_pdf_page_018_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_018"
+    },
+    {
+      "position": 116,
+      "chunk_id": "large_pdf_page_018_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_018"
+    },
+    {
+      "position": 117,
+      "chunk_id": "large_pdf_page_019_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_019"
+    },
+    {
+      "position": 118,
+      "chunk_id": "large_pdf_page_019_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_019"
+    },
+    {
+      "position": 119,
+      "chunk_id": "large_pdf_page_020_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_020"
+    },
+    {
+      "position": 120,
+      "chunk_id": "large_pdf_page_021_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_021"
+    },
+    {
+      "position": 121,
+      "chunk_id": "large_pdf_page_022_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_022"
+    },
+    {
+      "position": 122,
+      "chunk_id": "large_pdf_page_023_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_023"
+    },
+    {
+      "position": 123,
+      "chunk_id": "large_pdf_page_023_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_023"
+    },
+    {
+      "position": 124,
+      "chunk_id": "large_pdf_page_024_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_024"
+    },
+    {
+      "position": 125,
+      "chunk_id": "large_pdf_page_024_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_024"
+    },
+    {
+      "position": 126,
+      "chunk_id": "large_pdf_page_025_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_025"
+    },
+    {
+      "position": 127,
+      "chunk_id": "large_pdf_page_026_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_026"
+    },
+    {
+      "position": 128,
+      "chunk_id": "large_pdf_page_026_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_026"
+    },
+    {
+      "position": 129,
+      "chunk_id": "large_pdf_page_027_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_027"
+    },
+    {
+      "position": 130,
+      "chunk_id": "large_pdf_page_027_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_027"
+    },
+    {
+      "position": 131,
+      "chunk_id": "large_pdf_page_028_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_028"
+    },
+    {
+      "position": 132,
+      "chunk_id": "large_pdf_page_029_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_029"
+    },
+    {
+      "position": 133,
+      "chunk_id": "large_pdf_page_030_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_030"
+    },
+    {
+      "position": 134,
+      "chunk_id": "large_pdf_page_031_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_031"
+    },
+    {
+      "position": 135,
+      "chunk_id": "large_pdf_page_032_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_032"
+    },
+    {
+      "position": 136,
+      "chunk_id": "large_pdf_page_032_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_032"
+    },
+    {
+      "position": 137,
+      "chunk_id": "large_pdf_page_033_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_033"
+    },
+    {
+      "position": 138,
+      "chunk_id": "large_pdf_page_033_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_033"
+    },
+    {
+      "position": 139,
+      "chunk_id": "large_pdf_page_034_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_034"
+    },
+    {
+      "position": 140,
+      "chunk_id": "large_pdf_page_035_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_035"
+    },
+    {
+      "position": 141,
+      "chunk_id": "large_pdf_page_035_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_035"
+    },
+    {
+      "position": 142,
+      "chunk_id": "large_pdf_page_036_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_036"
+    },
+    {
+      "position": 143,
+      "chunk_id": "large_pdf_page_036_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_036"
+    },
+    {
+      "position": 144,
+      "chunk_id": "large_pdf_page_036_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_036"
+    },
+    {
+      "position": 145,
+      "chunk_id": "large_pdf_page_036_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_036"
+    },
+    {
+      "position": 146,
+      "chunk_id": "large_pdf_page_037_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_037"
+    },
+    {
+      "position": 147,
+      "chunk_id": "large_pdf_page_038_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_038"
+    },
+    {
+      "position": 148,
+      "chunk_id": "large_pdf_page_038_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_038"
+    },
+    {
+      "position": 149,
+      "chunk_id": "large_pdf_page_038_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_038"
+    },
+    {
+      "position": 150,
+      "chunk_id": "large_pdf_page_038_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_038"
+    },
+    {
+      "position": 151,
+      "chunk_id": "large_pdf_page_038_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_038"
+    },
+    {
+      "position": 152,
+      "chunk_id": "large_pdf_page_038_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_038"
+    },
+    {
+      "position": 153,
+      "chunk_id": "large_pdf_page_038_007",
+      "source": "pdf",
+      "doc_id": "pdf_page_038"
+    },
+    {
+      "position": 154,
+      "chunk_id": "large_pdf_page_038_008",
+      "source": "pdf",
+      "doc_id": "pdf_page_038"
+    },
+    {
+      "position": 155,
+      "chunk_id": "large_pdf_page_038_009",
+      "source": "pdf",
+      "doc_id": "pdf_page_038"
+    },
+    {
+      "position": 156,
+      "chunk_id": "large_pdf_page_038_010",
+      "source": "pdf",
+      "doc_id": "pdf_page_038"
+    },
+    {
+      "position": 157,
+      "chunk_id": "large_pdf_page_038_011",
+      "source": "pdf",
+      "doc_id": "pdf_page_038"
+    },
+    {
+      "position": 158,
+      "chunk_id": "large_pdf_page_039_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_039"
+    },
+    {
+      "position": 159,
+      "chunk_id": "large_pdf_page_039_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_039"
+    },
+    {
+      "position": 160,
+      "chunk_id": "large_pdf_page_040_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_040"
+    },
+    {
+      "position": 161,
+      "chunk_id": "large_pdf_page_040_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_040"
+    },
+    {
+      "position": 162,
+      "chunk_id": "large_pdf_page_040_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_040"
+    },
+    {
+      "position": 163,
+      "chunk_id": "large_pdf_page_040_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_040"
+    },
+    {
+      "position": 164,
+      "chunk_id": "large_pdf_page_040_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_040"
+    },
+    {
+      "position": 165,
+      "chunk_id": "large_pdf_page_040_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_040"
+    },
+    {
+      "position": 166,
+      "chunk_id": "large_pdf_page_040_007",
+      "source": "pdf",
+      "doc_id": "pdf_page_040"
+    },
+    {
+      "position": 167,
+      "chunk_id": "large_pdf_page_040_008",
+      "source": "pdf",
+      "doc_id": "pdf_page_040"
+    },
+    {
+      "position": 168,
+      "chunk_id": "large_pdf_page_040_009",
+      "source": "pdf",
+      "doc_id": "pdf_page_040"
+    },
+    {
+      "position": 169,
+      "chunk_id": "large_pdf_page_040_010",
+      "source": "pdf",
+      "doc_id": "pdf_page_040"
+    },
+    {
+      "position": 170,
+      "chunk_id": "large_pdf_page_040_011",
+      "source": "pdf",
+      "doc_id": "pdf_page_040"
+    },
+    {
+      "position": 171,
+      "chunk_id": "large_pdf_page_040_012",
+      "source": "pdf",
+      "doc_id": "pdf_page_040"
+    },
+    {
+      "position": 172,
+      "chunk_id": "large_pdf_page_041_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_041"
+    },
+    {
+      "position": 173,
+      "chunk_id": "large_pdf_page_042_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_042"
+    },
+    {
+      "position": 174,
+      "chunk_id": "large_pdf_page_042_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_042"
+    },
+    {
+      "position": 175,
+      "chunk_id": "large_pdf_page_042_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_042"
+    },
+    {
+      "position": 176,
+      "chunk_id": "large_pdf_page_043_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_043"
+    },
+    {
+      "position": 177,
+      "chunk_id": "large_pdf_page_044_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_044"
+    },
+    {
+      "position": 178,
+      "chunk_id": "large_pdf_page_044_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_044"
+    },
+    {
+      "position": 179,
+      "chunk_id": "large_pdf_page_045_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_045"
+    },
+    {
+      "position": 180,
+      "chunk_id": "large_pdf_page_046_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_046"
+    },
+    {
+      "position": 181,
+      "chunk_id": "large_pdf_page_047_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_047"
+    },
+    {
+      "position": 182,
+      "chunk_id": "large_pdf_page_048_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_048"
+    },
+    {
+      "position": 183,
+      "chunk_id": "large_pdf_page_048_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_048"
+    },
+    {
+      "position": 184,
+      "chunk_id": "large_pdf_page_049_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_049"
+    },
+    {
+      "position": 185,
+      "chunk_id": "large_pdf_page_050_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_050"
+    },
+    {
+      "position": 186,
+      "chunk_id": "large_pdf_page_050_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_050"
+    },
+    {
+      "position": 187,
+      "chunk_id": "large_pdf_page_051_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_051"
+    },
+    {
+      "position": 188,
+      "chunk_id": "large_pdf_page_051_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_051"
+    },
+    {
+      "position": 189,
+      "chunk_id": "large_pdf_page_051_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_051"
+    },
+    {
+      "position": 190,
+      "chunk_id": "large_pdf_page_052_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_052"
+    },
+    {
+      "position": 191,
+      "chunk_id": "large_pdf_page_052_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_052"
+    },
+    {
+      "position": 192,
+      "chunk_id": "large_pdf_page_053_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_053"
+    },
+    {
+      "position": 193,
+      "chunk_id": "large_pdf_page_053_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_053"
+    },
+    {
+      "position": 194,
+      "chunk_id": "large_pdf_page_053_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_053"
+    },
+    {
+      "position": 195,
+      "chunk_id": "large_pdf_page_053_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_053"
+    },
+    {
+      "position": 196,
+      "chunk_id": "large_pdf_page_054_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_054"
+    },
+    {
+      "position": 197,
+      "chunk_id": "large_pdf_page_054_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_054"
+    },
+    {
+      "position": 198,
+      "chunk_id": "large_pdf_page_055_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_055"
+    },
+    {
+      "position": 199,
+      "chunk_id": "large_pdf_page_055_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_055"
+    },
+    {
+      "position": 200,
+      "chunk_id": "large_pdf_page_056_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_056"
+    },
+    {
+      "position": 201,
+      "chunk_id": "large_pdf_page_057_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_057"
+    },
+    {
+      "position": 202,
+      "chunk_id": "large_pdf_page_057_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_057"
+    },
+    {
+      "position": 203,
+      "chunk_id": "large_pdf_page_058_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_058"
+    },
+    {
+      "position": 204,
+      "chunk_id": "large_pdf_page_058_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_058"
+    },
+    {
+      "position": 205,
+      "chunk_id": "large_pdf_page_059_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_059"
+    },
+    {
+      "position": 206,
+      "chunk_id": "large_pdf_page_059_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_059"
+    },
+    {
+      "position": 207,
+      "chunk_id": "large_pdf_page_060_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_060"
+    },
+    {
+      "position": 208,
+      "chunk_id": "large_pdf_page_061_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_061"
+    },
+    {
+      "position": 209,
+      "chunk_id": "large_pdf_page_062_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_062"
+    },
+    {
+      "position": 210,
+      "chunk_id": "large_pdf_page_063_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_063"
+    },
+    {
+      "position": 211,
+      "chunk_id": "large_pdf_page_064_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_064"
+    },
+    {
+      "position": 212,
+      "chunk_id": "large_pdf_page_065_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_065"
+    },
+    {
+      "position": 213,
+      "chunk_id": "large_pdf_page_066_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_066"
+    },
+    {
+      "position": 214,
+      "chunk_id": "large_pdf_page_067_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_067"
+    },
+    {
+      "position": 215,
+      "chunk_id": "large_pdf_page_067_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_067"
+    },
+    {
+      "position": 216,
+      "chunk_id": "large_pdf_page_068_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_068"
+    },
+    {
+      "position": 217,
+      "chunk_id": "large_pdf_page_069_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_069"
+    },
+    {
+      "position": 218,
+      "chunk_id": "large_pdf_page_070_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_070"
+    },
+    {
+      "position": 219,
+      "chunk_id": "large_pdf_page_071_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_071"
+    },
+    {
+      "position": 220,
+      "chunk_id": "large_pdf_page_072_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_072"
+    },
+    {
+      "position": 221,
+      "chunk_id": "large_pdf_page_072_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_072"
+    },
+    {
+      "position": 222,
+      "chunk_id": "large_pdf_page_073_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_073"
+    },
+    {
+      "position": 223,
+      "chunk_id": "large_pdf_page_073_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_073"
+    },
+    {
+      "position": 224,
+      "chunk_id": "large_pdf_page_074_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_074"
+    },
+    {
+      "position": 225,
+      "chunk_id": "large_pdf_page_075_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_075"
+    },
+    {
+      "position": 226,
+      "chunk_id": "large_pdf_page_075_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_075"
+    },
+    {
+      "position": 227,
+      "chunk_id": "large_pdf_page_076_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_076"
+    },
+    {
+      "position": 228,
+      "chunk_id": "large_pdf_page_077_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_077"
+    },
+    {
+      "position": 229,
+      "chunk_id": "large_pdf_page_077_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_077"
+    },
+    {
+      "position": 230,
+      "chunk_id": "large_pdf_page_078_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_078"
+    },
+    {
+      "position": 231,
+      "chunk_id": "large_pdf_page_078_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_078"
+    },
+    {
+      "position": 232,
+      "chunk_id": "large_pdf_page_078_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_078"
+    },
+    {
+      "position": 233,
+      "chunk_id": "large_pdf_page_078_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_078"
+    },
+    {
+      "position": 234,
+      "chunk_id": "large_pdf_page_078_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_078"
+    },
+    {
+      "position": 235,
+      "chunk_id": "large_pdf_page_078_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_078"
+    },
+    {
+      "position": 236,
+      "chunk_id": "large_pdf_page_079_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_079"
+    },
+    {
+      "position": 237,
+      "chunk_id": "large_pdf_page_079_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_079"
+    },
+    {
+      "position": 238,
+      "chunk_id": "large_pdf_page_080_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_080"
+    },
+    {
+      "position": 239,
+      "chunk_id": "large_pdf_page_081_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_081"
+    },
+    {
+      "position": 240,
+      "chunk_id": "large_pdf_page_082_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_082"
+    },
+    {
+      "position": 241,
+      "chunk_id": "large_pdf_page_083_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_083"
+    },
+    {
+      "position": 242,
+      "chunk_id": "large_pdf_page_084_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_084"
+    },
+    {
+      "position": 243,
+      "chunk_id": "large_pdf_page_085_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_085"
+    },
+    {
+      "position": 244,
+      "chunk_id": "large_pdf_page_086_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_086"
+    },
+    {
+      "position": 245,
+      "chunk_id": "large_pdf_page_087_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_087"
+    },
+    {
+      "position": 246,
+      "chunk_id": "large_pdf_page_087_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_087"
+    },
+    {
+      "position": 247,
+      "chunk_id": "large_pdf_page_088_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_088"
+    },
+    {
+      "position": 248,
+      "chunk_id": "large_pdf_page_089_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_089"
+    },
+    {
+      "position": 249,
+      "chunk_id": "large_pdf_page_089_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_089"
+    },
+    {
+      "position": 250,
+      "chunk_id": "large_pdf_page_090_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_090"
+    },
+    {
+      "position": 251,
+      "chunk_id": "large_pdf_page_091_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_091"
+    },
+    {
+      "position": 252,
+      "chunk_id": "large_pdf_page_091_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_091"
+    },
+    {
+      "position": 253,
+      "chunk_id": "large_pdf_page_092_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_092"
+    },
+    {
+      "position": 254,
+      "chunk_id": "large_pdf_page_092_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_092"
+    },
+    {
+      "position": 255,
+      "chunk_id": "large_pdf_page_093_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_093"
+    },
+    {
+      "position": 256,
+      "chunk_id": "large_pdf_page_094_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_094"
+    },
+    {
+      "position": 257,
+      "chunk_id": "large_pdf_page_094_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_094"
+    },
+    {
+      "position": 258,
+      "chunk_id": "large_pdf_page_095_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_095"
+    },
+    {
+      "position": 259,
+      "chunk_id": "large_pdf_page_095_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_095"
+    },
+    {
+      "position": 260,
+      "chunk_id": "large_pdf_page_096_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_096"
+    },
+    {
+      "position": 261,
+      "chunk_id": "large_pdf_page_097_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_097"
+    },
+    {
+      "position": 262,
+      "chunk_id": "large_pdf_page_098_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_098"
+    },
+    {
+      "position": 263,
+      "chunk_id": "large_pdf_page_098_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_098"
+    },
+    {
+      "position": 264,
+      "chunk_id": "large_pdf_page_099_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_099"
+    },
+    {
+      "position": 265,
+      "chunk_id": "large_pdf_page_099_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_099"
+    },
+    {
+      "position": 266,
+      "chunk_id": "large_pdf_page_100_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_100"
+    },
+    {
+      "position": 267,
+      "chunk_id": "large_pdf_page_101_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_101"
+    },
+    {
+      "position": 268,
+      "chunk_id": "large_pdf_page_101_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_101"
+    },
+    {
+      "position": 269,
+      "chunk_id": "large_pdf_page_102_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_102"
+    },
+    {
+      "position": 270,
+      "chunk_id": "large_pdf_page_102_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_102"
+    },
+    {
+      "position": 271,
+      "chunk_id": "large_pdf_page_103_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_103"
+    },
+    {
+      "position": 272,
+      "chunk_id": "large_pdf_page_104_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_104"
+    },
+    {
+      "position": 273,
+      "chunk_id": "large_pdf_page_104_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_104"
+    },
+    {
+      "position": 274,
+      "chunk_id": "large_pdf_page_105_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_105"
+    },
+    {
+      "position": 275,
+      "chunk_id": "large_pdf_page_106_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_106"
+    },
+    {
+      "position": 276,
+      "chunk_id": "large_pdf_page_107_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_107"
+    },
+    {
+      "position": 277,
+      "chunk_id": "large_pdf_page_107_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_107"
+    },
+    {
+      "position": 278,
+      "chunk_id": "large_pdf_page_108_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_108"
+    },
+    {
+      "position": 279,
+      "chunk_id": "large_pdf_page_108_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_108"
+    },
+    {
+      "position": 280,
+      "chunk_id": "large_pdf_page_109_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_109"
+    },
+    {
+      "position": 281,
+      "chunk_id": "large_pdf_page_109_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_109"
+    },
+    {
+      "position": 282,
+      "chunk_id": "large_pdf_page_110_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_110"
+    },
+    {
+      "position": 283,
+      "chunk_id": "large_pdf_page_110_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_110"
+    },
+    {
+      "position": 284,
+      "chunk_id": "large_pdf_page_111_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_111"
+    },
+    {
+      "position": 285,
+      "chunk_id": "large_pdf_page_111_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_111"
+    },
+    {
+      "position": 286,
+      "chunk_id": "large_pdf_page_112_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_112"
+    },
+    {
+      "position": 287,
+      "chunk_id": "large_pdf_page_112_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_112"
+    },
+    {
+      "position": 288,
+      "chunk_id": "large_pdf_page_113_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_113"
+    },
+    {
+      "position": 289,
+      "chunk_id": "large_pdf_page_113_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_113"
+    },
+    {
+      "position": 290,
+      "chunk_id": "large_pdf_page_114_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_114"
+    },
+    {
+      "position": 291,
+      "chunk_id": "large_pdf_page_114_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_114"
+    },
+    {
+      "position": 292,
+      "chunk_id": "large_pdf_page_115_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_115"
+    },
+    {
+      "position": 293,
+      "chunk_id": "large_pdf_page_116_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_116"
+    },
+    {
+      "position": 294,
+      "chunk_id": "large_pdf_page_116_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_116"
+    },
+    {
+      "position": 295,
+      "chunk_id": "large_pdf_page_117_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_117"
+    },
+    {
+      "position": 296,
+      "chunk_id": "large_pdf_page_118_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_118"
+    },
+    {
+      "position": 297,
+      "chunk_id": "large_pdf_page_118_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_118"
+    },
+    {
+      "position": 298,
+      "chunk_id": "large_pdf_page_119_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_119"
+    },
+    {
+      "position": 299,
+      "chunk_id": "large_pdf_page_120_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_120"
+    },
+    {
+      "position": 300,
+      "chunk_id": "large_pdf_page_120_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_120"
+    },
+    {
+      "position": 301,
+      "chunk_id": "large_pdf_page_121_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_121"
+    },
+    {
+      "position": 302,
+      "chunk_id": "large_pdf_page_121_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_121"
+    },
+    {
+      "position": 303,
+      "chunk_id": "large_pdf_page_122_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_122"
+    },
+    {
+      "position": 304,
+      "chunk_id": "large_pdf_page_122_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_122"
+    },
+    {
+      "position": 305,
+      "chunk_id": "large_pdf_page_123_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_123"
+    },
+    {
+      "position": 306,
+      "chunk_id": "large_pdf_page_123_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_123"
+    },
+    {
+      "position": 307,
+      "chunk_id": "large_pdf_page_124_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_124"
+    },
+    {
+      "position": 308,
+      "chunk_id": "large_pdf_page_125_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_125"
+    },
+    {
+      "position": 309,
+      "chunk_id": "large_pdf_page_125_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_125"
+    },
+    {
+      "position": 310,
+      "chunk_id": "large_pdf_page_126_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_126"
+    },
+    {
+      "position": 311,
+      "chunk_id": "large_pdf_page_127_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_127"
+    },
+    {
+      "position": 312,
+      "chunk_id": "large_pdf_page_127_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_127"
+    },
+    {
+      "position": 313,
+      "chunk_id": "large_pdf_page_128_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_128"
+    },
+    {
+      "position": 314,
+      "chunk_id": "large_pdf_page_128_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_128"
+    },
+    {
+      "position": 315,
+      "chunk_id": "large_pdf_page_129_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_129"
+    },
+    {
+      "position": 316,
+      "chunk_id": "large_pdf_page_129_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_129"
+    },
+    {
+      "position": 317,
+      "chunk_id": "large_pdf_page_130_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_130"
+    },
+    {
+      "position": 318,
+      "chunk_id": "large_pdf_page_131_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_131"
+    },
+    {
+      "position": 319,
+      "chunk_id": "large_pdf_page_131_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_131"
+    },
+    {
+      "position": 320,
+      "chunk_id": "large_pdf_page_132_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_132"
+    },
+    {
+      "position": 321,
+      "chunk_id": "large_pdf_page_132_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_132"
+    },
+    {
+      "position": 322,
+      "chunk_id": "large_pdf_page_133_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_133"
+    },
+    {
+      "position": 323,
+      "chunk_id": "large_pdf_page_133_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_133"
+    },
+    {
+      "position": 324,
+      "chunk_id": "large_pdf_page_134_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_134"
+    },
+    {
+      "position": 325,
+      "chunk_id": "large_pdf_page_135_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_135"
+    },
+    {
+      "position": 326,
+      "chunk_id": "large_pdf_page_136_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_136"
+    },
+    {
+      "position": 327,
+      "chunk_id": "large_pdf_page_137_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_137"
+    },
+    {
+      "position": 328,
+      "chunk_id": "large_pdf_page_138_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_138"
+    },
+    {
+      "position": 329,
+      "chunk_id": "large_pdf_page_138_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_138"
+    },
+    {
+      "position": 330,
+      "chunk_id": "large_pdf_page_138_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_138"
+    },
+    {
+      "position": 331,
+      "chunk_id": "large_pdf_page_138_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_138"
+    },
+    {
+      "position": 332,
+      "chunk_id": "large_pdf_page_138_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_138"
+    },
+    {
+      "position": 333,
+      "chunk_id": "large_pdf_page_138_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_138"
+    },
+    {
+      "position": 334,
+      "chunk_id": "large_pdf_page_139_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_139"
+    },
+    {
+      "position": 335,
+      "chunk_id": "large_pdf_page_139_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_139"
+    },
+    {
+      "position": 336,
+      "chunk_id": "large_pdf_page_139_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_139"
+    },
+    {
+      "position": 337,
+      "chunk_id": "large_pdf_page_139_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_139"
+    },
+    {
+      "position": 338,
+      "chunk_id": "large_pdf_page_139_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_139"
+    },
+    {
+      "position": 339,
+      "chunk_id": "large_pdf_page_139_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_139"
+    },
+    {
+      "position": 340,
+      "chunk_id": "large_pdf_page_140_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_140"
+    },
+    {
+      "position": 341,
+      "chunk_id": "large_pdf_page_140_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_140"
+    },
+    {
+      "position": 342,
+      "chunk_id": "large_pdf_page_140_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_140"
+    },
+    {
+      "position": 343,
+      "chunk_id": "large_pdf_page_140_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_140"
+    },
+    {
+      "position": 344,
+      "chunk_id": "large_pdf_page_140_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_140"
+    },
+    {
+      "position": 345,
+      "chunk_id": "large_pdf_page_140_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_140"
+    },
+    {
+      "position": 346,
+      "chunk_id": "large_pdf_page_141_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_141"
+    },
+    {
+      "position": 347,
+      "chunk_id": "large_pdf_page_141_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_141"
+    },
+    {
+      "position": 348,
+      "chunk_id": "large_pdf_page_141_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_141"
+    },
+    {
+      "position": 349,
+      "chunk_id": "large_pdf_page_141_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_141"
+    },
+    {
+      "position": 350,
+      "chunk_id": "large_pdf_page_141_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_141"
+    },
+    {
+      "position": 351,
+      "chunk_id": "large_pdf_page_141_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_141"
+    },
+    {
+      "position": 352,
+      "chunk_id": "large_pdf_page_142_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_142"
+    },
+    {
+      "position": 353,
+      "chunk_id": "large_pdf_page_142_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_142"
+    },
+    {
+      "position": 354,
+      "chunk_id": "large_pdf_page_142_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_142"
+    },
+    {
+      "position": 355,
+      "chunk_id": "large_pdf_page_143_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_143"
+    },
+    {
+      "position": 356,
+      "chunk_id": "large_pdf_page_143_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_143"
+    },
+    {
+      "position": 357,
+      "chunk_id": "large_pdf_page_143_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_143"
+    },
+    {
+      "position": 358,
+      "chunk_id": "large_pdf_page_144_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_144"
+    },
+    {
+      "position": 359,
+      "chunk_id": "large_pdf_page_144_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_144"
+    },
+    {
+      "position": 360,
+      "chunk_id": "large_pdf_page_144_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_144"
+    },
+    {
+      "position": 361,
+      "chunk_id": "large_pdf_page_144_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_144"
+    },
+    {
+      "position": 362,
+      "chunk_id": "large_pdf_page_144_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_144"
+    },
+    {
+      "position": 363,
+      "chunk_id": "large_pdf_page_144_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_144"
+    },
+    {
+      "position": 364,
+      "chunk_id": "large_pdf_page_145_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_145"
+    },
+    {
+      "position": 365,
+      "chunk_id": "large_pdf_page_145_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_145"
+    },
+    {
+      "position": 366,
+      "chunk_id": "large_pdf_page_145_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_145"
+    },
+    {
+      "position": 367,
+      "chunk_id": "large_pdf_page_145_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_145"
+    },
+    {
+      "position": 368,
+      "chunk_id": "large_pdf_page_145_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_145"
+    },
+    {
+      "position": 369,
+      "chunk_id": "large_pdf_page_146_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_146"
+    },
+    {
+      "position": 370,
+      "chunk_id": "large_pdf_page_146_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_146"
+    },
+    {
+      "position": 371,
+      "chunk_id": "large_pdf_page_146_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_146"
+    },
+    {
+      "position": 372,
+      "chunk_id": "large_pdf_page_147_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_147"
+    },
+    {
+      "position": 373,
+      "chunk_id": "large_pdf_page_147_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_147"
+    },
+    {
+      "position": 374,
+      "chunk_id": "large_pdf_page_148_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_148"
+    },
+    {
+      "position": 375,
+      "chunk_id": "large_pdf_page_148_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_148"
+    },
+    {
+      "position": 376,
+      "chunk_id": "large_pdf_page_148_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_148"
+    },
+    {
+      "position": 377,
+      "chunk_id": "large_pdf_page_148_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_148"
+    },
+    {
+      "position": 378,
+      "chunk_id": "large_pdf_page_148_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_148"
+    },
+    {
+      "position": 379,
+      "chunk_id": "large_pdf_page_148_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_148"
+    },
+    {
+      "position": 380,
+      "chunk_id": "large_pdf_page_149_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_149"
+    },
+    {
+      "position": 381,
+      "chunk_id": "large_pdf_page_149_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_149"
+    },
+    {
+      "position": 382,
+      "chunk_id": "large_pdf_page_149_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_149"
+    },
+    {
+      "position": 383,
+      "chunk_id": "large_pdf_page_150_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_150"
+    },
+    {
+      "position": 384,
+      "chunk_id": "large_pdf_page_150_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_150"
+    },
+    {
+      "position": 385,
+      "chunk_id": "large_pdf_page_151_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_151"
+    },
+    {
+      "position": 386,
+      "chunk_id": "large_pdf_page_152_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_152"
+    },
+    {
+      "position": 387,
+      "chunk_id": "large_pdf_page_152_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_152"
+    },
+    {
+      "position": 388,
+      "chunk_id": "large_pdf_page_153_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_153"
+    },
+    {
+      "position": 389,
+      "chunk_id": "large_pdf_page_154_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_154"
+    },
+    {
+      "position": 390,
+      "chunk_id": "large_pdf_page_154_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_154"
+    },
+    {
+      "position": 391,
+      "chunk_id": "large_pdf_page_154_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_154"
+    },
+    {
+      "position": 392,
+      "chunk_id": "large_pdf_page_155_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_155"
+    },
+    {
+      "position": 393,
+      "chunk_id": "large_pdf_page_155_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_155"
+    },
+    {
+      "position": 394,
+      "chunk_id": "large_pdf_page_155_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_155"
+    },
+    {
+      "position": 395,
+      "chunk_id": "large_pdf_page_156_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_156"
+    },
+    {
+      "position": 396,
+      "chunk_id": "large_pdf_page_156_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_156"
+    },
+    {
+      "position": 397,
+      "chunk_id": "large_pdf_page_157_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_157"
+    },
+    {
+      "position": 398,
+      "chunk_id": "large_pdf_page_157_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_157"
+    },
+    {
+      "position": 399,
+      "chunk_id": "large_pdf_page_158_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_158"
+    },
+    {
+      "position": 400,
+      "chunk_id": "large_pdf_page_158_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_158"
+    },
+    {
+      "position": 401,
+      "chunk_id": "large_pdf_page_159_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_159"
+    },
+    {
+      "position": 402,
+      "chunk_id": "large_pdf_page_159_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_159"
+    },
+    {
+      "position": 403,
+      "chunk_id": "large_pdf_page_160_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_160"
+    },
+    {
+      "position": 404,
+      "chunk_id": "large_pdf_page_160_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_160"
+    },
+    {
+      "position": 405,
+      "chunk_id": "large_pdf_page_160_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_160"
+    },
+    {
+      "position": 406,
+      "chunk_id": "large_pdf_page_161_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_161"
+    },
+    {
+      "position": 407,
+      "chunk_id": "large_pdf_page_161_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_161"
+    },
+    {
+      "position": 408,
+      "chunk_id": "large_pdf_page_161_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_161"
+    },
+    {
+      "position": 409,
+      "chunk_id": "large_pdf_page_162_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_162"
+    },
+    {
+      "position": 410,
+      "chunk_id": "large_pdf_page_162_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_162"
+    },
+    {
+      "position": 411,
+      "chunk_id": "large_pdf_page_163_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_163"
+    },
+    {
+      "position": 412,
+      "chunk_id": "large_pdf_page_164_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_164"
+    },
+    {
+      "position": 413,
+      "chunk_id": "large_pdf_page_164_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_164"
+    },
+    {
+      "position": 414,
+      "chunk_id": "large_pdf_page_165_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_165"
+    },
+    {
+      "position": 415,
+      "chunk_id": "large_pdf_page_165_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_165"
+    },
+    {
+      "position": 416,
+      "chunk_id": "large_pdf_page_166_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_166"
+    },
+    {
+      "position": 417,
+      "chunk_id": "large_pdf_page_166_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_166"
+    },
+    {
+      "position": 418,
+      "chunk_id": "large_pdf_page_166_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_166"
+    },
+    {
+      "position": 419,
+      "chunk_id": "large_pdf_page_167_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_167"
+    },
+    {
+      "position": 420,
+      "chunk_id": "large_pdf_page_167_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_167"
+    },
+    {
+      "position": 421,
+      "chunk_id": "large_pdf_page_167_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_167"
+    },
+    {
+      "position": 422,
+      "chunk_id": "large_pdf_page_168_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_168"
+    },
+    {
+      "position": 423,
+      "chunk_id": "large_pdf_page_168_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_168"
+    },
+    {
+      "position": 424,
+      "chunk_id": "large_pdf_page_169_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_169"
+    },
+    {
+      "position": 425,
+      "chunk_id": "large_pdf_page_170_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_170"
+    },
+    {
+      "position": 426,
+      "chunk_id": "large_pdf_page_170_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_170"
+    },
+    {
+      "position": 427,
+      "chunk_id": "large_pdf_page_171_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_171"
+    },
+    {
+      "position": 428,
+      "chunk_id": "large_pdf_page_171_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_171"
+    },
+    {
+      "position": 429,
+      "chunk_id": "large_pdf_page_172_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_172"
+    },
+    {
+      "position": 430,
+      "chunk_id": "large_pdf_page_172_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_172"
+    },
+    {
+      "position": 431,
+      "chunk_id": "large_pdf_page_172_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_172"
+    },
+    {
+      "position": 432,
+      "chunk_id": "large_pdf_page_173_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_173"
+    },
+    {
+      "position": 433,
+      "chunk_id": "large_pdf_page_173_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_173"
+    },
+    {
+      "position": 434,
+      "chunk_id": "large_pdf_page_173_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_173"
+    },
+    {
+      "position": 435,
+      "chunk_id": "large_pdf_page_174_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_174"
+    },
+    {
+      "position": 436,
+      "chunk_id": "large_pdf_page_174_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_174"
+    },
+    {
+      "position": 437,
+      "chunk_id": "large_pdf_page_175_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_175"
+    },
+    {
+      "position": 438,
+      "chunk_id": "large_pdf_page_176_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_176"
+    },
+    {
+      "position": 439,
+      "chunk_id": "large_pdf_page_176_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_176"
+    },
+    {
+      "position": 440,
+      "chunk_id": "large_pdf_page_177_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_177"
+    },
+    {
+      "position": 441,
+      "chunk_id": "large_pdf_page_177_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_177"
+    },
+    {
+      "position": 442,
+      "chunk_id": "large_pdf_page_178_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_178"
+    },
+    {
+      "position": 443,
+      "chunk_id": "large_pdf_page_178_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_178"
+    },
+    {
+      "position": 444,
+      "chunk_id": "large_pdf_page_178_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_178"
+    },
+    {
+      "position": 445,
+      "chunk_id": "large_pdf_page_179_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_179"
+    },
+    {
+      "position": 446,
+      "chunk_id": "large_pdf_page_179_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_179"
+    },
+    {
+      "position": 447,
+      "chunk_id": "large_pdf_page_179_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_179"
+    },
+    {
+      "position": 448,
+      "chunk_id": "large_pdf_page_180_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_180"
+    },
+    {
+      "position": 449,
+      "chunk_id": "large_pdf_page_180_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_180"
+    },
+    {
+      "position": 450,
+      "chunk_id": "large_pdf_page_181_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_181"
+    },
+    {
+      "position": 451,
+      "chunk_id": "large_pdf_page_182_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_182"
+    },
+    {
+      "position": 452,
+      "chunk_id": "large_pdf_page_182_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_182"
+    },
+    {
+      "position": 453,
+      "chunk_id": "large_pdf_page_183_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_183"
+    },
+    {
+      "position": 454,
+      "chunk_id": "large_pdf_page_183_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_183"
+    },
+    {
+      "position": 455,
+      "chunk_id": "large_pdf_page_184_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_184"
+    },
+    {
+      "position": 456,
+      "chunk_id": "large_pdf_page_184_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_184"
+    },
+    {
+      "position": 457,
+      "chunk_id": "large_pdf_page_184_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_184"
+    },
+    {
+      "position": 458,
+      "chunk_id": "large_pdf_page_185_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_185"
+    },
+    {
+      "position": 459,
+      "chunk_id": "large_pdf_page_186_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_186"
+    },
+    {
+      "position": 460,
+      "chunk_id": "large_pdf_page_186_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_186"
+    },
+    {
+      "position": 461,
+      "chunk_id": "large_pdf_page_186_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_186"
+    },
+    {
+      "position": 462,
+      "chunk_id": "large_pdf_page_187_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_187"
+    },
+    {
+      "position": 463,
+      "chunk_id": "large_pdf_page_188_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_188"
+    },
+    {
+      "position": 464,
+      "chunk_id": "large_pdf_page_188_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_188"
+    },
+    {
+      "position": 465,
+      "chunk_id": "large_pdf_page_188_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_188"
+    },
+    {
+      "position": 466,
+      "chunk_id": "large_pdf_page_188_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_188"
+    },
+    {
+      "position": 467,
+      "chunk_id": "large_pdf_page_188_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_188"
+    },
+    {
+      "position": 468,
+      "chunk_id": "large_pdf_page_188_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_188"
+    },
+    {
+      "position": 469,
+      "chunk_id": "large_pdf_page_188_007",
+      "source": "pdf",
+      "doc_id": "pdf_page_188"
+    },
+    {
+      "position": 470,
+      "chunk_id": "large_pdf_page_188_008",
+      "source": "pdf",
+      "doc_id": "pdf_page_188"
+    },
+    {
+      "position": 471,
+      "chunk_id": "large_pdf_page_188_009",
+      "source": "pdf",
+      "doc_id": "pdf_page_188"
+    },
+    {
+      "position": 472,
+      "chunk_id": "large_pdf_page_188_010",
+      "source": "pdf",
+      "doc_id": "pdf_page_188"
+    },
+    {
+      "position": 473,
+      "chunk_id": "large_pdf_page_188_011",
+      "source": "pdf",
+      "doc_id": "pdf_page_188"
+    },
+    {
+      "position": 474,
+      "chunk_id": "large_pdf_page_188_012",
+      "source": "pdf",
+      "doc_id": "pdf_page_188"
+    },
+    {
+      "position": 475,
+      "chunk_id": "large_pdf_page_188_013",
+      "source": "pdf",
+      "doc_id": "pdf_page_188"
+    },
+    {
+      "position": 476,
+      "chunk_id": "large_pdf_page_188_014",
+      "source": "pdf",
+      "doc_id": "pdf_page_188"
+    },
+    {
+      "position": 477,
+      "chunk_id": "large_pdf_page_189_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_189"
+    },
+    {
+      "position": 478,
+      "chunk_id": "large_pdf_page_189_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_189"
+    },
+    {
+      "position": 479,
+      "chunk_id": "large_pdf_page_189_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_189"
+    },
+    {
+      "position": 480,
+      "chunk_id": "large_pdf_page_189_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_189"
+    },
+    {
+      "position": 481,
+      "chunk_id": "large_pdf_page_189_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_189"
+    },
+    {
+      "position": 482,
+      "chunk_id": "large_pdf_page_189_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_189"
+    },
+    {
+      "position": 483,
+      "chunk_id": "large_pdf_page_189_007",
+      "source": "pdf",
+      "doc_id": "pdf_page_189"
+    },
+    {
+      "position": 484,
+      "chunk_id": "large_pdf_page_189_008",
+      "source": "pdf",
+      "doc_id": "pdf_page_189"
+    },
+    {
+      "position": 485,
+      "chunk_id": "large_pdf_page_189_009",
+      "source": "pdf",
+      "doc_id": "pdf_page_189"
+    },
+    {
+      "position": 486,
+      "chunk_id": "large_pdf_page_189_010",
+      "source": "pdf",
+      "doc_id": "pdf_page_189"
+    },
+    {
+      "position": 487,
+      "chunk_id": "large_pdf_page_189_011",
+      "source": "pdf",
+      "doc_id": "pdf_page_189"
+    },
+    {
+      "position": 488,
+      "chunk_id": "large_pdf_page_189_012",
+      "source": "pdf",
+      "doc_id": "pdf_page_189"
+    },
+    {
+      "position": 489,
+      "chunk_id": "large_pdf_page_189_013",
+      "source": "pdf",
+      "doc_id": "pdf_page_189"
+    },
+    {
+      "position": 490,
+      "chunk_id": "large_pdf_page_189_014",
+      "source": "pdf",
+      "doc_id": "pdf_page_189"
+    },
+    {
+      "position": 491,
+      "chunk_id": "large_pdf_page_189_015",
+      "source": "pdf",
+      "doc_id": "pdf_page_189"
+    },
+    {
+      "position": 492,
+      "chunk_id": "large_pdf_page_189_016",
+      "source": "pdf",
+      "doc_id": "pdf_page_189"
+    },
+    {
+      "position": 493,
+      "chunk_id": "large_pdf_page_190_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_190"
+    },
+    {
+      "position": 494,
+      "chunk_id": "large_pdf_page_190_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_190"
+    },
+    {
+      "position": 495,
+      "chunk_id": "large_pdf_page_190_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_190"
+    },
+    {
+      "position": 496,
+      "chunk_id": "large_pdf_page_190_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_190"
+    },
+    {
+      "position": 497,
+      "chunk_id": "large_pdf_page_190_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_190"
+    },
+    {
+      "position": 498,
+      "chunk_id": "large_pdf_page_190_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_190"
+    },
+    {
+      "position": 499,
+      "chunk_id": "large_pdf_page_190_007",
+      "source": "pdf",
+      "doc_id": "pdf_page_190"
+    },
+    {
+      "position": 500,
+      "chunk_id": "large_pdf_page_190_008",
+      "source": "pdf",
+      "doc_id": "pdf_page_190"
+    },
+    {
+      "position": 501,
+      "chunk_id": "large_pdf_page_190_009",
+      "source": "pdf",
+      "doc_id": "pdf_page_190"
+    },
+    {
+      "position": 502,
+      "chunk_id": "large_pdf_page_190_010",
+      "source": "pdf",
+      "doc_id": "pdf_page_190"
+    },
+    {
+      "position": 503,
+      "chunk_id": "large_pdf_page_190_011",
+      "source": "pdf",
+      "doc_id": "pdf_page_190"
+    },
+    {
+      "position": 504,
+      "chunk_id": "large_pdf_page_190_012",
+      "source": "pdf",
+      "doc_id": "pdf_page_190"
+    },
+    {
+      "position": 505,
+      "chunk_id": "large_pdf_page_190_013",
+      "source": "pdf",
+      "doc_id": "pdf_page_190"
+    },
+    {
+      "position": 506,
+      "chunk_id": "large_pdf_page_190_014",
+      "source": "pdf",
+      "doc_id": "pdf_page_190"
+    },
+    {
+      "position": 507,
+      "chunk_id": "large_pdf_page_190_015",
+      "source": "pdf",
+      "doc_id": "pdf_page_190"
+    },
+    {
+      "position": 508,
+      "chunk_id": "large_pdf_page_191_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_191"
+    },
+    {
+      "position": 509,
+      "chunk_id": "large_pdf_page_191_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_191"
+    },
+    {
+      "position": 510,
+      "chunk_id": "large_pdf_page_191_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_191"
+    },
+    {
+      "position": 511,
+      "chunk_id": "large_pdf_page_191_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_191"
+    },
+    {
+      "position": 512,
+      "chunk_id": "large_pdf_page_191_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_191"
+    },
+    {
+      "position": 513,
+      "chunk_id": "large_pdf_page_191_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_191"
+    },
+    {
+      "position": 514,
+      "chunk_id": "large_pdf_page_191_007",
+      "source": "pdf",
+      "doc_id": "pdf_page_191"
+    },
+    {
+      "position": 515,
+      "chunk_id": "large_pdf_page_191_008",
+      "source": "pdf",
+      "doc_id": "pdf_page_191"
+    },
+    {
+      "position": 516,
+      "chunk_id": "large_pdf_page_191_009",
+      "source": "pdf",
+      "doc_id": "pdf_page_191"
+    },
+    {
+      "position": 517,
+      "chunk_id": "large_pdf_page_191_010",
+      "source": "pdf",
+      "doc_id": "pdf_page_191"
+    },
+    {
+      "position": 518,
+      "chunk_id": "large_pdf_page_191_011",
+      "source": "pdf",
+      "doc_id": "pdf_page_191"
+    },
+    {
+      "position": 519,
+      "chunk_id": "large_pdf_page_191_012",
+      "source": "pdf",
+      "doc_id": "pdf_page_191"
+    },
+    {
+      "position": 520,
+      "chunk_id": "large_pdf_page_191_013",
+      "source": "pdf",
+      "doc_id": "pdf_page_191"
+    },
+    {
+      "position": 521,
+      "chunk_id": "large_pdf_page_191_014",
+      "source": "pdf",
+      "doc_id": "pdf_page_191"
+    },
+    {
+      "position": 522,
+      "chunk_id": "large_pdf_page_192_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_192"
+    },
+    {
+      "position": 523,
+      "chunk_id": "large_pdf_page_192_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_192"
+    },
+    {
+      "position": 524,
+      "chunk_id": "large_pdf_page_192_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_192"
+    },
+    {
+      "position": 525,
+      "chunk_id": "large_pdf_page_192_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_192"
+    },
+    {
+      "position": 526,
+      "chunk_id": "large_pdf_page_192_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_192"
+    },
+    {
+      "position": 527,
+      "chunk_id": "large_pdf_page_192_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_192"
+    },
+    {
+      "position": 528,
+      "chunk_id": "large_pdf_page_192_007",
+      "source": "pdf",
+      "doc_id": "pdf_page_192"
+    },
+    {
+      "position": 529,
+      "chunk_id": "large_pdf_page_192_008",
+      "source": "pdf",
+      "doc_id": "pdf_page_192"
+    },
+    {
+      "position": 530,
+      "chunk_id": "large_pdf_page_192_009",
+      "source": "pdf",
+      "doc_id": "pdf_page_192"
+    },
+    {
+      "position": 531,
+      "chunk_id": "large_pdf_page_192_010",
+      "source": "pdf",
+      "doc_id": "pdf_page_192"
+    },
+    {
+      "position": 532,
+      "chunk_id": "large_pdf_page_192_011",
+      "source": "pdf",
+      "doc_id": "pdf_page_192"
+    },
+    {
+      "position": 533,
+      "chunk_id": "large_pdf_page_192_012",
+      "source": "pdf",
+      "doc_id": "pdf_page_192"
+    },
+    {
+      "position": 534,
+      "chunk_id": "large_pdf_page_192_013",
+      "source": "pdf",
+      "doc_id": "pdf_page_192"
+    },
+    {
+      "position": 535,
+      "chunk_id": "large_pdf_page_192_014",
+      "source": "pdf",
+      "doc_id": "pdf_page_192"
+    },
+    {
+      "position": 536,
+      "chunk_id": "large_pdf_page_192_015",
+      "source": "pdf",
+      "doc_id": "pdf_page_192"
+    },
+    {
+      "position": 537,
+      "chunk_id": "large_pdf_page_192_016",
+      "source": "pdf",
+      "doc_id": "pdf_page_192"
+    },
+    {
+      "position": 538,
+      "chunk_id": "large_pdf_page_193_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_193"
+    },
+    {
+      "position": 539,
+      "chunk_id": "large_pdf_page_193_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_193"
+    },
+    {
+      "position": 540,
+      "chunk_id": "large_pdf_page_193_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_193"
+    },
+    {
+      "position": 541,
+      "chunk_id": "large_pdf_page_193_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_193"
+    },
+    {
+      "position": 542,
+      "chunk_id": "large_pdf_page_193_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_193"
+    },
+    {
+      "position": 543,
+      "chunk_id": "large_pdf_page_193_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_193"
+    },
+    {
+      "position": 544,
+      "chunk_id": "large_pdf_page_193_007",
+      "source": "pdf",
+      "doc_id": "pdf_page_193"
+    },
+    {
+      "position": 545,
+      "chunk_id": "large_pdf_page_193_008",
+      "source": "pdf",
+      "doc_id": "pdf_page_193"
+    },
+    {
+      "position": 546,
+      "chunk_id": "large_pdf_page_193_009",
+      "source": "pdf",
+      "doc_id": "pdf_page_193"
+    },
+    {
+      "position": 547,
+      "chunk_id": "large_pdf_page_193_010",
+      "source": "pdf",
+      "doc_id": "pdf_page_193"
+    },
+    {
+      "position": 548,
+      "chunk_id": "large_pdf_page_193_011",
+      "source": "pdf",
+      "doc_id": "pdf_page_193"
+    },
+    {
+      "position": 549,
+      "chunk_id": "large_pdf_page_193_012",
+      "source": "pdf",
+      "doc_id": "pdf_page_193"
+    },
+    {
+      "position": 550,
+      "chunk_id": "large_pdf_page_193_013",
+      "source": "pdf",
+      "doc_id": "pdf_page_193"
+    },
+    {
+      "position": 551,
+      "chunk_id": "large_pdf_page_193_014",
+      "source": "pdf",
+      "doc_id": "pdf_page_193"
+    },
+    {
+      "position": 552,
+      "chunk_id": "large_pdf_page_193_015",
+      "source": "pdf",
+      "doc_id": "pdf_page_193"
+    },
+    {
+      "position": 553,
+      "chunk_id": "large_pdf_page_194_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_194"
+    },
+    {
+      "position": 554,
+      "chunk_id": "large_pdf_page_194_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_194"
+    },
+    {
+      "position": 555,
+      "chunk_id": "large_pdf_page_194_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_194"
+    },
+    {
+      "position": 556,
+      "chunk_id": "large_pdf_page_194_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_194"
+    },
+    {
+      "position": 557,
+      "chunk_id": "large_pdf_page_194_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_194"
+    },
+    {
+      "position": 558,
+      "chunk_id": "large_pdf_page_194_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_194"
+    },
+    {
+      "position": 559,
+      "chunk_id": "large_pdf_page_194_007",
+      "source": "pdf",
+      "doc_id": "pdf_page_194"
+    },
+    {
+      "position": 560,
+      "chunk_id": "large_pdf_page_194_008",
+      "source": "pdf",
+      "doc_id": "pdf_page_194"
+    },
+    {
+      "position": 561,
+      "chunk_id": "large_pdf_page_194_009",
+      "source": "pdf",
+      "doc_id": "pdf_page_194"
+    },
+    {
+      "position": 562,
+      "chunk_id": "large_pdf_page_194_010",
+      "source": "pdf",
+      "doc_id": "pdf_page_194"
+    },
+    {
+      "position": 563,
+      "chunk_id": "large_pdf_page_194_011",
+      "source": "pdf",
+      "doc_id": "pdf_page_194"
+    },
+    {
+      "position": 564,
+      "chunk_id": "large_pdf_page_194_012",
+      "source": "pdf",
+      "doc_id": "pdf_page_194"
+    },
+    {
+      "position": 565,
+      "chunk_id": "large_pdf_page_194_013",
+      "source": "pdf",
+      "doc_id": "pdf_page_194"
+    },
+    {
+      "position": 566,
+      "chunk_id": "large_pdf_page_194_014",
+      "source": "pdf",
+      "doc_id": "pdf_page_194"
+    },
+    {
+      "position": 567,
+      "chunk_id": "large_pdf_page_194_015",
+      "source": "pdf",
+      "doc_id": "pdf_page_194"
+    },
+    {
+      "position": 568,
+      "chunk_id": "large_pdf_page_195_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_195"
+    },
+    {
+      "position": 569,
+      "chunk_id": "large_pdf_page_195_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_195"
+    },
+    {
+      "position": 570,
+      "chunk_id": "large_pdf_page_195_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_195"
+    },
+    {
+      "position": 571,
+      "chunk_id": "large_pdf_page_195_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_195"
+    },
+    {
+      "position": 572,
+      "chunk_id": "large_pdf_page_195_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_195"
+    },
+    {
+      "position": 573,
+      "chunk_id": "large_pdf_page_195_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_195"
+    },
+    {
+      "position": 574,
+      "chunk_id": "large_pdf_page_195_007",
+      "source": "pdf",
+      "doc_id": "pdf_page_195"
+    },
+    {
+      "position": 575,
+      "chunk_id": "large_pdf_page_195_008",
+      "source": "pdf",
+      "doc_id": "pdf_page_195"
+    },
+    {
+      "position": 576,
+      "chunk_id": "large_pdf_page_195_009",
+      "source": "pdf",
+      "doc_id": "pdf_page_195"
+    },
+    {
+      "position": 577,
+      "chunk_id": "large_pdf_page_195_010",
+      "source": "pdf",
+      "doc_id": "pdf_page_195"
+    },
+    {
+      "position": 578,
+      "chunk_id": "large_pdf_page_195_011",
+      "source": "pdf",
+      "doc_id": "pdf_page_195"
+    },
+    {
+      "position": 579,
+      "chunk_id": "large_pdf_page_195_012",
+      "source": "pdf",
+      "doc_id": "pdf_page_195"
+    },
+    {
+      "position": 580,
+      "chunk_id": "large_pdf_page_195_013",
+      "source": "pdf",
+      "doc_id": "pdf_page_195"
+    },
+    {
+      "position": 581,
+      "chunk_id": "large_pdf_page_195_014",
+      "source": "pdf",
+      "doc_id": "pdf_page_195"
+    },
+    {
+      "position": 582,
+      "chunk_id": "large_pdf_page_195_015",
+      "source": "pdf",
+      "doc_id": "pdf_page_195"
+    },
+    {
+      "position": 583,
+      "chunk_id": "large_pdf_page_196_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_196"
+    },
+    {
+      "position": 584,
+      "chunk_id": "large_pdf_page_196_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_196"
+    },
+    {
+      "position": 585,
+      "chunk_id": "large_pdf_page_196_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_196"
+    },
+    {
+      "position": 586,
+      "chunk_id": "large_pdf_page_196_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_196"
+    },
+    {
+      "position": 587,
+      "chunk_id": "large_pdf_page_196_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_196"
+    },
+    {
+      "position": 588,
+      "chunk_id": "large_pdf_page_196_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_196"
+    },
+    {
+      "position": 589,
+      "chunk_id": "large_pdf_page_196_007",
+      "source": "pdf",
+      "doc_id": "pdf_page_196"
+    },
+    {
+      "position": 590,
+      "chunk_id": "large_pdf_page_196_008",
+      "source": "pdf",
+      "doc_id": "pdf_page_196"
+    },
+    {
+      "position": 591,
+      "chunk_id": "large_pdf_page_196_009",
+      "source": "pdf",
+      "doc_id": "pdf_page_196"
+    },
+    {
+      "position": 592,
+      "chunk_id": "large_pdf_page_196_010",
+      "source": "pdf",
+      "doc_id": "pdf_page_196"
+    },
+    {
+      "position": 593,
+      "chunk_id": "large_pdf_page_196_011",
+      "source": "pdf",
+      "doc_id": "pdf_page_196"
+    },
+    {
+      "position": 594,
+      "chunk_id": "large_pdf_page_196_012",
+      "source": "pdf",
+      "doc_id": "pdf_page_196"
+    },
+    {
+      "position": 595,
+      "chunk_id": "large_pdf_page_196_013",
+      "source": "pdf",
+      "doc_id": "pdf_page_196"
+    },
+    {
+      "position": 596,
+      "chunk_id": "large_pdf_page_197_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_197"
+    },
+    {
+      "position": 597,
+      "chunk_id": "large_pdf_page_198_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_198"
+    },
+    {
+      "position": 598,
+      "chunk_id": "large_pdf_page_198_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_198"
+    },
+    {
+      "position": 599,
+      "chunk_id": "large_pdf_page_198_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_198"
+    },
+    {
+      "position": 600,
+      "chunk_id": "large_pdf_page_199_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_199"
+    },
+    {
+      "position": 601,
+      "chunk_id": "large_pdf_page_199_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_199"
+    },
+    {
+      "position": 602,
+      "chunk_id": "large_pdf_page_199_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_199"
+    },
+    {
+      "position": 603,
+      "chunk_id": "large_pdf_page_200_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_200"
+    },
+    {
+      "position": 604,
+      "chunk_id": "large_pdf_page_200_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_200"
+    },
+    {
+      "position": 605,
+      "chunk_id": "large_pdf_page_200_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_200"
+    },
+    {
+      "position": 606,
+      "chunk_id": "large_pdf_page_200_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_200"
+    },
+    {
+      "position": 607,
+      "chunk_id": "large_pdf_page_200_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_200"
+    },
+    {
+      "position": 608,
+      "chunk_id": "large_pdf_page_200_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_200"
+    },
+    {
+      "position": 609,
+      "chunk_id": "large_pdf_page_200_007",
+      "source": "pdf",
+      "doc_id": "pdf_page_200"
+    },
+    {
+      "position": 610,
+      "chunk_id": "large_pdf_page_201_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_201"
+    },
+    {
+      "position": 611,
+      "chunk_id": "large_pdf_page_201_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_201"
+    },
+    {
+      "position": 612,
+      "chunk_id": "large_pdf_page_201_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_201"
+    },
+    {
+      "position": 613,
+      "chunk_id": "large_pdf_page_201_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_201"
+    },
+    {
+      "position": 614,
+      "chunk_id": "large_pdf_page_201_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_201"
+    },
+    {
+      "position": 615,
+      "chunk_id": "large_pdf_page_201_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_201"
+    },
+    {
+      "position": 616,
+      "chunk_id": "large_pdf_page_201_007",
+      "source": "pdf",
+      "doc_id": "pdf_page_201"
+    },
+    {
+      "position": 617,
+      "chunk_id": "large_pdf_page_202_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_202"
+    },
+    {
+      "position": 618,
+      "chunk_id": "large_pdf_page_202_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_202"
+    },
+    {
+      "position": 619,
+      "chunk_id": "large_pdf_page_202_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_202"
+    },
+    {
+      "position": 620,
+      "chunk_id": "large_pdf_page_203_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_203"
+    },
+    {
+      "position": 621,
+      "chunk_id": "large_pdf_page_203_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_203"
+    },
+    {
+      "position": 622,
+      "chunk_id": "large_pdf_page_203_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_203"
+    },
+    {
+      "position": 623,
+      "chunk_id": "large_pdf_page_203_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_203"
+    },
+    {
+      "position": 624,
+      "chunk_id": "large_pdf_page_203_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_203"
+    },
+    {
+      "position": 625,
+      "chunk_id": "large_pdf_page_203_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_203"
+    },
+    {
+      "position": 626,
+      "chunk_id": "large_pdf_page_203_007",
+      "source": "pdf",
+      "doc_id": "pdf_page_203"
+    },
+    {
+      "position": 627,
+      "chunk_id": "large_pdf_page_203_008",
+      "source": "pdf",
+      "doc_id": "pdf_page_203"
+    },
+    {
+      "position": 628,
+      "chunk_id": "large_pdf_page_203_009",
+      "source": "pdf",
+      "doc_id": "pdf_page_203"
+    },
+    {
+      "position": 629,
+      "chunk_id": "large_pdf_page_204_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_204"
+    },
+    {
+      "position": 630,
+      "chunk_id": "large_pdf_page_204_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_204"
+    },
+    {
+      "position": 631,
+      "chunk_id": "large_pdf_page_204_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_204"
+    },
+    {
+      "position": 632,
+      "chunk_id": "large_pdf_page_205_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_205"
+    },
+    {
+      "position": 633,
+      "chunk_id": "large_pdf_page_205_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_205"
+    },
+    {
+      "position": 634,
+      "chunk_id": "large_pdf_page_205_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_205"
+    },
+    {
+      "position": 635,
+      "chunk_id": "large_pdf_page_205_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_205"
+    },
+    {
+      "position": 636,
+      "chunk_id": "large_pdf_page_205_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_205"
+    },
+    {
+      "position": 637,
+      "chunk_id": "large_pdf_page_206_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_206"
+    },
+    {
+      "position": 638,
+      "chunk_id": "large_pdf_page_206_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_206"
+    },
+    {
+      "position": 639,
+      "chunk_id": "large_pdf_page_206_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_206"
+    },
+    {
+      "position": 640,
+      "chunk_id": "large_pdf_page_206_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_206"
+    },
+    {
+      "position": 641,
+      "chunk_id": "large_pdf_page_207_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_207"
+    },
+    {
+      "position": 642,
+      "chunk_id": "large_pdf_page_207_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_207"
+    },
+    {
+      "position": 643,
+      "chunk_id": "large_pdf_page_207_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_207"
+    },
+    {
+      "position": 644,
+      "chunk_id": "large_pdf_page_207_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_207"
+    },
+    {
+      "position": 645,
+      "chunk_id": "large_pdf_page_208_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_208"
+    },
+    {
+      "position": 646,
+      "chunk_id": "large_pdf_page_208_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_208"
+    },
+    {
+      "position": 647,
+      "chunk_id": "large_pdf_page_208_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_208"
+    },
+    {
+      "position": 648,
+      "chunk_id": "large_pdf_page_208_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_208"
+    },
+    {
+      "position": 649,
+      "chunk_id": "large_pdf_page_208_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_208"
+    },
+    {
+      "position": 650,
+      "chunk_id": "large_pdf_page_208_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_208"
+    },
+    {
+      "position": 651,
+      "chunk_id": "large_pdf_page_209_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_209"
+    },
+    {
+      "position": 652,
+      "chunk_id": "large_pdf_page_209_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_209"
+    },
+    {
+      "position": 653,
+      "chunk_id": "large_pdf_page_209_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_209"
+    },
+    {
+      "position": 654,
+      "chunk_id": "large_pdf_page_209_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_209"
+    },
+    {
+      "position": 655,
+      "chunk_id": "large_pdf_page_209_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_209"
+    },
+    {
+      "position": 656,
+      "chunk_id": "large_pdf_page_209_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_209"
+    },
+    {
+      "position": 657,
+      "chunk_id": "large_pdf_page_210_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_210"
+    },
+    {
+      "position": 658,
+      "chunk_id": "large_pdf_page_210_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_210"
+    },
+    {
+      "position": 659,
+      "chunk_id": "large_pdf_page_210_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_210"
+    },
+    {
+      "position": 660,
+      "chunk_id": "large_pdf_page_210_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_210"
+    },
+    {
+      "position": 661,
+      "chunk_id": "large_pdf_page_210_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_210"
+    },
+    {
+      "position": 662,
+      "chunk_id": "large_pdf_page_210_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_210"
+    },
+    {
+      "position": 663,
+      "chunk_id": "large_pdf_page_211_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_211"
+    },
+    {
+      "position": 664,
+      "chunk_id": "large_pdf_page_211_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_211"
+    },
+    {
+      "position": 665,
+      "chunk_id": "large_pdf_page_211_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_211"
+    },
+    {
+      "position": 666,
+      "chunk_id": "large_pdf_page_211_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_211"
+    },
+    {
+      "position": 667,
+      "chunk_id": "large_pdf_page_212_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_212"
+    },
+    {
+      "position": 668,
+      "chunk_id": "large_pdf_page_212_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_212"
+    },
+    {
+      "position": 669,
+      "chunk_id": "large_pdf_page_212_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_212"
+    },
+    {
+      "position": 670,
+      "chunk_id": "large_pdf_page_212_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_212"
+    },
+    {
+      "position": 671,
+      "chunk_id": "large_pdf_page_212_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_212"
+    },
+    {
+      "position": 672,
+      "chunk_id": "large_pdf_page_212_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_212"
+    },
+    {
+      "position": 673,
+      "chunk_id": "large_pdf_page_212_007",
+      "source": "pdf",
+      "doc_id": "pdf_page_212"
+    },
+    {
+      "position": 674,
+      "chunk_id": "large_pdf_page_212_008",
+      "source": "pdf",
+      "doc_id": "pdf_page_212"
+    },
+    {
+      "position": 675,
+      "chunk_id": "large_pdf_page_212_009",
+      "source": "pdf",
+      "doc_id": "pdf_page_212"
+    },
+    {
+      "position": 676,
+      "chunk_id": "large_pdf_page_213_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_213"
+    },
+    {
+      "position": 677,
+      "chunk_id": "large_pdf_page_213_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_213"
+    },
+    {
+      "position": 678,
+      "chunk_id": "large_pdf_page_213_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_213"
+    },
+    {
+      "position": 679,
+      "chunk_id": "large_pdf_page_214_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_214"
+    },
+    {
+      "position": 680,
+      "chunk_id": "large_pdf_page_214_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_214"
+    },
+    {
+      "position": 681,
+      "chunk_id": "large_pdf_page_214_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_214"
+    },
+    {
+      "position": 682,
+      "chunk_id": "large_pdf_page_214_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_214"
+    },
+    {
+      "position": 683,
+      "chunk_id": "large_pdf_page_215_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_215"
+    },
+    {
+      "position": 684,
+      "chunk_id": "large_pdf_page_215_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_215"
+    },
+    {
+      "position": 685,
+      "chunk_id": "large_pdf_page_215_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_215"
+    },
+    {
+      "position": 686,
+      "chunk_id": "large_pdf_page_215_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_215"
+    },
+    {
+      "position": 687,
+      "chunk_id": "large_pdf_page_215_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_215"
+    },
+    {
+      "position": 688,
+      "chunk_id": "large_pdf_page_216_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_216"
+    },
+    {
+      "position": 689,
+      "chunk_id": "large_pdf_page_216_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_216"
+    },
+    {
+      "position": 690,
+      "chunk_id": "large_pdf_page_216_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_216"
+    },
+    {
+      "position": 691,
+      "chunk_id": "large_pdf_page_216_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_216"
+    },
+    {
+      "position": 692,
+      "chunk_id": "large_pdf_page_217_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_217"
+    },
+    {
+      "position": 693,
+      "chunk_id": "large_pdf_page_217_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_217"
+    },
+    {
+      "position": 694,
+      "chunk_id": "large_pdf_page_217_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_217"
+    },
+    {
+      "position": 695,
+      "chunk_id": "large_pdf_page_218_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_218"
+    },
+    {
+      "position": 696,
+      "chunk_id": "large_pdf_page_218_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_218"
+    },
+    {
+      "position": 697,
+      "chunk_id": "large_pdf_page_219_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_219"
+    },
+    {
+      "position": 698,
+      "chunk_id": "large_pdf_page_219_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_219"
+    },
+    {
+      "position": 699,
+      "chunk_id": "large_pdf_page_219_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_219"
+    },
+    {
+      "position": 700,
+      "chunk_id": "large_pdf_page_220_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_220"
+    },
+    {
+      "position": 701,
+      "chunk_id": "large_pdf_page_220_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_220"
+    },
+    {
+      "position": 702,
+      "chunk_id": "large_pdf_page_221_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_221"
+    },
+    {
+      "position": 703,
+      "chunk_id": "large_pdf_page_221_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_221"
+    },
+    {
+      "position": 704,
+      "chunk_id": "large_pdf_page_221_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_221"
+    },
+    {
+      "position": 705,
+      "chunk_id": "large_pdf_page_221_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_221"
+    },
+    {
+      "position": 706,
+      "chunk_id": "large_pdf_page_221_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_221"
+    },
+    {
+      "position": 707,
+      "chunk_id": "large_pdf_page_222_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_222"
+    },
+    {
+      "position": 708,
+      "chunk_id": "large_pdf_page_222_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_222"
+    },
+    {
+      "position": 709,
+      "chunk_id": "large_pdf_page_222_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_222"
+    },
+    {
+      "position": 710,
+      "chunk_id": "large_pdf_page_222_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_222"
+    },
+    {
+      "position": 711,
+      "chunk_id": "large_pdf_page_222_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_222"
+    },
+    {
+      "position": 712,
+      "chunk_id": "large_pdf_page_223_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_223"
+    },
+    {
+      "position": 713,
+      "chunk_id": "large_pdf_page_223_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_223"
+    },
+    {
+      "position": 714,
+      "chunk_id": "large_pdf_page_223_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_223"
+    },
+    {
+      "position": 715,
+      "chunk_id": "large_pdf_page_224_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_224"
+    },
+    {
+      "position": 716,
+      "chunk_id": "large_pdf_page_224_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_224"
+    },
+    {
+      "position": 717,
+      "chunk_id": "large_pdf_page_224_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_224"
+    },
+    {
+      "position": 718,
+      "chunk_id": "large_pdf_page_224_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_224"
+    },
+    {
+      "position": 719,
+      "chunk_id": "large_pdf_page_224_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_224"
+    },
+    {
+      "position": 720,
+      "chunk_id": "large_pdf_page_225_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_225"
+    },
+    {
+      "position": 721,
+      "chunk_id": "large_pdf_page_225_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_225"
+    },
+    {
+      "position": 722,
+      "chunk_id": "large_pdf_page_225_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_225"
+    },
+    {
+      "position": 723,
+      "chunk_id": "large_pdf_page_225_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_225"
+    },
+    {
+      "position": 724,
+      "chunk_id": "large_pdf_page_225_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_225"
+    },
+    {
+      "position": 725,
+      "chunk_id": "large_pdf_page_226_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_226"
+    },
+    {
+      "position": 726,
+      "chunk_id": "large_pdf_page_227_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_227"
+    },
+    {
+      "position": 727,
+      "chunk_id": "large_pdf_page_227_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_227"
+    },
+    {
+      "position": 728,
+      "chunk_id": "large_pdf_page_228_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_228"
+    },
+    {
+      "position": 729,
+      "chunk_id": "large_pdf_page_228_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_228"
+    },
+    {
+      "position": 730,
+      "chunk_id": "large_pdf_page_228_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_228"
+    },
+    {
+      "position": 731,
+      "chunk_id": "large_pdf_page_228_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_228"
+    },
+    {
+      "position": 732,
+      "chunk_id": "large_pdf_page_228_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_228"
+    },
+    {
+      "position": 733,
+      "chunk_id": "large_pdf_page_228_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_228"
+    },
+    {
+      "position": 734,
+      "chunk_id": "large_pdf_page_229_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_229"
+    },
+    {
+      "position": 735,
+      "chunk_id": "large_pdf_page_229_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_229"
+    },
+    {
+      "position": 736,
+      "chunk_id": "large_pdf_page_229_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_229"
+    },
+    {
+      "position": 737,
+      "chunk_id": "large_pdf_page_229_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_229"
+    },
+    {
+      "position": 738,
+      "chunk_id": "large_pdf_page_229_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_229"
+    },
+    {
+      "position": 739,
+      "chunk_id": "large_pdf_page_229_006",
+      "source": "pdf",
+      "doc_id": "pdf_page_229"
+    },
+    {
+      "position": 740,
+      "chunk_id": "large_pdf_page_230_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_230"
+    },
+    {
+      "position": 741,
+      "chunk_id": "large_pdf_page_230_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_230"
+    },
+    {
+      "position": 742,
+      "chunk_id": "large_pdf_page_230_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_230"
+    },
+    {
+      "position": 743,
+      "chunk_id": "large_pdf_page_230_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_230"
+    },
+    {
+      "position": 744,
+      "chunk_id": "large_pdf_page_231_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_231"
+    },
+    {
+      "position": 745,
+      "chunk_id": "large_pdf_page_231_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_231"
+    },
+    {
+      "position": 746,
+      "chunk_id": "large_pdf_page_231_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_231"
+    },
+    {
+      "position": 747,
+      "chunk_id": "large_pdf_page_232_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_232"
+    },
+    {
+      "position": 748,
+      "chunk_id": "large_pdf_page_232_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_232"
+    },
+    {
+      "position": 749,
+      "chunk_id": "large_pdf_page_233_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_233"
+    },
+    {
+      "position": 750,
+      "chunk_id": "large_pdf_page_233_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_233"
+    },
+    {
+      "position": 751,
+      "chunk_id": "large_pdf_page_233_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_233"
+    },
+    {
+      "position": 752,
+      "chunk_id": "large_pdf_page_234_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_234"
+    },
+    {
+      "position": 753,
+      "chunk_id": "large_pdf_page_234_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_234"
+    },
+    {
+      "position": 754,
+      "chunk_id": "large_pdf_page_235_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_235"
+    },
+    {
+      "position": 755,
+      "chunk_id": "large_pdf_page_235_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_235"
+    },
+    {
+      "position": 756,
+      "chunk_id": "large_pdf_page_235_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_235"
+    },
+    {
+      "position": 757,
+      "chunk_id": "large_pdf_page_235_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_235"
+    },
+    {
+      "position": 758,
+      "chunk_id": "large_pdf_page_236_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_236"
+    },
+    {
+      "position": 759,
+      "chunk_id": "large_pdf_page_236_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_236"
+    },
+    {
+      "position": 760,
+      "chunk_id": "large_pdf_page_236_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_236"
+    },
+    {
+      "position": 761,
+      "chunk_id": "large_pdf_page_236_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_236"
+    },
+    {
+      "position": 762,
+      "chunk_id": "large_pdf_page_236_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_236"
+    },
+    {
+      "position": 763,
+      "chunk_id": "large_pdf_page_237_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_237"
+    },
+    {
+      "position": 764,
+      "chunk_id": "large_pdf_page_237_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_237"
+    },
+    {
+      "position": 765,
+      "chunk_id": "large_pdf_page_237_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_237"
+    },
+    {
+      "position": 766,
+      "chunk_id": "large_pdf_page_238_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_238"
+    },
+    {
+      "position": 767,
+      "chunk_id": "large_pdf_page_238_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_238"
+    },
+    {
+      "position": 768,
+      "chunk_id": "large_pdf_page_238_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_238"
+    },
+    {
+      "position": 769,
+      "chunk_id": "large_pdf_page_239_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_239"
+    },
+    {
+      "position": 770,
+      "chunk_id": "large_pdf_page_239_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_239"
+    },
+    {
+      "position": 771,
+      "chunk_id": "large_pdf_page_240_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_240"
+    },
+    {
+      "position": 772,
+      "chunk_id": "large_pdf_page_240_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_240"
+    },
+    {
+      "position": 773,
+      "chunk_id": "large_pdf_page_240_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_240"
+    },
+    {
+      "position": 774,
+      "chunk_id": "large_pdf_page_241_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_241"
+    },
+    {
+      "position": 775,
+      "chunk_id": "large_pdf_page_241_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_241"
+    },
+    {
+      "position": 776,
+      "chunk_id": "large_pdf_page_242_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_242"
+    },
+    {
+      "position": 777,
+      "chunk_id": "large_pdf_page_242_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_242"
+    },
+    {
+      "position": 778,
+      "chunk_id": "large_pdf_page_242_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_242"
+    },
+    {
+      "position": 779,
+      "chunk_id": "large_pdf_page_242_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_242"
+    },
+    {
+      "position": 780,
+      "chunk_id": "large_pdf_page_242_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_242"
+    },
+    {
+      "position": 781,
+      "chunk_id": "large_pdf_page_243_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_243"
+    },
+    {
+      "position": 782,
+      "chunk_id": "large_pdf_page_243_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_243"
+    },
+    {
+      "position": 783,
+      "chunk_id": "large_pdf_page_243_003",
+      "source": "pdf",
+      "doc_id": "pdf_page_243"
+    },
+    {
+      "position": 784,
+      "chunk_id": "large_pdf_page_243_004",
+      "source": "pdf",
+      "doc_id": "pdf_page_243"
+    },
+    {
+      "position": 785,
+      "chunk_id": "large_pdf_page_243_005",
+      "source": "pdf",
+      "doc_id": "pdf_page_243"
+    },
+    {
+      "position": 786,
+      "chunk_id": "large_pdf_page_244_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_244"
+    },
+    {
+      "position": 787,
+      "chunk_id": "large_pdf_page_244_002",
+      "source": "pdf",
+      "doc_id": "pdf_page_244"
+    },
+    {
+      "position": 788,
+      "chunk_id": "large_pdf_page_245_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_245"
+    },
+    {
+      "position": 789,
+      "chunk_id": "large_pdf_page_246_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_246"
+    },
+    {
+      "position": 790,
+      "chunk_id": "large_pdf_page_247_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_247"
+    },
+    {
+      "position": 791,
+      "chunk_id": "large_pdf_page_248_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_248"
+    },
+    {
+      "position": 792,
+      "chunk_id": "large_pdf_page_249_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_249"
+    },
+    {
+      "position": 793,
+      "chunk_id": "large_pdf_page_250_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_250"
+    },
+    {
+      "position": 794,
+      "chunk_id": "large_pdf_page_251_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_251"
+    },
+    {
+      "position": 795,
+      "chunk_id": "large_pdf_page_252_001",
+      "source": "pdf",
+      "doc_id": "pdf_page_252"
+    }
+  ]
+}
